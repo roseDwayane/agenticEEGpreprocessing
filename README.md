@@ -246,11 +246,3 @@ From [`step8_journal_recommendations.md`](10_Research/20260620_agentic-eeg-prepr
 | **NeurIPS D&B / TMLR** | — | Wildcard — the oracle-as-benchmark + agent-transfer angle |
 
 A two-paper strategy is viable: a *neuro-methods* paper (metric + benchmark) and an *ML/agent* paper (LLM agent transfers to electrophysiology).
-
----
-
-## 9. Provenance / 來源
-
-This research scaffold was produced with the **SCHOLAR `/research` pipeline** (9 steps) and the **research-to-knowledge bridge**, then curated. Every one of the 53 references was verified against a real API response — **zero hallucinated citations** (validated in Step 9). Citation counts are point-in-time snapshots; the FOOOF foundational paper ([Donoghue et al., 2020](https://doi.org/10.1038/s41593-020-00744-x)) and several others are abstract-level in `step5` (flagged `needs_fulltext`) because their published versions are paywalled.
-
-本研究骨架以 SCHOLAR `/research` pipeline（9 步）與 research-to-knowledge bridge 產出後人工校訂。53 篇參考文獻全部對應真實 API 回應——**零幻覺引用**。
