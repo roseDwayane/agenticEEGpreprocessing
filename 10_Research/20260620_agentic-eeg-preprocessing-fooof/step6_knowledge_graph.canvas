@@ -1,0 +1,847 @@
+{
+ "nodes": [
+  {
+   "id": "overview",
+   "type": "file",
+   "file": "/Users/kyc/PythonProject/agenticEEGpreprocessing/10_Research/20260620_agentic-eeg-preprocessing-fooof/step6_sota_review.md",
+   "x": -200,
+   "y": -700,
+   "width": 520,
+   "height": 110,
+   "color": "6"
+  },
+  {
+   "id": "theme-1",
+   "type": "group",
+   "x": -1630,
+   "y": -560,
+   "width": 420,
+   "height": 1380,
+   "label": "Standardized & Automated EEG Pipelines / 標準化自動化 EEG 管線"
+  },
+  {
+   "id": "BigdelyShamloEtAl2015",
+   "type": "text",
+   "text": "**BigdelyShamloEtAl2015**\nThe PREP pipeline: standardized preprocessing fo (2015)",
+   "x": -1600,
+   "y": -500,
+   "width": 360,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "GabardDurnamEtAl2018",
+   "type": "text",
+   "text": "**GabardDurnamEtAl2018**\nThe Harvard Automated Processing Pipeline for El (2018)",
+   "x": -1600,
+   "y": -400,
+   "width": 360,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "JasEtAl2017",
+   "type": "text",
+   "text": "**JasEtAl2017**\nAutoreject: Automated artifact rejection for MEG (2017)",
+   "x": -1600,
+   "y": -300,
+   "width": 360,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "PionTonachiniEtAl2019",
+   "type": "text",
+   "text": "**PionTonachiniEtAl2019**\nICLabel: An automated electroencephalographic in (2019)",
+   "x": -1600,
+   "y": -200,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "PedroniEtAl2019",
+   "type": "file",
+   "file": "/Users/kyc/PythonProject/agenticEEGpreprocessing/10_Research/20260620_agentic-eeg-preprocessing-fooof/step5_full_text/PedroniEtAl2019.md",
+   "x": -1600,
+   "y": -100,
+   "width": 360,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "LiEtAl2022",
+   "type": "text",
+   "text": "**LiEtAl2022**\nMNE-ICALabel: Automatically annotating ICA compo (2022)",
+   "x": -1600,
+   "y": 0,
+   "width": 360,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "LopezEtAl2022",
+   "type": "text",
+   "text": "**LopezEtAl2022**\nHAPPILEE: HAPPE In Low Electrode Electroencephal (2022)",
+   "x": -1600,
+   "y": 100,
+   "width": 360,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "MonachinoEtAl2022",
+   "type": "text",
+   "text": "**MonachinoEtAl2022**\nThe HAPPE plus Event-Related (HAPPE+ER) software (2022)",
+   "x": -1600,
+   "y": 200,
+   "width": 360,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "KumaravelEtAl2022",
+   "type": "text",
+   "text": "**KumaravelEtAl2022**\nNEAR: An artifact removal pipeline for human new (2022)",
+   "x": -1600,
+   "y": 300,
+   "width": 360,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "MayeliEtAl2021",
+   "type": "text",
+   "text": "**MayeliEtAl2021**\nAutomated pipeline for EEG artifact reduction (A (2021)",
+   "x": -1600,
+   "y": 400,
+   "width": 360,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "vilaEtAl2023",
+   "type": "text",
+   "text": "**vilaEtAl2023**\nDISCOVER-EEG: an open, fully automated EEG pipel (2023)",
+   "x": -1600,
+   "y": 500,
+   "width": 360,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "MutanenEtAl2018",
+   "type": "text",
+   "text": "**MutanenEtAl2018**\nAutomatic and robust noise suppression in EEG an (2018)",
+   "x": -1600,
+   "y": 600,
+   "width": 360,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "BlumEtAl2019",
+   "type": "text",
+   "text": "**BlumEtAl2019**\nA Riemannian Modification of Artifact Subspace R (2019)",
+   "x": -1600,
+   "y": 700,
+   "width": 360,
+   "height": 70,
+   "color": "5"
+  },
+  {
+   "id": "theme-2",
+   "type": "group",
+   "x": -1030,
+   "y": -560,
+   "width": 420,
+   "height": 780,
+   "label": "FOOOF Spectral Parameterization / FOOOF 頻譜參數化"
+  },
+  {
+   "id": "DonoghueEtAl2020b",
+   "type": "file",
+   "file": "/Users/kyc/PythonProject/agenticEEGpreprocessing/10_Research/20260620_agentic-eeg-preprocessing-fooof/step5_full_text/DonoghueEtAl2020b.md",
+   "x": -1000,
+   "y": -500,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "HallerEtAl2018",
+   "type": "text",
+   "text": "**HallerEtAl2018**\nParameterizing neural power spectra (2018)",
+   "x": -1000,
+   "y": -400,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "WenLiu2016",
+   "type": "text",
+   "text": "**WenLiu2016**\nSeparating Fractal and Oscillatory Components in (2016)",
+   "x": -1000,
+   "y": -300,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "GersterEtAl2022",
+   "type": "file",
+   "file": "/Users/kyc/PythonProject/agenticEEGpreprocessing/10_Research/20260620_agentic-eeg-preprocessing-fooof/step5_full_text/GersterEtAl2022.md",
+   "x": -1000,
+   "y": -200,
+   "width": 360,
+   "height": 70,
+   "color": "3"
+  },
+  {
+   "id": "OstlundEtAl2022",
+   "type": "text",
+   "text": "**OstlundEtAl2022**\nSpectral parameterization for studying neurodeve (2022)",
+   "x": -1000,
+   "y": -100,
+   "width": 360,
+   "height": 70,
+   "color": "3"
+  },
+  {
+   "id": "WilsonEtAl2022",
+   "type": "text",
+   "text": "**WilsonEtAl2022**\nTime-resolved parameterization of aperiodic and  (2022)",
+   "x": -1000,
+   "y": 0,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "DonoghueEtAl2020a",
+   "type": "text",
+   "text": "**DonoghueEtAl2020a**\nElectrophysiological Frequency Band Ratio Measur (2020)",
+   "x": -1000,
+   "y": 100,
+   "width": 360,
+   "height": 70,
+   "color": "4"
+  },
+  {
+   "id": "theme-3",
+   "type": "group",
+   "x": -430,
+   "y": -560,
+   "width": 420,
+   "height": 480,
+   "label": "Aperiodic Activity as Validated Signal / 非週期活動作為已驗證訊號"
+  },
+  {
+   "id": "LendnerEtAl2020",
+   "type": "text",
+   "text": "**LendnerEtAl2020**\nAn electrophysiological marker of arousal level  (2020)",
+   "x": -400,
+   "y": -500,
+   "width": 360,
+   "height": 70,
+   "color": "4"
+  },
+  {
+   "id": "HillEtAl2022",
+   "type": "text",
+   "text": "**HillEtAl2022**\nPeriodic and aperiodic neural activity displays  (2022)",
+   "x": -400,
+   "y": -400,
+   "width": 360,
+   "height": 70,
+   "color": "4"
+  },
+  {
+   "id": "MerkinEtAl2022",
+   "type": "text",
+   "text": "**MerkinEtAl2022**\nDo age-related differences in aperiodic neural a (2022)",
+   "x": -400,
+   "y": -300,
+   "width": 360,
+   "height": 70,
+   "color": "4"
+  },
+  {
+   "id": "ThuwalEtAl2021",
+   "type": "text",
+   "text": "**ThuwalEtAl2021**\nAperiodic and Periodic Components of Ongoing Osc (2021)",
+   "x": -400,
+   "y": -200,
+   "width": 360,
+   "height": 70,
+   "color": "4"
+  },
+  {
+   "id": "theme-4",
+   "type": "group",
+   "x": 170,
+   "y": -560,
+   "width": 420,
+   "height": 380,
+   "label": "Preprocessing Sensitivity & Objective Quality / 預處理敏感度與客觀品質"
+  },
+  {
+   "id": "RobbinsEtAl2020",
+   "type": "file",
+   "file": "/Users/kyc/PythonProject/agenticEEGpreprocessing/10_Research/20260620_agentic-eeg-preprocessing-fooof/step5_full_text/RobbinsEtAl2020.md",
+   "x": 200,
+   "y": -500,
+   "width": 360,
+   "height": 70,
+   "color": "3"
+  },
+  {
+   "id": "Delorme2023",
+   "type": "file",
+   "file": "/Users/kyc/PythonProject/agenticEEGpreprocessing/10_Research/20260620_agentic-eeg-preprocessing-fooof/step5_full_text/Delorme2023.md",
+   "x": 200,
+   "y": -400,
+   "width": 360,
+   "height": 70,
+   "color": "3"
+  },
+  {
+   "id": "CoelliEtAl2023",
+   "type": "text",
+   "text": "**CoelliEtAl2023**\nSelecting methods for a modular EEG pre-processi (2023)",
+   "x": 200,
+   "y": -300,
+   "width": 360,
+   "height": 70,
+   "color": "3"
+  },
+  {
+   "id": "theme-5",
+   "type": "group",
+   "x": 770,
+   "y": -560,
+   "width": 420,
+   "height": 2680,
+   "label": "Pipeline Optimization: AutoML/HPO → LLM Agents / 管線最佳化"
+  },
+  {
+   "id": "ThorntonEtAl2012",
+   "type": "text",
+   "text": "**ThorntonEtAl2012**\nAuto-WEKA: Combined Selection and Hyperparameter (2012)",
+   "x": 800,
+   "y": -500,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "FeurerEtAl2015",
+   "type": "text",
+   "text": "**FeurerEtAl2015**\nEfficient and Robust Automated Machine Learning (2015)",
+   "x": 800,
+   "y": -400,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "FeurerEtAl2020",
+   "type": "text",
+   "text": "**FeurerEtAl2020**\nAuto-Sklearn 2.0: Hands-free AutoML via Meta-Lea (2020)",
+   "x": 800,
+   "y": -300,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "BischlEtAl2023",
+   "type": "text",
+   "text": "**BischlEtAl2023**\nHyperparameter optimization: Foundations, algori (2023)",
+   "x": 800,
+   "y": -200,
+   "width": 360,
+   "height": 70,
+   "color": "3"
+  },
+  {
+   "id": "GreenhillEtAl2020",
+   "type": "text",
+   "text": "**GreenhillEtAl2020**\nBayesian Optimization for Adaptive Experimental  (2020)",
+   "x": 800,
+   "y": -100,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "SantuEtAl2020",
+   "type": "text",
+   "text": "**SantuEtAl2020**\nAutoML to Date and Beyond: Challenges and Opport (2020)",
+   "x": 800,
+   "y": 0,
+   "width": 360,
+   "height": 70,
+   "color": "3"
+  },
+  {
+   "id": "CooneyEtAl2020",
+   "type": "text",
+   "text": "**CooneyEtAl2020**\nEvaluation of Hyperparameter Optimization in Mac (2020)",
+   "x": 800,
+   "y": 100,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "BashashatiEtAl2016",
+   "type": "text",
+   "text": "**BashashatiEtAl2016**\nUser-customized brain computer interfaces using  (2016)",
+   "x": 800,
+   "y": 200,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "NeutatzEtAl2022",
+   "type": "text",
+   "text": "**NeutatzEtAl2022**\nData Cleaning and AutoML: Would an Optimizer Cho (2022)",
+   "x": 800,
+   "y": 300,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "SiddiqiEtAl2023",
+   "type": "text",
+   "text": "**SiddiqiEtAl2023**\nSAGA: A Scalable Framework for Optimizing Data C (2023)",
+   "x": 800,
+   "y": 400,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "MartinezEtAl2023",
+   "type": "file",
+   "file": "/Users/kyc/PythonProject/agenticEEGpreprocessing/10_Research/20260620_agentic-eeg-preprocessing-fooof/step5_full_text/MartinezEtAl2023.md",
+   "x": 800,
+   "y": 500,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "WangEtAl2024",
+   "type": "text",
+   "text": "**WangEtAl2024**\nA Survey on Large Language Model based Autonomou (2024)",
+   "x": 800,
+   "y": 600,
+   "width": 360,
+   "height": 70,
+   "color": "3"
+  },
+  {
+   "id": "WuEtAl2023",
+   "type": "text",
+   "text": "**WuEtAl2023**\nAutoGen: Enabling Next-Gen LLM Applications via  (2023)",
+   "x": 800,
+   "y": 700,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "ShenEtAl2023",
+   "type": "text",
+   "text": "**ShenEtAl2023**\nHuggingGPT: Solving AI Tasks with ChatGPT and it (2023)",
+   "x": 800,
+   "y": 800,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "HuangEtAl2023",
+   "type": "text",
+   "text": "**HuangEtAl2023**\nMLAgentBench: Evaluating Language Agents on Mach (2023)",
+   "x": 800,
+   "y": 900,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "HollmannEtAl2023",
+   "type": "text",
+   "text": "**HollmannEtAl2023**\nLarge Language Models for Automated Data Science (2023)",
+   "x": 800,
+   "y": 1000,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "GuoEtAl2024",
+   "type": "file",
+   "file": "/Users/kyc/PythonProject/agenticEEGpreprocessing/10_Research/20260620_agentic-eeg-preprocessing-fooof/step5_full_text/GuoEtAl2024.md",
+   "x": 800,
+   "y": 1100,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "JiangEtAl2025",
+   "type": "text",
+   "text": "**JiangEtAl2025**\nAIDE: AI-Driven Exploration in the Space of Code (2025)",
+   "x": 800,
+   "y": 1200,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "TriratEtAl2024",
+   "type": "file",
+   "file": "/Users/kyc/PythonProject/agenticEEGpreprocessing/10_Research/20260620_agentic-eeg-preprocessing-fooof/step5_full_text/TriratEtAl2024.md",
+   "x": 800,
+   "y": 1300,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "ChiEtAl2024",
+   "type": "file",
+   "file": "/Users/kyc/PythonProject/agenticEEGpreprocessing/10_Research/20260620_agentic-eeg-preprocessing-fooof/step5_full_text/ChiEtAl2024.md",
+   "x": 800,
+   "y": 1400,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "HongEtAl2024",
+   "type": "text",
+   "text": "**HongEtAl2024**\nData Interpreter: An LLM Agent For Data Science (2024)",
+   "x": 800,
+   "y": 1500,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "ZhangEtAl2023",
+   "type": "text",
+   "text": "**ZhangEtAl2023**\nAutoML-GPT: Automatic Machine Learning with GPT (2023)",
+   "x": 800,
+   "y": 1600,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "TsaiEtAl2023",
+   "type": "text",
+   "text": "**TsaiEtAl2023**\nAutoML-GPT: Large Language Model for AutoML (2023)",
+   "x": 800,
+   "y": 1700,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "BoikoEtAl2023",
+   "type": "text",
+   "text": "**BoikoEtAl2023**\nAutonomous chemical research with large language (2023)",
+   "x": 800,
+   "y": 1800,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "BranEtAl2024",
+   "type": "text",
+   "text": "**BranEtAl2024**\nAugmenting large language models with chemistry  (2024)",
+   "x": 800,
+   "y": 1900,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  },
+  {
+   "id": "LuEtAl2024",
+   "type": "text",
+   "text": "**LuEtAl2024**\nThe AI Scientist: Towards Fully Automated Open-E (2024)",
+   "x": 800,
+   "y": 2000,
+   "width": 360,
+   "height": 70,
+   "color": "2"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e-HallerEtAl2018-DonoghueEtAl2020b",
+   "fromNode": "HallerEtAl2018",
+   "fromSide": "right",
+   "toNode": "DonoghueEtAl2020b",
+   "toSide": "left",
+   "label": "precursor → FOOOF"
+  },
+  {
+   "id": "e-WenLiu2016-GersterEtAl2022",
+   "fromNode": "WenLiu2016",
+   "fromSide": "right",
+   "toNode": "GersterEtAl2022",
+   "toSide": "left",
+   "label": "IRASA compared vs FOOOF"
+  },
+  {
+   "id": "e-DonoghueEtAl2020b-GersterEtAl2022",
+   "fromNode": "DonoghueEtAl2020b",
+   "fromSide": "right",
+   "toNode": "GersterEtAl2022",
+   "toSide": "left",
+   "label": "method scrutinized"
+  },
+  {
+   "id": "e-DonoghueEtAl2020b-DonoghueEtAl2020a",
+   "fromNode": "DonoghueEtAl2020b",
+   "fromSide": "right",
+   "toNode": "DonoghueEtAl2020a",
+   "toSide": "left",
+   "label": "aperiodic confounds band-ratio"
+  },
+  {
+   "id": "e-DonoghueEtAl2020b-OstlundEtAl2022",
+   "fromNode": "DonoghueEtAl2020b",
+   "fromSide": "right",
+   "toNode": "OstlundEtAl2022",
+   "toSide": "left",
+   "label": "applied to development"
+  },
+  {
+   "id": "e-DonoghueEtAl2020b-WilsonEtAl2022",
+   "fromNode": "DonoghueEtAl2020b",
+   "fromSide": "right",
+   "toNode": "WilsonEtAl2022",
+   "toSide": "left",
+   "label": "extended to time-resolved"
+  },
+  {
+   "id": "e-DonoghueEtAl2020b-LendnerEtAl2020",
+   "fromNode": "DonoghueEtAl2020b",
+   "fromSide": "right",
+   "toNode": "LendnerEtAl2020",
+   "toSide": "left",
+   "label": "aperiodic = real signal"
+  },
+  {
+   "id": "e-DonoghueEtAl2020b-HillEtAl2022",
+   "fromNode": "DonoghueEtAl2020b",
+   "fromSide": "right",
+   "toNode": "HillEtAl2022",
+   "toSide": "left",
+   "label": "aperiodic validated in aging"
+  },
+  {
+   "id": "e-BigdelyShamloEtAl2015-GabardDurnamEtAl2018",
+   "fromNode": "BigdelyShamloEtAl2015",
+   "fromSide": "right",
+   "toNode": "GabardDurnamEtAl2018",
+   "toSide": "left",
+   "label": "robust referencing reused"
+  },
+  {
+   "id": "e-PionTonachiniEtAl2019-LiEtAl2022",
+   "fromNode": "PionTonachiniEtAl2019",
+   "fromSide": "right",
+   "toNode": "LiEtAl2022",
+   "toSide": "left",
+   "label": "ICLabel → Python port"
+  },
+  {
+   "id": "e-JasEtAl2017-GabardDurnamEtAl2018",
+   "fromNode": "JasEtAl2017",
+   "fromSide": "right",
+   "toNode": "GabardDurnamEtAl2018",
+   "toSide": "left",
+   "label": "autoreject in HAPPE-class pipelines"
+  },
+  {
+   "id": "e-GabardDurnamEtAl2018-LopezEtAl2022",
+   "fromNode": "GabardDurnamEtAl2018",
+   "fromSide": "right",
+   "toNode": "LopezEtAl2022",
+   "toSide": "left",
+   "label": "HAPPE → low-density"
+  },
+  {
+   "id": "e-GabardDurnamEtAl2018-MonachinoEtAl2022",
+   "fromNode": "GabardDurnamEtAl2018",
+   "fromSide": "right",
+   "toNode": "MonachinoEtAl2022",
+   "toSide": "left",
+   "label": "HAPPE → ERP variant"
+  },
+  {
+   "id": "e-BigdelyShamloEtAl2015-RobbinsEtAl2020",
+   "fromNode": "BigdelyShamloEtAl2015",
+   "fromSide": "right",
+   "toNode": "RobbinsEtAl2020",
+   "toSide": "left",
+   "label": "same group: pipeline sensitivity"
+  },
+  {
+   "id": "e-RobbinsEtAl2020-Delorme2023",
+   "fromNode": "RobbinsEtAl2020",
+   "fromSide": "right",
+   "toNode": "Delorme2023",
+   "toSide": "left",
+   "label": "preprocessing sensitivity → quality metric"
+  },
+  {
+   "id": "e-PedroniEtAl2019-Delorme2023",
+   "fromNode": "PedroniEtAl2019",
+   "fromSide": "right",
+   "toNode": "Delorme2023",
+   "toSide": "left",
+   "label": "shared: need for objective quality"
+  },
+  {
+   "id": "e-CoelliEtAl2023-MartinezEtAl2023",
+   "fromNode": "CoelliEtAl2023",
+   "fromSide": "right",
+   "toNode": "MartinezEtAl2023",
+   "toSide": "left",
+   "label": "manual per-step compare → automated search"
+  },
+  {
+   "id": "e-ThorntonEtAl2012-FeurerEtAl2015",
+   "fromNode": "ThorntonEtAl2012",
+   "fromSide": "right",
+   "toNode": "FeurerEtAl2015",
+   "toSide": "left",
+   "label": "Auto-WEKA → Auto-sklearn"
+  },
+  {
+   "id": "e-FeurerEtAl2015-FeurerEtAl2020",
+   "fromNode": "FeurerEtAl2015",
+   "fromSide": "right",
+   "toNode": "FeurerEtAl2020",
+   "toSide": "left",
+   "label": "Auto-sklearn → 2.0"
+  },
+  {
+   "id": "e-NeutatzEtAl2022-SiddiqiEtAl2023",
+   "fromNode": "NeutatzEtAl2022",
+   "fromSide": "right",
+   "toNode": "SiddiqiEtAl2023",
+   "toSide": "left",
+   "label": "data-cleaning optimization"
+  },
+  {
+   "id": "e-FeurerEtAl2015-MartinezEtAl2023",
+   "fromNode": "FeurerEtAl2015",
+   "fromSide": "right",
+   "toNode": "MartinezEtAl2023",
+   "toSide": "left",
+   "label": "AutoML → preprocessing search"
+  },
+  {
+   "id": "e-BashashatiEtAl2016-MartinezEtAl2023",
+   "fromNode": "BashashatiEtAl2016",
+   "fromSide": "right",
+   "toNode": "MartinezEtAl2023",
+   "toSide": "left",
+   "label": "BO for BCI → pipeline search"
+  },
+  {
+   "id": "e-WangEtAl2024-GuoEtAl2024",
+   "fromNode": "WangEtAl2024",
+   "fromSide": "right",
+   "toNode": "GuoEtAl2024",
+   "toSide": "left",
+   "label": "agent survey → DS-Agent"
+  },
+  {
+   "id": "e-WuEtAl2023-TriratEtAl2024",
+   "fromNode": "WuEtAl2023",
+   "fromSide": "right",
+   "toNode": "TriratEtAl2024",
+   "toSide": "left",
+   "label": "AutoGen substrate → AutoML-Agent"
+  },
+  {
+   "id": "e-HuangEtAl2023-JiangEtAl2025",
+   "fromNode": "HuangEtAl2023",
+   "fromSide": "right",
+   "toNode": "JiangEtAl2025",
+   "toSide": "left",
+   "label": "benchmark → AIDE"
+  },
+  {
+   "id": "e-JiangEtAl2025-ChiEtAl2024",
+   "fromNode": "JiangEtAl2025",
+   "fromSide": "right",
+   "toNode": "ChiEtAl2024",
+   "toSide": "left",
+   "label": "tree-search lineage"
+  },
+  {
+   "id": "e-GuoEtAl2024-HongEtAl2024",
+   "fromNode": "GuoEtAl2024",
+   "fromSide": "right",
+   "toNode": "HongEtAl2024",
+   "toSide": "left",
+   "label": "DS agents"
+  },
+  {
+   "id": "e-BoikoEtAl2023-LuEtAl2024",
+   "fromNode": "BoikoEtAl2023",
+   "fromSide": "right",
+   "toNode": "LuEtAl2024",
+   "toSide": "left",
+   "label": "autonomous science agents"
+  },
+  {
+   "id": "e-BranEtAl2024-BoikoEtAl2023",
+   "fromNode": "BranEtAl2024",
+   "fromSide": "right",
+   "toNode": "BoikoEtAl2023",
+   "toSide": "left",
+   "label": "tool-using chemistry agents"
+  },
+  {
+   "id": "e-Delorme2023-DonoghueEtAl2020b",
+   "fromNode": "Delorme2023",
+   "fromSide": "right",
+   "toNode": "DonoghueEtAl2020b",
+   "toSide": "left",
+   "label": "bridge: objective quality ↔ spectral metric"
+  },
+  {
+   "id": "e-MartinezEtAl2023-BigdelyShamloEtAl2015",
+   "fromNode": "MartinezEtAl2023",
+   "fromSide": "right",
+   "toNode": "BigdelyShamloEtAl2015",
+   "toSide": "left",
+   "label": "bridge: search ↔ EEG preprocessing"
+  },
+  {
+   "id": "e-GersterEtAl2022-LendnerEtAl2020",
+   "fromNode": "GersterEtAl2022",
+   "fromSide": "right",
+   "toNode": "LendnerEtAl2020",
+   "toSide": "left",
+   "label": "bridge: metric caveats ↔ aperiodic signal"
+  }
+ ]
+}

@@ -1,0 +1,2624 @@
+{
+  "session_id": "20260620",
+  "topic": "Agentic EEG preprocessing pipeline with FOOOF-based signal quality optimization",
+  "screening_timestamp": "2026-06-20T21:10:00+08:00",
+  "screening_config": {
+    "threshold": 3.5,
+    "weights": {
+      "relevance": 0.5,
+      "quality": 0.3,
+      "recency_impact": 0.2
+    }
+  },
+  "summary": {
+    "total_screened": 69,
+    "included": 53,
+    "borderline": 13,
+    "excluded": 3,
+    "inclusion_rate": "77%"
+  },
+  "papers": [
+    {
+      "id": "paper_004",
+      "title": "ICLabel: An automated electroencephalographic independent component classifier, dataset, and website",
+      "authors": [
+        "Luca Pion-Tonachini",
+        "Ken Kreutz-Delgado",
+        "Scott Makeig"
+      ],
+      "year": 2019,
+      "journal": "NeuroImage",
+      "doi": "10.1016/j.neuroimage.2019.05.026",
+      "url": "https://doi.org/10.1016/j.neuroimage.2019.05.026",
+      "abstract": "An automated system for classifying EEG independent components, trained on spatiotemporal features from over 200,000 ICs across 6,000+ recordings, with crowdsourced labels across seven categories: Brain, Muscle, Eye, Heart, Line Noise, Channel Noise, and Other.",
+      "citation_count": 2298,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W2914237854",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [
+        "paper_002",
+        "paper_006",
+        "paper_008",
+        "paper_009",
+        "paper_013",
+        "paper_005"
+      ],
+      "is_seed_paper": true,
+      "found_via": "Q1",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 6,
+        "out_degree": 0,
+        "is_hub": true
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 5.0,
+        "recency_impact": 5.0,
+        "composite": 5.0,
+        "category": "included",
+        "rationale": "Automated IC classifier — central to ICA-based cleaning the agent would invoke; very high impact",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_008",
+      "title": "EEG is better left alone",
+      "authors": [
+        "Arnaud Delorme"
+      ],
+      "year": 2023,
+      "journal": "Scientific Reports",
+      "doi": "10.1038/s41598-023-27528-0",
+      "url": "https://doi.org/10.1038/s41598-023-27528-0",
+      "abstract": "Automated preprocessing methods are critically needed for large public EEG databases, yet the optimal approach remains unknown due to lacking quality metrics for comparison. The author designed a robust metric assessing the percentage of significant channels between two experimental conditions within a 100ms post-stimulus window. Analysis of three public data collections revealed that with high-pass filtering and bad channel interpolation exceptions, automated corrections had no effect or significantly decreased channel performance. Comparing optimized pipelines across EEGLAB, FieldTrip, MNE, Brainstorm, only one performed significantly better than high-pass filtering alone.",
+      "citation_count": 230,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4319826315",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_001",
+        "paper_003",
+        "paper_004",
+        "paper_007"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q2",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 0,
+        "out_degree": 4,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 5.0,
+        "recency_impact": 5.0,
+        "composite": 5.0,
+        "category": "included",
+        "rationale": "Builds an explicit quality metric to compare pipelines & shows automation can hurt — directly motivates quality-over-accuracy framing",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_021",
+      "title": "Parameterizing neural power spectra into periodic and aperiodic components",
+      "authors": [
+        "Thomas Donoghue",
+        "Matar Haller",
+        "Erik J. Peterson",
+        "Paroma Varma",
+        "Priyadarshini Sebastian",
+        "Richard Gao",
+        "Torben Noto",
+        "Antonio H. Lara",
+        "Joni D. Wallis",
+        "Robert T. Knight",
+        "Avgusta Y. Shestyuk",
+        "Bradley Voytek"
+      ],
+      "year": 2020,
+      "journal": "Nature Neuroscience",
+      "doi": "10.1038/s41593-020-00744-x",
+      "url": "https://doi.org/10.1038/s41593-020-00744-x",
+      "abstract": null,
+      "citation_count": 2350,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W3110151578",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [
+        "paper_009",
+        "paper_025",
+        "paper_024",
+        "paper_026",
+        "paper_027",
+        "paper_030",
+        "paper_031",
+        "paper_032",
+        "paper_033",
+        "paper_034",
+        "paper_035",
+        "paper_036",
+        "paper_037",
+        "paper_038"
+      ],
+      "is_seed_paper": true,
+      "found_via": "Q3",
+      "theme": "fooof",
+      "citation_network": {
+        "cluster": "cluster_B_fooof_spectral",
+        "in_degree": 14,
+        "out_degree": 0,
+        "is_hub": true
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 5.0,
+        "recency_impact": 5.0,
+        "composite": 5.0,
+        "category": "included",
+        "rationale": "THE FOOOF paper — defines aperiodic/periodic split underpinning the SNR metric; field-defining impact",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_024",
+      "title": "Separating Neural Oscillations from Aperiodic 1/f Activity: Challenges and Recommendations",
+      "authors": [
+        "Moritz Gerster",
+        "Gunnar Waterstraat",
+        "Vladimir Litvak",
+        "Klaus Lehnertz",
+        "Alfons Schnitzler",
+        "Esther Florin",
+        "Gabriel Curio",
+        "Vadim V. Nikulin"
+      ],
+      "year": 2022,
+      "journal": "Neuroinformatics",
+      "doi": "10.1007/s12021-022-09581-8",
+      "url": "https://doi.org/10.1007/s12021-022-09581-8",
+      "abstract": "The authors scrutinize FOOOF (Fitting Oscillations & One-Over-F) and IRASA (Irregular Resampling Auto-Spectral Analysis), commonly used to separate periodic from aperiodic components. They evaluate these methods using EEG, MEG, and LFP recordings from three datasets, quantify parameterization error against simulation parameters, assess computational costs, and propose recommendations on how to use them.",
+      "citation_count": 254,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4225828198",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_021",
+        "paper_023"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "theme": "fooof",
+      "citation_network": {
+        "cluster": "cluster_B_fooof_spectral",
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 5.0,
+        "recency_impact": 5.0,
+        "composite": 5.0,
+        "category": "included",
+        "rationale": "FOOOF-vs-IRASA challenges & recommendations — the methods caveats for using FOOOF as a quality metric",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_001",
+      "title": "The PREP pipeline: standardized preprocessing for large-scale EEG analysis",
+      "authors": [
+        "Nima Bigdely-Shamlo",
+        "Tim Mullen",
+        "Christian Kothe",
+        "Kyung-Min Su",
+        "Kay A. Robbins"
+      ],
+      "year": 2015,
+      "journal": "Frontiers in Neuroinformatics",
+      "doi": "10.3389/fninf.2015.00016",
+      "url": "https://doi.org/10.3389/fninf.2015.00016",
+      "abstract": "The emergence of portable brain imaging technology enables large-scale real-world human analysis. Such datasets are inherently large and complex, necessitating automated processing approaches. This work demonstrates how insufficient attention to early preprocessing stages in EEG pipelines reduces signal-to-noise ratios and introduces unwanted artifacts. While ordinary average referencing improves signal-to-noise ratios, noisy channels contaminate results. The authors propose a multi-stage robust referencing scheme and introduce a standardized early-stage preprocessing pipeline (PREP), available as a freely distributed MATLAB library.",
+      "citation_count": 1408,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W1525254066",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [
+        "paper_002",
+        "paper_010",
+        "paper_006",
+        "paper_007",
+        "paper_008",
+        "paper_013",
+        "paper_017"
+      ],
+      "is_seed_paper": true,
+      "found_via": "Q1",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 7,
+        "out_degree": 0,
+        "is_hub": true
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 5.0,
+        "recency_impact": 4.0,
+        "composite": 4.8,
+        "category": "included",
+        "rationale": "Canonical standardized preprocessing pipeline; defines the action space the agent/greedy-search operates over; foundational",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_002",
+      "title": "The Harvard Automated Processing Pipeline for Electroencephalography (HAPPE): Standardized Processing Software for Developmental and High-Artifact Data",
+      "authors": [
+        "Laurel J. Gabard-Durnam",
+        "Adriana S. Méndez Leal",
+        "Carol L. Wilkinson",
+        "April R. Levin"
+      ],
+      "year": 2018,
+      "journal": "Frontiers in Neuroscience",
+      "doi": "10.3389/fnins.2018.00097",
+      "url": "https://doi.org/10.3389/fnins.2018.00097",
+      "abstract": "EEG recordings from developmental populations present particular challenges for data processing, containing high artifact contamination and short recording lengths. The authors propose HAPPE, a standardized, automated pipeline compatible with variable artifact levels and lengths. HAPPE processes data through filtering, artifact rejection, and re-referencing steps, and includes post-processing reports facilitating quality evaluation. HAPPE outperforms seven alternative widely-used approaches, removing more artifact while preserving signal.",
+      "citation_count": 555,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W2792847701",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_001",
+        "paper_003",
+        "paper_004"
+      ],
+      "cited_by": [
+        "paper_010",
+        "paper_011",
+        "paper_012",
+        "paper_020"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q1",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 4,
+        "out_degree": 3,
+        "is_hub": true
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 5.0,
+        "recency_impact": 4.0,
+        "composite": 4.8,
+        "category": "included",
+        "rationale": "HAPPE — core automated pipeline & a key baseline; high impact",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_003",
+      "title": "Autoreject: Automated artifact rejection for MEG and EEG data",
+      "authors": [
+        "Mainak Jas",
+        "Denis A. Engemann",
+        "Yousra Bekhti",
+        "Federico Raimondo",
+        "Alexandre Gramfort"
+      ],
+      "year": 2017,
+      "journal": "NeuroImage",
+      "doi": "10.1016/j.neuroimage.2017.06.030",
+      "url": "https://doi.org/10.1016/j.neuroimage.2017.06.030",
+      "abstract": "The authors present an automated algorithm for unified rejection and repair of bad trials in MEG and EEG signals. The method employs cross-validation with a robust evaluation metric to estimate optimal peak-to-peak thresholds, yielding trial-wise and sensor-wise artifact identification. Validation across four public datasets with over 200 subjects demonstrates practical significance.",
+      "citation_count": 630,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W2599251041",
+      "pubmed_id": null,
+      "arxiv_id": "1612.08194",
+      "references": [],
+      "cited_by": [
+        "paper_002",
+        "paper_006",
+        "paper_007",
+        "paper_008",
+        "paper_009",
+        "paper_013"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q1",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 6,
+        "out_degree": 0,
+        "is_hub": true
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 5.0,
+        "recency_impact": 4.0,
+        "composite": 4.8,
+        "category": "included",
+        "rationale": "Automated, cross-validated artifact rejection — directly a candidate preprocessing action & strong baseline",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_006",
+      "title": "Automagic: Standardized preprocessing of big EEG data",
+      "authors": [
+        "Andreas Pedroni",
+        "Amirreza Bahreini",
+        "Nicolas Langer"
+      ],
+      "year": 2019,
+      "journal": "NeuroImage",
+      "doi": "10.1016/j.neuroimage.2019.06.046",
+      "url": "https://doi.org/10.1016/j.neuroimage.2019.06.046",
+      "abstract": "Automagic is an open-source MATLAB toolbox that acts as a wrapper to run available preprocessing methods and offers objective standardized quality assessment for growing datasets. It addresses the lack of a method to objectively quantify the quality of preprocessed EEG, reducing subjectivity in excluding subjects. Compatible with the BIDS standard.",
+      "citation_count": 294,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W2950097344",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_001",
+        "paper_003",
+        "paper_004"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q2",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 0,
+        "out_degree": 3,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 5.0,
+        "recency_impact": 4.0,
+        "composite": 4.8,
+        "category": "included",
+        "rationale": "Explicitly offers OBJECTIVE QUALITY ASSESSMENT of preprocessed EEG — directly parallels the quality-metric goal",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_007",
+      "title": "How Sensitive Are EEG Results to Preprocessing Methods: A Benchmarking Study",
+      "authors": [
+        "Kay A. Robbins",
+        "Jonathan Touryan",
+        "Tim Mullen",
+        "Christian Kothe",
+        "Nima Bigdely-Shamlo"
+      ],
+      "year": 2020,
+      "journal": "IEEE Transactions on Neural Systems and Rehabilitation Engineering",
+      "doi": "10.1109/tnsre.2020.2980223",
+      "url": "https://doi.org/10.1109/tnsre.2020.2980223",
+      "abstract": "The authors analyze the effect of preprocessing on downstream analysis using simple signal and event-related measures, evaluating multiple EEG preprocessing pipelines (LARG, MARA, ASR) on simulated and real data. Results demonstrate significant differences across methods, particularly in low-frequency features and blink residuals, emphasizing the necessity for detailed preprocessing documentation and standardized comparison tools.",
+      "citation_count": 143,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W3012999699",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_001",
+        "paper_003"
+      ],
+      "cited_by": [
+        "paper_008",
+        "paper_013"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q4",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 2,
+        "out_degree": 2,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 5.0,
+        "recency_impact": 4.0,
+        "composite": 4.8,
+        "category": "included",
+        "rationale": "Quantifies preprocessing-choice sensitivity — the core justification that parameter selection matters; IEEE TNSRE",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_023",
+      "title": "Separating Fractal and Oscillatory Components in the Power Spectrum of Neurophysiological Signal",
+      "authors": [
+        "Haiguang Wen",
+        "Zhongming Liu"
+      ],
+      "year": 2016,
+      "journal": "Brain Topography",
+      "doi": "10.1007/s10548-015-0448-0",
+      "url": "https://doi.org/10.1007/s10548-015-0448-0",
+      "abstract": null,
+      "citation_count": 463,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W1563625862",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [
+        "paper_024",
+        "paper_028",
+        "paper_029"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "theme": "fooof",
+      "citation_network": {
+        "cluster": "cluster_B_fooof_spectral",
+        "in_degree": 3,
+        "out_degree": 0,
+        "is_hub": true
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 5.0,
+        "recency_impact": 4.0,
+        "composite": 4.8,
+        "category": "included",
+        "rationale": "IRASA — the principal alternative decomposition for the signal/noise SNR metric; high impact",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_013",
+      "title": "Selecting methods for a modular EEG pre-processing pipeline: An objective comparison",
+      "authors": [
+        "Stefania Coelli",
+        "Alessandra Calcagno",
+        "Chiara Maria Cassani",
+        "Federico Temporiti",
+        "Pierluigi Reali",
+        "Roberto Gatti",
+        "Manuela Galli",
+        "Anna Maria Bianchi"
+      ],
+      "year": 2023,
+      "journal": "Biomedical Signal Processing and Control",
+      "doi": "10.1016/j.bspc.2023.105830",
+      "url": "https://doi.org/10.1016/j.bspc.2023.105830",
+      "abstract": "The authors analyzed different methodologies at each EEG processing step and proposed quantitative parameters for selecting preferable strategies, illustrated using Action Observation and Motor Imagery protocols. Results demonstrated that signal segmentation significantly affects cleaning procedures, while comparable results emerge from different ICA approaches and re-referencing methods (CAR, robust-CAR, REST, RESIT).",
+      "citation_count": 23,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4389727201",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_001",
+        "paper_003",
+        "paper_004",
+        "paper_007"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q4",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 0,
+        "out_degree": 4,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.7,
+        "category": "included",
+        "rationale": "Objectively compares per-step preprocessing choices with quantitative indices — nearly the greedy-search idea, manually done",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_044",
+      "title": "Towards Personalized Preprocessing Pipeline Search",
+      "authors": [
+        "Diego Martinez",
+        "Daochen Zha",
+        "Qiaoyu Tan",
+        "Xia Hu"
+      ],
+      "year": 2023,
+      "journal": "arXiv",
+      "doi": "10.48550/arxiv.2302.14329",
+      "url": "https://arxiv.org/abs/2302.14329",
+      "abstract": "Feature preprocessing, which transforms raw input features into numerical representations, is a crucial step in automated machine learning (AutoML) systems. However, the existing systems often have a very small search space for feature preprocessing with the same preprocessing pipeline applied to all the numerical features. This may result in sub-optimal performance since different datasets often have various feature characteristics, and features within a dataset may also have their own preprocessing preferences. To bridge this gap, we explore personalized preprocessing pipeline search, where the search algorithm is allowed to adopt a different preprocessing pipeline for each feature. This is a challenging task because the search space grows exponentially with more features. To tackle this challenge, we propose ClusterP3S, a novel framework for Personalized Preprocessing Pipeline Search via Clustering. The key idea is to learn feature clusters such that the search space can be significantly reduced by using the same preprocessing pipeline for the features within a cluster. To this end, we propose a hierarchical search strategy to jointly learn the clusters and search for the optimal pipelines, where the upper-level search optimizes the feature clustering to enable better pipelines built upon the clusters, and the lower-level search optimizes the pipeline given a specific cluster assignment. We instantiate this idea with a deep clustering network that is trained with reinforcement learning at the upper level, and random search at the lower level. Experiments on benchmark classification datasets demonstrate the effectiveness of enabling feature-wise preprocessing pipeline search.",
+      "citation_count": 0,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4322759875",
+      "pubmed_id": null,
+      "arxiv_id": "2302.14329",
+      "references": [
+        "paper_040",
+        "paper_045"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "WebSearch (RL preprocessing pipeline search) + OpenAlex",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_C_automl_hpo",
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.7,
+        "category": "included",
+        "rationale": "Per-instance preprocessing-pipeline search — the closest prior art to 'agent picks params per recording'",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_056",
+      "title": "DS-Agent: Automated Data Science by Empowering Large Language Models with Case-Based Reasoning",
+      "authors": [
+        "Siyuan Guo",
+        "Cheng Deng",
+        "Ying Wen",
+        "Hechang Chen",
+        "Yi Chang",
+        "Jun Wang"
+      ],
+      "year": 2024,
+      "journal": "arXiv (also ICML 2024)",
+      "doi": "10.48550/arxiv.2402.17453",
+      "url": "https://arxiv.org/abs/2402.17453",
+      "abstract": "In this work, we investigate the potential of large language models (LLMs) based agents to automate data science tasks, with the goal of comprehending task requirements, then building and training the best-fit machine learning models. Despite their widespread success, existing LLM agents are hindered by generating unreasonable experiment plans within this scenario. To this end, we present DS-Agent, a novel automatic framework that harnesses LLM agent and case-based reasoning (CBR). In the development stage, DS-Agent follows the CBR framework to structure an automatic iteration pipeline, which can flexibly capitalize on the expert knowledge from Kaggle, and facilitate consistent performance improvement through the feedback mechanism. Moreover, DS-Agent implements a low-resource deployment stage with a simplified CBR paradigm to adapt past successful solutions from the development stage for direct code generation, significantly reducing the demand on foundational capabilities of LLMs. Empirically, DS-Agent with GPT-4 achieves 100% success rate in the development stage, while attaining 36% improvement on average one pass rate across alternative LLMs in the deployment stage. In both stages, DS-Agent achieves the best rank in performance, costing $1.60 and $0.13 per run with GPT-4, respectively.",
+      "citation_count": 7,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4392271261",
+      "pubmed_id": null,
+      "arxiv_id": "2402.17453",
+      "references": [
+        "paper_069",
+        "paper_055"
+      ],
+      "cited_by": [
+        "paper_058"
+      ],
+      "is_seed_paper": false,
+      "found_via": "known-system verification (DS-Agent) via WebSearch + OpenAlex",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 1,
+        "out_degree": 2,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.7,
+        "category": "included",
+        "rationale": "LLM data-science agent with case-based reasoning — direct template for the Step-3 controller",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_059",
+      "title": "AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML",
+      "authors": [
+        "Patara Trirat",
+        "Wonyong Jeong",
+        "Sung Ju Hwang"
+      ],
+      "year": 2024,
+      "journal": "arXiv (also ICML 2025)",
+      "doi": "10.48550/arxiv.2410.02958",
+      "url": "https://arxiv.org/abs/2410.02958",
+      "abstract": "Automated machine learning (AutoML) accelerates AI development by automating tasks in the development pipeline, such as optimal model search and hyperparameter tuning. Existing AutoML systems often require technical expertise to set up complex tools, which is in general time-consuming and requires a large amount of human effort. Therefore, recent works have started exploiting large language models (LLM) to lessen such burden and increase the usability of AutoML frameworks via a natural language interface, allowing non-expert users to build their data-driven solutions. These methods, however, are usually designed only for a particular process in the AI development pipeline and do not efficiently use the inherent capacity of the LLMs. This paper proposes AutoML-Agent, a novel multi-agent framework tailored for full-pipeline AutoML, i.e., from data retrieval to model deployment. AutoML-Agent takes user's task descriptions, facilitates collaboration between specialized LLM agents, and delivers deployment-ready models. Unlike existing work, instead of devising a single plan, we introduce a retrieval-augmented planning strategy to enhance exploration to search for more optimal plans. We also decompose each plan into sub-tasks (e.g., data preprocessing and neural network design) each of which is solved by a specialized agent we build via prompting executing in parallel, making the search process more efficient. Moreover, we propose a multi-stage verification to verify executed results and guide the code generation LLM in implementing successful solutions. Extensive experiments on seven downstream tasks using fourteen datasets show that AutoML-Agent achieves a higher success rate in automating the full AutoML process, yielding systems with good performance throughout the diverse domains.",
+      "citation_count": 5,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4403885480",
+      "pubmed_id": null,
+      "arxiv_id": "2410.02958",
+      "references": [
+        "paper_069",
+        "paper_061",
+        "paper_062"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "known-system verification (AutoML-Agent) via WebSearch + OpenAlex",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 0,
+        "out_degree": 3,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.7,
+        "category": "included",
+        "rationale": "Multi-agent LLM full-pipeline AutoML — closest LLM-agent analog to the proposed system",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_060",
+      "title": "SELA: Tree-Search Enhanced LLM Agents for Automated Machine Learning",
+      "authors": [
+        "Yizhou Chi",
+        "Yizhang Lin",
+        "Sirui Hong",
+        "Duyi Pan",
+        "Yaying Fei",
+        "Guanghao Mei",
+        "Bangbang Liu",
+        "Tianqi Pang",
+        "Jacky Kwok",
+        "Ceyao Zhang",
+        "Bang Liu",
+        "Chenglin Wu"
+      ],
+      "year": 2024,
+      "journal": "arXiv",
+      "doi": "10.48550/arxiv.2410.17238",
+      "url": "https://arxiv.org/abs/2410.17238",
+      "abstract": "Automated Machine Learning (AutoML) approaches encompass traditional methods that optimize fixed pipelines for model selection and ensembling, as well as newer LLM-based frameworks that autonomously build pipelines. While LLM-based agents have shown promise in automating machine learning tasks, they often generate low-diversity and suboptimal code, even after multiple iterations. To overcome these limitations, we introduce Tree-Search Enhanced LLM Agents (SELA), an innovative agent-based system that leverages Monte Carlo Tree Search (MCTS) to optimize the AutoML process. By representing pipeline configurations as trees, our framework enables agents to conduct experiments intelligently and iteratively refine their strategies, facilitating a more effective exploration of the machine learning solution space. This novel approach allows SELA to discover optimal pathways based on experimental feedback, improving the overall quality of the solutions. In an extensive evaluation across 20 machine learning datasets, we compare the performance of traditional and agent-based AutoML methods, demonstrating that SELA achieves a win rate of 65% to 80% against each baseline across all datasets. These results underscore the significant potential of agent-based strategies in AutoML, offering a fresh perspective on tackling complex machine learning challenges.",
+      "citation_count": 2,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4404261785",
+      "pubmed_id": null,
+      "arxiv_id": "2410.17238",
+      "references": [
+        "paper_058",
+        "paper_061",
+        "paper_057"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "OpenAlex title lookup (SELA, MCTS AutoML agent)",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 0,
+        "out_degree": 3,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.7,
+        "category": "included",
+        "rationale": "Tree-search LLM agent for AutoML — directly relevant search+LLM hybrid",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_022",
+      "title": "Parameterizing neural power spectra",
+      "authors": [
+        "Matar Haller",
+        "Thomas Donoghue",
+        "Erik Peterson",
+        "Paroma Varma",
+        "Priyadarshini Sebastian",
+        "Richard Gao",
+        "Torben Noto",
+        "Robert T. Knight",
+        "Avgusta Y. Shestyuk",
+        "Bradley Voytek"
+      ],
+      "year": 2018,
+      "journal": "bioRxiv",
+      "doi": "10.1101/299859",
+      "url": "https://doi.org/10.1101/299859",
+      "abstract": "Electrophysiological signals exhibit both periodic and aperiodic features. The aperiodic 1/f component is dynamic, changing with age, task demands, and cognitive state, and linked to excitation/inhibition balance. The authors introduce a novel algorithm for automatic parameterization of spectral densities as a combination of putative periodic oscillations over an aperiodic background, requiring no a priori band limits, amenable to large-scale data exploration.",
+      "citation_count": 181,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W2796533672",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "theme": "fooof",
+      "citation_network": {
+        "cluster": "cluster_B_fooof_spectral",
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 5.0,
+        "quality": 4.0,
+        "recency_impact": 4.0,
+        "composite": 4.5,
+        "category": "included",
+        "rationale": "FOOOF bioRxiv precursor — method origin",
+        "tier": 1
+      }
+    },
+    {
+      "id": "paper_027",
+      "title": "Electrophysiological Frequency Band Ratio Measures Conflate Periodic and Aperiodic Neural Activity",
+      "authors": [
+        "Thomas Donoghue",
+        "Julio Dominguez",
+        "Bradley Voytek"
+      ],
+      "year": 2020,
+      "journal": "eNeuro",
+      "doi": "10.1523/eneuro.0192-20.2020",
+      "url": "https://doi.org/10.1523/eneuro.0192-20.2020",
+      "abstract": "Band ratio measures (e.g., theta/beta ratio) are typically interpreted as reflecting oscillatory power, but electrophysiological signals contain both periodic and 1/f-like aperiodic components. The authors show in simulation and human EEG that band ratio measures conflate multiple underlying spectral changes; the theta/beta ratio is most reflective of aperiodic activity, not theta and beta power. They recommend explicit parameterization as a more specific approach.",
+      "citation_count": 188,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W3089047745",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_021"
+      ],
+      "cited_by": [
+        "paper_033"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "theme": "fooof",
+      "citation_network": {
+        "cluster": "cluster_B_fooof_spectral",
+        "in_degree": 1,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 5.0,
+        "recency_impact": 4.0,
+        "composite": 4.3,
+        "category": "included",
+        "rationale": "Shows band-ratios conflate aperiodic+periodic — argues FOR explicit parameterization the metric relies on",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_039",
+      "title": "Auto-WEKA: Combined Selection and Hyperparameter Optimization of Classification Algorithms",
+      "authors": [
+        "Chris Thornton",
+        "Frank Hutter",
+        "Holger H. Hoos",
+        "Kevin Leyton-Brown"
+      ],
+      "year": 2012,
+      "journal": "arXiv (also KDD 2013)",
+      "doi": "10.48550/arxiv.1208.3719",
+      "url": "https://arxiv.org/abs/1208.3719",
+      "abstract": "Many different machine learning algorithms exist; taking into account each algorithm's hyperparameters, there is a staggeringly large number of possible alternatives overall. We consider the problem of simultaneously selecting a learning algorithm and setting its hyperparameters, going beyond previous work that addresses these issues in isolation. We show that this problem can be addressed by a fully automated approach, leveraging recent innovations in Bayesian optimization. Specifically, we consider a wide range of feature selection techniques (combining 3 search and 8 evaluator methods) and all classification approaches implemented in WEKA, spanning 2 ensemble methods, 10 meta-methods, 27 base classifiers, and hyperparameter settings for each classifier. On each of 21 popular datasets from the UCI repository, the KDD Cup 09, variants of the MNIST dataset and CIFAR-10, we show classification performance often much better than using standard selection/hyperparameter optimization methods. We hope that our approach will help non-expert users to more effectively identify machine learning algorithms and hyperparameter settings appropriate to their applications, and hence to achieve improved performance.",
+      "citation_count": 94,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W2949431720",
+      "pubmed_id": null,
+      "arxiv_id": "1208.3719",
+      "references": [],
+      "cited_by": [
+        "paper_041",
+        "paper_040",
+        "paper_042",
+        "paper_047"
+      ],
+      "is_seed_paper": false,
+      "found_via": "known-system verification (Auto-WEKA, Thornton et al.) via WebSearch + OpenAlex",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_C_automl_hpo",
+        "in_degree": 4,
+        "out_degree": 0,
+        "is_hub": true
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 5.0,
+        "recency_impact": 4.0,
+        "composite": 4.3,
+        "category": "included",
+        "rationale": "Foundational combined algorithm-selection + HPO via Bayesian opt — the search-baseline template for ground-truth construction",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_040",
+      "title": "Efficient and Robust Automated Machine Learning",
+      "authors": [
+        "Matthias Feurer",
+        "Aaron Klein",
+        "Katharina Eggensperger",
+        "Jost Tobias Springenberg",
+        "Manuel Blum",
+        "Frank Hutter"
+      ],
+      "year": 2015,
+      "journal": "Advances in Neural Information Processing Systems (NeurIPS)",
+      "doi": null,
+      "url": "https://papers.nips.cc/paper/5872-efficient-and-robust-automated-machine-learning",
+      "abstract": "The success of machine learning in a broad range of applications has led to an ever-growing demand for machine learning systems that can be used off the shelf by non-experts. To be effective in practice, such systems need to automatically choose a good algorithm and feature preprocessing steps for a new dataset at hand, and also set their respective hyperparameters. Recent work has started to tackle this automated machine learning (AutoML) problem with the help of efficient Bayesian optimization methods. Building on this, we introduce a robust new AutoML system based on scikit-learn (using 15 classifiers, 14 feature preprocessing methods, and 4 data preprocessing methods, giving rise to a structured hypothesis space with 110 hyperparameters). This system, which we dub AUTO-SKLEARN, improves on existing AutoML methods by automatically taking into account past performance on similar datasets, and by constructing ensembles from the models evaluated during the optimization. Our system won the first phase of the ongoing ChaLearn AutoML challenge, and our comprehensive analysis on over 100 diverse datasets shows that it substantially outperforms the previous state of the art in AutoML. We also demonstrate the performance gains due to each of our contributions and derive insights into the effectiveness of the individual components of AUTO-SKLEARN.",
+      "citation_count": 1259,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W2182361439",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_039"
+      ],
+      "cited_by": [
+        "paper_041",
+        "paper_042",
+        "paper_047",
+        "paper_044",
+        "paper_045",
+        "paper_055"
+      ],
+      "is_seed_paper": true,
+      "found_via": "known-system verification (Auto-sklearn, Feurer et al.) via WebSearch + OpenAlex",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_C_automl_hpo",
+        "in_degree": 6,
+        "out_degree": 1,
+        "is_hub": true
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 5.0,
+        "recency_impact": 4.0,
+        "composite": 4.3,
+        "category": "included",
+        "rationale": "Auto-sklearn — canonical AutoML; the meta-learning + search baseline for parameter selection",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_005",
+      "title": "MNE-ICALabel: Automatically annotating ICA components with ICLabel in Python",
+      "authors": [
+        "Adam Li",
+        "Jacob Feitelberg",
+        "Anand Prakash Saini",
+        "Richard Höchenberger",
+        "Mathieu Scheltienne"
+      ],
+      "year": 2022,
+      "journal": "Journal of Open Source Software",
+      "doi": "10.21105/joss.04484",
+      "url": "https://doi.org/10.21105/joss.04484",
+      "abstract": "MNE-ICALabel is a Python library to facilitate the automatic annotation of ICA components for MEG, EEG, and iEEG data with MNE-Python.",
+      "citation_count": 113,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4293194544",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_004"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q1",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.2,
+        "category": "included",
+        "rationale": "Python ICLabel port — practical tool the pipeline would call; recent",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_009",
+      "title": "DISCOVER-EEG: an open, fully automated EEG pipeline for biomarker discovery in clinical neuroscience",
+      "authors": [
+        "Cristina Gil Ávila",
+        "Felix S. Bott",
+        "Laura Tiemann",
+        "Vanessa D. Hohn",
+        "Elisabeth S. May",
+        "Moritz M. Nickel",
+        "Paul Theo Zebhauser",
+        "Joachim Gross",
+        "Markus Ploner"
+      ],
+      "year": 2023,
+      "journal": "Scientific Data",
+      "doi": "10.1038/s41597-023-02525-0",
+      "url": "https://doi.org/10.1038/s41597-023-02525-0",
+      "abstract": "DISCOVER-EEG is an open and fully automated pipeline that enables easy and fast preprocessing, analysis, and visualization of resting state EEG data. BIDS data are automatically preprocessed, and physiologically meaningful features (oscillatory power, connectivity, network characteristics) are extracted and visualized using EEGLAB and FieldTrip. Tested on large openly available datasets of healthy participants and patients with a psychiatric condition.",
+      "citation_count": 68,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4386602382",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_003",
+        "paper_004",
+        "paper_021"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q1",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 0,
+        "out_degree": 3,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.2,
+        "category": "included",
+        "rationale": "Fully automated pipeline extracting spectral/connectivity features — close to the agent's target output; recent",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_010",
+      "title": "HAPPILEE: HAPPE In Low Electrode Electroencephalography, a standardized pre-processing software for lower density recordings",
+      "authors": [
+        "Kelsie L. Lopez",
+        "A. D. Monachino",
+        "Santiago Morales",
+        "Stephanie C. Leach",
+        "Maureen E. Bowers",
+        "Laurel J. Gabard-Durnam"
+      ],
+      "year": 2022,
+      "journal": "NeuroImage",
+      "doi": "10.1016/j.neuroimage.2022.119390",
+      "url": "https://doi.org/10.1016/j.neuroimage.2022.119390",
+      "abstract": "HAPPILEE offers a standardized, automated processing pipeline compatible with lower-density channel layouts. It handles task-free and task-related EEG through sequential steps: filtering, line noise reduction, bad channel detection, artifact correction, segmentation, and segment rejection. Post-processing reports provide quality metrics. Freely available as part of HAPPE 2.0.",
+      "citation_count": 60,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4284969807",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_002",
+        "paper_001"
+      ],
+      "cited_by": [
+        "paper_020"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q1",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 1,
+        "out_degree": 2,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.2,
+        "category": "included",
+        "rationale": "Low-density HAPPE variant — preprocessing action & baseline; recent",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_011",
+      "title": "The HAPPE plus Event-Related (HAPPE+ER) software: A standardized preprocessing pipeline for event-related potential analyses",
+      "authors": [
+        "A. D. Monachino",
+        "Kelsie L. Lopez",
+        "Lara J. Pierce",
+        "Laurel J. Gabard-Durnam"
+      ],
+      "year": 2022,
+      "journal": "Developmental Cognitive Neuroscience",
+      "doi": "10.1016/j.dcn.2022.101140",
+      "url": "https://doi.org/10.1016/j.dcn.2022.101140",
+      "abstract": "HAPPE+ER is a standardized preprocessing pipeline for ERP data spanning the lifespan. The software processes ERP data from raw files through analysis generation, incorporating quality metrics and post-processing reports, and provides validation scripts for performance evaluation.",
+      "citation_count": 53,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4286249762",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_002"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q1",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.2,
+        "category": "included",
+        "rationale": "ERP HAPPE variant — preprocessing baseline; recent",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_012",
+      "title": "NEAR: An artifact removal pipeline for human newborn EEG data",
+      "authors": [
+        "Velu Prabhakar Kumaravel",
+        "Elisabetta Farella",
+        "Eugenio Parise",
+        "Marco Buiatti"
+      ],
+      "year": 2022,
+      "journal": "Developmental Cognitive Neuroscience",
+      "doi": "10.1016/j.dcn.2022.101068",
+      "url": "https://doi.org/10.1016/j.dcn.2022.101068",
+      "abstract": "The NEAR pipeline addresses artifact removal challenges specific to newborn EEG data, automating detection and removal of artifacts via Local Outlier Factor for bad channel detection and Artifact Subspace Reconstruction for bad segment correction, facilitating consistent processing across datasets.",
+      "citation_count": 53,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4205750514",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_002",
+        "paper_017"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q1",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.2,
+        "category": "included",
+        "rationale": "Newborn artifact pipeline using LOF+ASR — concrete preprocessing actions; recent",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_025",
+      "title": "Spectral parameterization for studying neurodevelopment: How and why",
+      "authors": [
+        "Brendan Ostlund",
+        "Thomas Donoghue",
+        "Berenice Anaya",
+        "Kelley E. Gunther",
+        "Sarah L. Karalunas",
+        "Bradley Voytek",
+        "Koraly Pérez-Edgar"
+      ],
+      "year": 2022,
+      "journal": "Developmental Cognitive Neuroscience",
+      "doi": "10.1016/j.dcn.2022.101073",
+      "url": "https://doi.org/10.1016/j.dcn.2022.101073",
+      "abstract": "The authors discuss why explicit parameterization of neural power spectra is imperative for developmental cognitive neuroscientists, provide annotated code for parameterization via specparam, and apply the algorithm to EEG data in childhood to illustrate its utility.",
+      "citation_count": 133,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4225390978",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_021"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "theme": "fooof",
+      "citation_network": {
+        "cluster": "cluster_B_fooof_spectral",
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.2,
+        "category": "included",
+        "rationale": "How/why-to-parameterize tutorial — practical guidance for the metric; recent",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_026",
+      "title": "Time-resolved parameterization of aperiodic and periodic brain activity",
+      "authors": [
+        "Luc Edward Wilson",
+        "Jason da Silva Castanheira",
+        "Sylvain Baillet"
+      ],
+      "year": 2022,
+      "journal": "eLife",
+      "doi": "10.7554/elife.77348",
+      "url": "https://doi.org/10.7554/eLife.77348",
+      "abstract": "The authors introduce Spectral Parameterization Resolved in Time (SPRiNT) for decomposing complex neural dynamics into aperiodic and periodic elements in a time-resolved manner, demonstrating recovery of time-varying spectral features on synthetic data and application to resting-state EEG (n=178) and intracranial rodent recordings.",
+      "citation_count": 107,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4295487996",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_021"
+      ],
+      "cited_by": [
+        "paper_038"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "theme": "fooof",
+      "citation_network": {
+        "cluster": "cluster_B_fooof_spectral",
+        "in_degree": 1,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.2,
+        "category": "included",
+        "rationale": "SPRiNT — time-resolved aperiodic/periodic; relevant for windowed quality scoring",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_046",
+      "title": "SAGA: A Scalable Framework for Optimizing Data Cleaning Pipelines for Machine Learning Applications",
+      "authors": [
+        "Shafaq Siddiqi",
+        "Roman Kern",
+        "Matthias Boehm"
+      ],
+      "year": 2023,
+      "journal": "Proceedings of the ACM on Management of Data",
+      "doi": "10.1145/3617338",
+      "url": "https://doi.org/10.1145/3617338",
+      "abstract": "In the exploratory data science lifecycle, data scientists often spent the majority of their time finding, integrating, validating and cleaning relevant datasets. Despite recent work on data validation, and numerous error detection and correction algorithms, in practice, data cleaning for ML remains largely a manual, unpleasant, and labor-intensive trial and error process, especially in large-scale, distributed computation. The target ML application---such as classification or regression models---can be used as a signal of valuable feedback though, for selecting effective data cleaning strategies. In this paper, we introduce SAGA, a framework for automatically generating the top-K most effective data cleaning pipelines. SAGA adopts ideas from Auto-ML, feature selection, and hyper-parameter tuning. Our framework is extensible for user-provided constraints, new data cleaning primitives, and ML applications; automatically generates hybrid runtime plans of local and distributed operations; and performs pruning by interesting properties (e.g., monotonicity). Instead of full automation---which is rather unrealistic---SAGA simplifies the mechanical aspects of data cleaning. Our experiments show that SAGA yields robust accuracy improvements over state-of-the-art, and good scalability regarding increasing data sizes and number of evaluated pipelines.",
+      "citation_count": 16,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4388620358",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_045"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "OpenAlex 'AutoML EEG classification pipeline optimization'",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_C_automl_hpo",
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.2,
+        "category": "included",
+        "rationale": "Optimizes data-cleaning pipelines for ML — analogous framework; recent",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_055",
+      "title": "Large Language Models for Automated Data Science: Introducing CAAFE for Context-Aware Automated Feature Engineering",
+      "authors": [
+        "Noah Hollmann",
+        "Samuel Müller",
+        "Frank Hutter"
+      ],
+      "year": 2023,
+      "journal": "arXiv (also NeurIPS 2023)",
+      "doi": "10.48550/arxiv.2305.03403",
+      "url": "https://arxiv.org/abs/2305.03403",
+      "abstract": "As the field of automated machine learning (AutoML) advances, it becomes increasingly important to incorporate domain knowledge into these systems. We present an approach for doing so by harnessing the power of large language models (LLMs). Specifically, we introduce Context-Aware Automated Feature Engineering (CAAFE), a feature engineering method for tabular datasets that utilizes an LLM to iteratively generate additional semantically meaningful features for tabular datasets based on the description of the dataset. The method produces both Python code for creating new features and explanations for the utility of the generated features. Despite being methodologically simple, CAAFE improves performance on 11 out of 14 datasets -- boosting mean ROC AUC performance from 0.798 to 0.822 across all dataset - similar to the improvement achieved by using a random forest instead of logistic regression on our datasets. Furthermore, CAAFE is interpretable by providing a textual explanation for each generated feature. CAAFE paves the way for more extensive semi-automation in data science tasks and emphasizes the significance of context-aware solutions that can extend the scope of AutoML systems to semantic AutoML.",
+      "citation_count": 7,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4375870086",
+      "pubmed_id": null,
+      "arxiv_id": "2305.03403",
+      "references": [
+        "paper_040"
+      ],
+      "cited_by": [
+        "paper_056"
+      ],
+      "is_seed_paper": false,
+      "found_via": "known-system verification (Hollmann CAAFE) via WebSearch + OpenAlex",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 1,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.2,
+        "category": "included",
+        "rationale": "LLM does automated feature engineering — archetype for LLM-driven data-prep decisions",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_057",
+      "title": "MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation",
+      "authors": [
+        "Qian Huang",
+        "Jian Vora",
+        "Percy Liang",
+        "Jure Leskovec"
+      ],
+      "year": 2023,
+      "journal": "arXiv (also ICML 2024)",
+      "doi": "10.48550/arxiv.2310.03302",
+      "url": "https://arxiv.org/abs/2310.03302",
+      "abstract": "A central aspect of machine learning research is experimentation, the process of designing and running experiments, analyzing the results, and iterating towards some positive outcome (e.g., improving accuracy). Could agents driven by powerful language models perform machine learning experimentation effectively? To answer this question, we introduce MLAgentBench, a suite of 13 tasks ranging from improving model performance on CIFAR-10 to recent research problems like BabyLM. For each task, an agent can perform actions like reading/writing files, executing code, and inspecting outputs. We then construct an agent that can perform ML experimentation based on ReAct framework. We benchmark agents based on Claude v1.0, Claude v2.1, Claude v3 Opus, GPT-4, GPT-4-turbo, Gemini-Pro, and Mixtral and find that a Claude v3 Opus agent is the best in terms of success rate. It can build compelling ML models over many tasks in MLAgentBench with 37.5% average success rate. Our agents also display highly interpretable plans and actions. However, the success rates vary considerably; they span from 100% on well-established older datasets to as low as 0% on recent Kaggle challenges created potentially after the underlying LM was trained. Finally, we identify several key challenges for LM-based agents such as long-term planning and reducing hallucination.",
+      "citation_count": 10,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4387432648",
+      "pubmed_id": null,
+      "arxiv_id": "2310.03302",
+      "references": [
+        "paper_069"
+      ],
+      "cited_by": [
+        "paper_058",
+        "paper_060"
+      ],
+      "is_seed_paper": false,
+      "found_via": "known-system verification (MLAgentBench) via WebSearch + OpenAlex",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 2,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.2,
+        "category": "included",
+        "rationale": "Benchmark for LLM ML-engineering agents — evaluation template for the agent",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_058",
+      "title": "AIDE: AI-Driven Exploration in the Space of Code",
+      "authors": [
+        "Zhengyao Jiang",
+        "Dominik Schmidt",
+        "Dhruv Srikanth",
+        "Dixing Xu",
+        "Ian Kaplan",
+        "Deniss Jacenko",
+        "Yuxiang Wu"
+      ],
+      "year": 2025,
+      "journal": "arXiv",
+      "doi": "10.48550/arxiv.2502.13138",
+      "url": "https://arxiv.org/abs/2502.13138",
+      "abstract": "Machine learning, the foundation of modern artificial intelligence, has driven innovations that have fundamentally transformed the world. Yet, behind advancements lies a complex and often tedious process requiring labor and compute intensive iteration and experimentation. Engineers and scientists developing machine learning models spend much of their time on trial-and-error tasks instead of conceptualizing innovative solutions or research hypotheses. To address this challenge, we introduce AI-Driven Exploration (AIDE), a machine learning engineering agent powered by large language models (LLMs). AIDE frames machine learning engineering as a code optimization problem, and formulates trial-and-error as a tree search in the space of potential solutions. By strategically reusing and refining promising solutions, AIDE effectively trades computational resources for enhanced performance, achieving state-of-the-art results on multiple machine learning engineering benchmarks, including our Kaggle evaluations, OpenAI MLE-Bench and METR's RE-Bench.",
+      "citation_count": 3,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4407760093",
+      "pubmed_id": null,
+      "arxiv_id": "2502.13138",
+      "references": [
+        "paper_057",
+        "paper_056"
+      ],
+      "cited_by": [
+        "paper_060"
+      ],
+      "is_seed_paper": false,
+      "found_via": "known-system verification (AIDE/Weco) via WebSearch + OpenAlex",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 1,
+        "out_degree": 2,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.2,
+        "category": "included",
+        "rationale": "Tree-search LLM agent over code/ML solutions — directly adaptable to preprocessing-config search",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_061",
+      "title": "Data Interpreter: An LLM Agent For Data Science",
+      "authors": [
+        "Sirui Hong",
+        "Yizhang Lin",
+        "Bang Liu",
+        "Bangbang Liu",
+        "Binhao Wu",
+        "Ceyao Zhang",
+        "Chenxing Wei",
+        "Danyang Li",
+        "Jiaqi Chen",
+        "Jiayi Zhang",
+        "Jinlin Wang",
+        "Li Zhang",
+        "Lingyao Zhang",
+        "Min Yang",
+        "Mingchen Zhuge",
+        "Taicheng Guo",
+        "Tuo Zhou",
+        "Wei Tao",
+        "Xiangru Tang",
+        "Xiangtao Lu",
+        "Xiawu Zheng",
+        "Xinbing Liang",
+        "Yaying Fei",
+        "Yuheng Cheng",
+        "Zhibin Gou",
+        "Zongze Xu",
+        "Chenglin Wu"
+      ],
+      "year": 2024,
+      "journal": "arXiv",
+      "doi": "10.48550/arxiv.2402.18679",
+      "url": "https://arxiv.org/abs/2402.18679",
+      "abstract": "Large Language Model (LLM)-based agents have shown effectiveness across many applications. However, their use in data science scenarios requiring solving long-term interconnected tasks, dynamic data adjustments and domain expertise remains challenging. Previous approaches primarily focus on individual tasks, making it difficult to assess the complete data science workflow. Moreover, they struggle to handle real-time changes in intermediate data and fail to adapt dynamically to evolving task dependencies inherent to data science problems. In this paper, we present Data Interpreter, an LLM-based agent designed to automatically solve various data science problems end-to-end. Our Data Interpreter incorporates two key modules: 1) Hierarchical Graph Modeling, which breaks down complex problems into manageable subproblems, enabling dynamic node generation and graph optimization; and 2) Programmable Node Generation, a technique that refines and verifies each subproblem to iteratively improve code generation results and robustness. Extensive experiments consistently demonstrate the superiority of Data Interpreter. On InfiAgent-DABench, it achieves a 25% performance boost, raising accuracy from 75.9% to 94.9%. For machine learning and open-ended tasks, it improves performance from 88% to 95%, and from 60% to 97%, respectively. Moreover, on the MATH dataset, Data Interpreter achieves remarkable performance with a 26% improvement compared to state-of-the-art baselines.",
+      "citation_count": 11,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4392492277",
+      "pubmed_id": null,
+      "arxiv_id": "2402.18679",
+      "references": [
+        "paper_062",
+        "paper_069"
+      ],
+      "cited_by": [
+        "paper_059",
+        "paper_060"
+      ],
+      "is_seed_paper": false,
+      "found_via": "OpenAlex DOI lookup (Data Interpreter)",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 2,
+        "out_degree": 2,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 4.2,
+        "category": "included",
+        "rationale": "LLM agent for end-to-end data science — relevant controller pattern",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_017",
+      "title": "A Riemannian Modification of Artifact Subspace Reconstruction for EEG Artifact Handling",
+      "authors": [
+        "Sarah Blum",
+        "Nadine Jacobsen",
+        "Martin G. Bleichner",
+        "Stefan Debener"
+      ],
+      "year": 2019,
+      "journal": "Frontiers in Human Neuroscience",
+      "doi": "10.3389/fnhum.2019.00141",
+      "url": "https://doi.org/10.3389/fnhum.2019.00141",
+      "abstract": "The authors adapted ASR using Riemannian geometry (rASR). Compared to ASR on EEG data recorded on smartphones in outdoor/indoor conditions (N=27), rASR performed favorably on reduction of eye-blinks, improvement of visual-evoked potentials, and computation time.",
+      "citation_count": 187,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W2942270306",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_001"
+      ],
+      "cited_by": [
+        "paper_012"
+      ],
+      "is_seed_paper": false,
+      "found_via": "Q1",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 1,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 4.0,
+        "composite": 4.0,
+        "category": "included",
+        "rationale": "rASR — a concrete tunable artifact-handling action with a quality comparison",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_019",
+      "title": "Automatic and robust noise suppression in EEG and MEG: The SOUND algorithm",
+      "authors": [
+        "Tuomas P. Mutanen",
+        "Johanna Metsomaa",
+        "Sara Liljander",
+        "Risto J. Ilmoniemi"
+      ],
+      "year": 2018,
+      "journal": "NeuroImage",
+      "doi": "10.1016/j.neuroimage.2017.10.021",
+      "url": "https://doi.org/10.1016/j.neuroimage.2017.10.021",
+      "abstract": null,
+      "citation_count": 174,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W2767137498",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q1",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 4.0,
+        "composite": 4.0,
+        "category": "included",
+        "rationale": "Data-driven noise suppression with explicit SNR framing — relevant action & metric flavor",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_041",
+      "title": "Auto-Sklearn 2.0: Hands-free AutoML via Meta-Learning",
+      "authors": [
+        "Matthias Feurer",
+        "Katharina Eggensperger",
+        "Stefan Falkner",
+        "Marius Lindauer",
+        "Frank Hutter"
+      ],
+      "year": 2020,
+      "journal": "arXiv (also JMLR 2022)",
+      "doi": "10.15488/15562",
+      "url": "https://arxiv.org/abs/2007.04074",
+      "abstract": "Automated Machine Learning (AutoML) supports practitioners and researchers with the tedious task of designing machine learning pipelines and has recently achieved substantial success. In this paper, we introduce new AutoML approaches motivated by our winning submission to the second ChaLearn AutoML challenge. We develop PoSH Auto-sklearn, which enables AutoML systems to work well on large datasets under rigid time limits by using a new, simple and meta-feature-free meta-learning technique and by employing a successful bandit strategy for budget allocation. However, PoSH Auto-sklearn introduces even more ways of running AutoML and might make it harder for users to set it up correctly. Therefore, we also go one step further and study the design space of AutoML itself, proposing a solution towards truly hands-free AutoML. Together, these changes give rise to the next generation of our AutoML system, Auto-sklearn 2.0. We verify the improvements by these additions in an extensive experimental study on 39 AutoML benchmark datasets. We conclude the paper by comparing to other popular AutoML frameworks and Auto-sklearn 1.0, reducing the relative error by up to a factor of 4.5, and yielding a performance in 10 minutes that is substantially better than what Auto-sklearn 1.0 achieves within an hour.",
+      "citation_count": 9,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W3196575278",
+      "pubmed_id": null,
+      "arxiv_id": "2007.04074",
+      "references": [
+        "paper_040",
+        "paper_039"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "OpenAlex title lookup (Auto-sklearn 2.0)",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_C_automl_hpo",
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 4.0,
+        "composite": 4.0,
+        "category": "included",
+        "rationale": "Hands-free AutoML via meta-learning — directly relevant to learning-to-select-config",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_042",
+      "title": "Hyperparameter optimization: Foundations, algorithms, best practices, and open challenges",
+      "authors": [
+        "Bernd Bischl",
+        "Martin Binder",
+        "Michel Lang",
+        "Tobias Pielok",
+        "Jakob Richter",
+        "Stefan Coors",
+        "Janek Thomas",
+        "Theresa Ullmann",
+        "Marc Becker",
+        "Anne-Laure Boulesteix",
+        "Difan Deng",
+        "Marius Lindauer"
+      ],
+      "year": 2023,
+      "journal": "WIREs Data Mining and Knowledge Discovery",
+      "doi": "10.1002/widm.1484",
+      "url": "https://doi.org/10.1002/widm.1484",
+      "abstract": "Most machine learning algorithms are configured by a set of hyperparameters whose values must be carefully chosen and which often considerably impact performance. To avoid a time-consuming and irreproducible manual process of trial-and-error to find well-performing hyperparameter configurations, various automatic hyperparameter optimization (HPO) methods—for example, based on resampling error estimation for supervised machine learning—can be employed. After introducing HPO from a general perspective, this paper reviews important HPO methods, from simple techniques such as grid or random search to more advanced methods like evolution strategies, Bayesian optimization, Hyperband, and racing. This work gives practical recommendations regarding important choices to be made when conducting HPO, including the HPO algorithms themselves, performance evaluation, how to combine HPO with machine learning pipelines, runtime improvements, and parallelization.",
+      "citation_count": 804,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W3179950556",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_039",
+        "paper_040"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "OpenAlex title lookup (HPO foundations review)",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_C_automl_hpo",
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 5.0,
+        "recency_impact": 5.0,
+        "composite": 4.0,
+        "category": "included",
+        "rationale": "Comprehensive HPO survey — methods reference for the search/optimization baseline",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_045",
+      "title": "Data Cleaning and AutoML: Would an Optimizer Choose to Clean?",
+      "authors": [
+        "Felix Neutatz",
+        "Binger Chen",
+        "Yazan Alkhatib",
+        "Jingwen Ye",
+        "Ziawasch Abedjan"
+      ],
+      "year": 2022,
+      "journal": "Datenbank-Spektrum",
+      "doi": "10.1007/s13222-022-00413-2",
+      "url": "https://doi.org/10.1007/s13222-022-00413-2",
+      "abstract": "Data cleaning is widely acknowledged as an important yet tedious task when dealing with large amounts of data. Thus, there is always a cost-benefit trade-off to consider. In particular, it is important to assess this trade-off when not every data point and data error is equally important for a task. This is often the case when statistical analysis or machine learning (ML) models derive knowledge about data. If we only care about maximizing the utility score of the applications, such as accuracy or F1 scores, many tasks can afford some degree of data quality problems. Recent studies analyzed the impact of various data error types on vanilla ML tasks, showing that missing values and outliers significantly impact the outcome of such models. In this paper, we expand the setting to one where data cleaning is not considered in isolation but as an equal parameter among many other hyper-parameters that influence feature selection, regularization, and model selection. In particular, we use state-of-the-art AutoML frameworks to automatically learn the parameters that benefit a particular ML binary classification task. In our study, we see that specific cleaning routines still play a significant role but can also be entirely avoided if the choice of a specific model or the filtering of specific features diminishes the overall impact.",
+      "citation_count": 27,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4280494175",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_040"
+      ],
+      "cited_by": [
+        "paper_044",
+        "paper_046"
+      ],
+      "is_seed_paper": false,
+      "found_via": "OpenAlex 'AutoML EEG classification pipeline optimization'",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_C_automl_hpo",
+        "in_degree": 2,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 4.0,
+        "composite": 4.0,
+        "category": "included",
+        "rationale": "Asks whether an optimizer chooses to clean data — directly analogous to optimizing preprocessing choices",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_066",
+      "title": "Autonomous chemical research with large language models",
+      "authors": [
+        "Daniil A. Boiko",
+        "Robert MacKnight",
+        "Ben Kline",
+        "Gabe Gomes"
+      ],
+      "year": 2023,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-023-06792-0",
+      "url": "https://doi.org/10.1038/s41586-023-06792-0",
+      "abstract": "Transformer-based large language models are making significant strides in various fields, such as natural language processing, biology, chemistry and computer programming. Here, we show the development and capabilities of Coscientist, an artificial intelligence system driven by GPT-4 that autonomously designs, plans and performs complex experiments by incorporating large language models empowered by tools such as internet and documentation search, code execution and experimental automation. Coscientist showcases its potential for accelerating research across six diverse tasks, including the successful reaction optimization of palladium-catalysed cross-couplings, while exhibiting advanced capabilities for (semi-)autonomous experimental design and execution. Our findings demonstrate the versatility, efficacy and explainability of artificial intelligence systems like Coscientist in advancing research.",
+      "citation_count": 806,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4389991792",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [
+        "paper_068",
+        "paper_067"
+      ],
+      "is_seed_paper": false,
+      "found_via": "known-system verification (Coscientist, Boiko et al. Nature 2023) via WebSearch + OpenAlex",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 2,
+        "out_degree": 0,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 5.0,
+        "recency_impact": 5.0,
+        "composite": 4.0,
+        "category": "included",
+        "rationale": "Coscientist — landmark autonomous LLM science agent; template for tool-using scientific agents; Nature",
+        "tier": 2
+      }
+    },
+    {
+      "id": "paper_028",
+      "title": "An electrophysiological marker of arousal level in humans",
+      "authors": [
+        "Janna D. Lendner",
+        "Randolph F. Helfrich",
+        "Bryce A. Mander",
+        "Luis Romundstad",
+        "Jack J. Lin",
+        "Matthew P. Walker",
+        "Pål G. Larsson",
+        "Robert T. Knight"
+      ],
+      "year": 2020,
+      "journal": "eLife",
+      "doi": "10.7554/elife.55092",
+      "url": "https://doi.org/10.7554/eLife.55092",
+      "abstract": "Using intracranial and surface EEG in four datasets, the authors demonstrate that the 1/f spectral slope of the power spectrum, reflecting the non-oscillatory scale-free component, delineates wakefulness from propofol anesthesia, NREM and REM sleep, providing a common electrophysiological marker that tracks arousal.",
+      "citation_count": 436,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W3045808667",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_023"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "theme": "fooof",
+      "citation_network": {
+        "cluster": "cluster_B_fooof_spectral",
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 5.0,
+        "recency_impact": 4.0,
+        "composite": 3.8,
+        "category": "included",
+        "rationale": "1/f slope tracks arousal/state — evidence aperiodic carries real signal, relevant to noise-vs-signal framing",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_048",
+      "title": "User-customized brain computer interfaces using Bayesian optimization",
+      "authors": [
+        "Hossein Bashashati",
+        "Rabab K. Ward",
+        "Ali Bashashati"
+      ],
+      "year": 2016,
+      "journal": "Journal of Neural Engineering",
+      "doi": "10.1088/1741-2560/13/2/026001",
+      "url": "https://doi.org/10.1088/1741-2560/13/2/026001",
+      "abstract": "OBJECTIVE: The brain characteristics of different people are not the same. Brain computer interfaces (BCIs) should thus be customized for each individual person. In motor-imagery based synchronous BCIs, a number of parameters (referred to as hyper-parameters) including the EEG frequency bands, the channels and the time intervals from which the features are extracted should be pre-determined based on each subject's brain characteristics. APPROACH: To determine the hyper-parameter values, previous work has relied on manual or semi-automatic methods that are not applicable to high-dimensional search spaces. In this paper, we propose a fully automatic, scalable and computationally inexpensive algorithm that uses Bayesian optimization to tune these hyper-parameters. We then build different classifiers trained on the sets of hyper-parameter values proposed by the Bayesian optimization. A final classifier aggregates the results of the different classifiers. MAIN RESULTS: We have applied our method to 21 subjects from three BCI competition datasets. We have conducted rigorous statistical tests, and have shown the positive impact of hyper-parameter optimization in improving the accuracy of BCIs. Furthermore, We have compared our results to those reported in the literature. SIGNIFICANCE: Unlike the best reported results in the literature, which are based on more sophisticated feature extraction and classification methods, and rely on prestudies to determine the hyper-parameter values, our method has the advantage of being fully automated, uses less sophisticated feature extraction and classification methods, and yields similar or superior results compared to the best performing designs in the literature.",
+      "citation_count": 43,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W2464397079",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "WebSearch 'Bayesian optimization BCI pipeline EEG' + OpenAlex",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_C_automl_hpo",
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 4.0,
+        "recency_impact": 3.0,
+        "composite": 3.8,
+        "category": "included",
+        "rationale": "BO to tune BCI per-user — concrete precedent for optimizing EEG pipeline params per subject",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_030",
+      "title": "Periodic and aperiodic neural activity displays age-dependent changes across early-to-middle childhood",
+      "authors": [
+        "Aron T. Hill",
+        "Gillian M. Clark",
+        "Felicity J. Bigelow",
+        "Jarrad A. G. Lum",
+        "Peter G. Enticott"
+      ],
+      "year": 2022,
+      "journal": "Developmental Cognitive Neuroscience",
+      "doi": "10.1016/j.dcn.2022.101076",
+      "url": "https://doi.org/10.1016/j.dcn.2022.101076",
+      "abstract": "Using resting-state EEG in 139 children aged 4-12, the EEG signal was parameterised into aperiodic and periodic components. Aperiodic exponent and offset both decreased with age, while aperiodic-adjusted peak frequency increased with age, highlighting the capacity of both features to elucidate age-related functional changes.",
+      "citation_count": 240,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4225406304",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_021"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "theme": "fooof",
+      "citation_network": {
+        "cluster": "cluster_B_fooof_spectral",
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 3.7,
+        "category": "included",
+        "rationale": "Aperiodic changes with development — application context for the metric, not method",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_062",
+      "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation Framework",
+      "authors": [
+        "Qingyun Wu",
+        "Gagan Bansal",
+        "Jieyu Zhang",
+        "Yiran Wu",
+        "Beibin Li",
+        "Erkang Zhu",
+        "Li Jiang",
+        "Xiaoyun Zhang",
+        "Shaokun Zhang",
+        "Jiale Liu",
+        "Ahmed Awadallah",
+        "Ryen W. White",
+        "Doug Burger",
+        "Chi Wang"
+      ],
+      "year": 2023,
+      "journal": "arXiv",
+      "doi": "10.48550/arxiv.2308.08155",
+      "url": "https://arxiv.org/abs/2308.08155",
+      "abstract": "AutoGen is an open-source framework that allows developers to build LLM applications via multiple agents that can converse with each other to accomplish tasks. AutoGen agents are customizable, conversable, and can operate in various modes that employ combinations of LLMs, human inputs, and tools. Using AutoGen, developers can also flexibly define agent interaction behaviors. Both natural language and computer code can be used to program flexible conversation patterns for different applications. AutoGen serves as a generic infrastructure to build diverse applications of various complexities and LLM capacities. Empirical studies demonstrate the effectiveness of the framework in many example applications, with domains ranging from mathematics, coding, question answering, operations research, online decision-making, entertainment, etc.",
+      "citation_count": 156,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4385965642",
+      "pubmed_id": null,
+      "arxiv_id": "2308.08155",
+      "references": [],
+      "cited_by": [
+        "paper_059",
+        "paper_061",
+        "paper_063",
+        "paper_068"
+      ],
+      "is_seed_paper": false,
+      "found_via": "OpenAlex DOI lookup (AutoGen) — note: OpenAlex display-title for this record is corrupted; DOI/authors/abstract confirm it is the AutoGen paper",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 4,
+        "out_degree": 0,
+        "is_hub": true
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 3.7,
+        "category": "included",
+        "rationale": "Multi-agent LLM framework — infrastructure the agent could be built on",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_064",
+      "title": "AutoML-GPT: Automatic Machine Learning with GPT",
+      "authors": [
+        "Shujian Zhang",
+        "Chengyue Gong",
+        "Lemeng Wu",
+        "Xingchao Liu",
+        "Mingyuan Zhou"
+      ],
+      "year": 2023,
+      "journal": "arXiv",
+      "doi": "10.48550/arxiv.2305.02499",
+      "url": "https://arxiv.org/abs/2305.02499",
+      "abstract": "AI tasks encompass a wide range of domains and fields. While numerous AI models have been designed for specific tasks and applications, they often require considerable human efforts in finding the right model architecture, optimization algorithm, and hyperparameters. Recent advances in large language models (LLMs) like ChatGPT show remarkable capabilities in various aspects of reasoning, comprehension, and interaction. Consequently, we propose developing task-oriented prompts and automatically utilizing LLMs to automate the training pipeline. To implement this concept, we present the AutoML-GPT, which employs GPT as the bridge to diverse AI models and dynamically trains models with optimized hyperparameters. AutoML-GPT dynamically takes user requests from the model and data cards and composes the corresponding prompt paragraph. Ultimately, with this prompt paragraph, AutoML-GPT will automatically conduct the experiments from data processing to model architecture, hyperparameter tuning, and predicted training log. By leveraging AutoML-GPT's robust language capabilities and the available AI models, AutoML-GPT can tackle numerous intricate AI tasks across various tasks and datasets. This approach achieves remarkable results in computer vision, natural language processing, and other challenging areas. Extensive experiments and ablation studies demonstrate that our method can be general, effective, and beneficial for many AI tasks.",
+      "citation_count": 26,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4372272770",
+      "pubmed_id": null,
+      "arxiv_id": "2305.02499",
+      "references": [
+        "paper_069"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "known-system verification (AutoML-GPT, Zhang et al.) via WebSearch + OpenAlex",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 3.0,
+        "recency_impact": 4.0,
+        "composite": 3.7,
+        "category": "included",
+        "rationale": "LLM-driven AutoML — relevant but lighter-weight",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_065",
+      "title": "AutoML-GPT: Large Language Model for AutoML",
+      "authors": [
+        "Yun-Da Tsai",
+        "Yu-Che Tsai",
+        "Bo-Wei Huang",
+        "Chun-Pai Yang",
+        "Shou-De Lin"
+      ],
+      "year": 2023,
+      "journal": "arXiv",
+      "doi": "10.48550/arxiv.2309.01125",
+      "url": "https://arxiv.org/abs/2309.01125",
+      "abstract": "With the emerging trend of GPT models, we have established a framework called AutoML-GPT that integrates a comprehensive set of tools and libraries. This framework grants users access to a wide range of data preprocessing techniques, feature engineering methods, and model selection algorithms. Through a conversational interface, users can specify their requirements, constraints, and evaluation metrics. Throughout the process, AutoML-GPT employs advanced techniques for hyperparameter optimization and model selection, ensuring that the resulting model achieves optimal performance. The system effectively manages the complexity of the machine learning pipeline, guiding users towards the best choices without requiring deep domain knowledge. Through our experimental results on diverse datasets, we have demonstrated that AutoML-GPT significantly reduces the time and effort required for machine learning tasks. Its ability to leverage the vast knowledge encoded in large language models enables it to provide valuable insights, identify potential pitfalls, and suggest effective solutions to common challenges faced during model training.",
+      "citation_count": 2,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4386562916",
+      "pubmed_id": null,
+      "arxiv_id": "2309.01125",
+      "references": [
+        "paper_069"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "known-system verification (AutoML-GPT, Tsai et al.) via WebSearch + OpenAlex",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 4.0,
+        "quality": 3.0,
+        "recency_impact": 4.0,
+        "composite": 3.7,
+        "category": "included",
+        "rationale": "LLM for AutoML (variant) — relevant",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_067",
+      "title": "Augmenting large language models with chemistry tools",
+      "authors": [
+        "Andres M. Bran",
+        "Sam Cox",
+        "Oliver Schilter",
+        "Carlo Baldassari",
+        "Andrew D. White",
+        "Philippe Schwaller"
+      ],
+      "year": 2024,
+      "journal": "Nature Machine Intelligence",
+      "doi": "10.1038/s42256-024-00832-8",
+      "url": "https://doi.org/10.1038/s42256-024-00832-8",
+      "abstract": "Large language models (LLMs) have shown strong performance in tasks across domains but struggle with chemistry-related problems. These models also lack access to external knowledge sources, limiting their usefulness in scientific applications. We introduce ChemCrow, an LLM chemistry agent designed to accomplish tasks across organic synthesis, drug discovery and materials design. By integrating 18 expert-designed tools and using GPT-4 as the LLM, ChemCrow augments the LLM performance in chemistry, and new capabilities emerge. Our agent autonomously planned and executed the syntheses of an insect repellent and three organocatalysts and guided the discovery of a novel chromophore. Our evaluation, including both LLM and expert assessments, demonstrates ChemCrow's effectiveness in automating a diverse set of chemical tasks. Our work not only aids expert chemists and lowers barriers for non-experts but also fosters scientific advancement by bridging the gap between experimental and computational chemistry.",
+      "citation_count": 577,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4396723768",
+      "pubmed_id": null,
+      "arxiv_id": "2304.05376",
+      "references": [
+        "paper_066",
+        "paper_069"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "known-system verification (ChemCrow, Bran et al.) via WebSearch + OpenAlex",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 3.7,
+        "category": "included",
+        "rationale": "ChemCrow — LLM+domain tools; archetype for tool-augmented scientific agent",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_068",
+      "title": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+      "authors": [
+        "Chris Lu",
+        "Cong Lu",
+        "Robert Tjarko Lange",
+        "Jakob Foerster",
+        "Jeff Clune",
+        "David Ha"
+      ],
+      "year": 2024,
+      "journal": "arXiv",
+      "doi": "10.48550/arxiv.2408.06292",
+      "url": "https://arxiv.org/abs/2408.06292",
+      "abstract": "One of the grand challenges of artificial general intelligence is developing agents capable of conducting scientific research and discovering new knowledge. While frontier models have already been used as aides to human scientists, e.g. for brainstorming ideas, writing code, or prediction tasks, they still conduct only a small part of the scientific process. This paper presents the first comprehensive framework for fully automatic scientific discovery, enabling frontier large language models to perform research independently and communicate their findings. We introduce The AI Scientist, which generates novel research ideas, writes code, executes experiments, visualizes results, describes its findings by writing a full scientific paper, and then runs a simulated review process for evaluation. In principle, this process can be repeated to iteratively develop ideas in an open-ended fashion, acting like the human scientific community. We demonstrate its versatility by applying it to three distinct subfields of machine learning: diffusion modeling, transformer-based language modeling, and learning dynamics. Each idea is implemented and developed into a full paper at a cost of less than $15 per paper. To evaluate the generated papers, we design and validate an automated reviewer, which we show achieves near-human performance in evaluating paper scores. The AI Scientist can produce papers that exceed the acceptance threshold at a top machine learning conference as judged by our automated reviewer.",
+      "citation_count": 107,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4402952666",
+      "pubmed_id": null,
+      "arxiv_id": "2408.06292",
+      "references": [
+        "paper_062",
+        "paper_069",
+        "paper_066"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "WebSearch 'The AI Scientist Sakana' + OpenAlex",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 0,
+        "out_degree": 3,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 3.7,
+        "category": "included",
+        "rationale": "Fully automated open-ended discovery agent — vision-level precedent",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_069",
+      "title": "A Survey on Large Language Model based Autonomous Agents",
+      "authors": [
+        "Lei Wang",
+        "Chen Ma",
+        "Xueyang Feng",
+        "Zeyu Zhang",
+        "Hao Yang",
+        "Jingsen Zhang",
+        "Zhiyuan Chen",
+        "Jiakai Tang",
+        "Xu Chen",
+        "Yankai Lin",
+        "Wayne Xin Zhao",
+        "Zhewei Wei",
+        "Ji-Rong Wen"
+      ],
+      "year": 2024,
+      "journal": "Frontiers of Computer Science",
+      "doi": "10.1007/s11704-024-40231-1",
+      "url": "https://doi.org/10.1007/s11704-024-40231-1",
+      "abstract": "Autonomous agents have long been a research focus in academic and industry communities. Previous research often focuses on training agents with limited knowledge within isolated environments, which diverges significantly from human learning processes, and makes the agents hard to achieve human-like decisions. Recently, through the acquisition of vast amounts of Web knowledge, large language models (LLMs) have shown potential in human-level intelligence, leading to a surge in research on LLM-based autonomous agents. In this paper, we present a comprehensive survey of these studies, delivering a systematic review of LLM-based autonomous agents from a holistic perspective. We first discuss the construction of LLM-based autonomous agents, proposing a unified framework that encompasses much of previous work. Then, we present an overview of the diverse applications of LLM-based autonomous agents in social science, natural science, and engineering. Finally, we delve into the evaluation strategies commonly used for LLM-based autonomous agents. Based on the previous studies, we also present several challenges and future directions in this field.",
+      "citation_count": 1151,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4393065402",
+      "pubmed_id": null,
+      "arxiv_id": "2308.11432",
+      "references": [],
+      "cited_by": [
+        "paper_056",
+        "paper_057",
+        "paper_059",
+        "paper_061",
+        "paper_068",
+        "paper_067",
+        "paper_064",
+        "paper_065"
+      ],
+      "is_seed_paper": true,
+      "found_via": "OpenAlex search (LLM autonomous agents survey)",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 8,
+        "out_degree": 0,
+        "is_hub": true
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 4.0,
+        "recency_impact": 5.0,
+        "composite": 3.7,
+        "category": "included",
+        "rationale": "Foundational survey framing LLM-agent design — orienting reference; hub",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_014",
+      "title": "Automated pipeline for EEG artifact reduction (APPEAR) recorded during fMRI",
+      "authors": [
+        "Ahmad Mayeli",
+        "Obada Al Zoubi",
+        "Kaylee Henry",
+        "Chung Ki Wong",
+        "Evan J. White",
+        "Qingfei Luo",
+        "Vadim Zotev",
+        "Hazem Refai",
+        "Jerzy Bodurka"
+      ],
+      "year": 2021,
+      "journal": "Journal of Neural Engineering",
+      "doi": "10.1088/1741-2552/ac1037",
+      "url": "https://doi.org/10.1088/1741-2552/ac1037",
+      "abstract": "APPEAR is a fully automatic, comprehensive pipeline integrating average template subtraction and ICA to suppress MRI-related and physiological artifacts in simultaneous EEG-fMRI recordings. Testing showed no significant differences between automated and manually corrected data.",
+      "citation_count": 22,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W2995400749",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q1",
+      "theme": "preprocessing",
+      "citation_network": {
+        "cluster": "cluster_A_eeg_preprocessing",
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 4.0,
+        "recency_impact": 4.0,
+        "composite": 3.5,
+        "category": "included",
+        "rationale": "Automated EEG-fMRI artifact pipeline — relevant actions but niche (fMRI) population",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_031",
+      "title": "Do age-related differences in aperiodic neural activity explain differences in resting EEG alpha?",
+      "authors": [
+        "Ashley Merkin",
+        "Sabrina Sghirripa",
+        "Lynton Graetz",
+        "Ashleigh E. Smith",
+        "Brenton Hordacre",
+        "Richard Harris",
+        "Julia B. Pitcher",
+        "John G. Semmler",
+        "Nigel C. Rogasch",
+        "Mitchell R. Goldsworthy"
+      ],
+      "year": 2022,
+      "journal": "Neurobiology of Aging",
+      "doi": "10.1016/j.neurobiolaging.2022.09.003",
+      "url": "https://doi.org/10.1016/j.neurobiolaging.2022.09.003",
+      "abstract": null,
+      "citation_count": 168,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4295735907",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_021"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "theme": "fooof",
+      "citation_network": {
+        "cluster": "cluster_B_fooof_spectral",
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 4.0,
+        "recency_impact": 4.0,
+        "composite": 3.5,
+        "category": "included",
+        "rationale": "Aperiodic vs alpha in aging — application context",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_036",
+      "title": "Aperiodic and Periodic Components of Ongoing Oscillatory Brain Dynamics Link Distinct Functional Aspects of Cognition across Adult Lifespan",
+      "authors": [
+        "Kusum Thuwal",
+        "Arpan Banerjee",
+        "Dipanjan Roy"
+      ],
+      "year": 2021,
+      "journal": "eNeuro",
+      "doi": "10.1523/eneuro.0224-21.2021",
+      "url": "https://doi.org/10.1523/eneuro.0224-21.2021",
+      "abstract": null,
+      "citation_count": 103,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W3199122930",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_021"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "Q3",
+      "theme": "fooof",
+      "citation_network": {
+        "cluster": "cluster_B_fooof_spectral",
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 4.0,
+        "recency_impact": 4.0,
+        "composite": 3.5,
+        "category": "included",
+        "rationale": "Aperiodic/periodic linked to cognition across lifespan — application context",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_043",
+      "title": "Bayesian Optimization for Adaptive Experimental Design: A Review",
+      "authors": [
+        "Stewart Greenhill",
+        "Santu Rana",
+        "Sunil Gupta",
+        "Pratibha Vellanki",
+        "Svetha Venkatesh"
+      ],
+      "year": 2020,
+      "journal": "IEEE Access",
+      "doi": "10.1109/access.2020.2966228",
+      "url": "https://doi.org/10.1109/ACCESS.2020.2966228",
+      "abstract": "Bayesian optimisation is a statistical method that efficiently models and optimises expensive \"black-box\" functions. This review considers the application of Bayesian optimisation to experimental design, in comparison to existing Design of Experiments (DOE) methods. Solutions are surveyed for a range of core issues in experimental design including: the incorporation of prior knowledge, high dimensional optimisation, constraints, batch evaluation, multiple objectives, multi-fidelity data, and mixed variable types.",
+      "citation_count": 493,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W2998788451",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "OpenAlex title lookup (Bayesian optimization review)",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_C_automl_hpo",
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 4.0,
+        "recency_impact": 4.0,
+        "composite": 3.5,
+        "category": "included",
+        "rationale": "BO review — method reference for parameter search",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_047",
+      "title": "AutoML to Date and Beyond: Challenges and Opportunities",
+      "authors": [
+        "Shubhra Kanti Karmaker Santu",
+        "Md. Mahadi Hassan",
+        "Micah J. Smith",
+        "Lei Xu",
+        "ChengXiang Zhai",
+        "Kalyan Veeramachaneni"
+      ],
+      "year": 2020,
+      "journal": "arXiv (also ACM Computing Surveys)",
+      "doi": "10.48550/arxiv.2010.10777",
+      "url": "https://arxiv.org/abs/2010.10777",
+      "abstract": "As big data becomes ubiquitous across domains, and more and more stakeholders aspire to make the most of their data, demand for machine learning tools has spurred researchers to explore the possibilities of automated machine learning (AutoML). AutoML tools aim to make machine learning accessible for non-machine learning experts (domain experts), to improve the efficiency of machine learning, and to accelerate machine learning research. But although automation and efficiency are among AutoML's main selling points, the process still requires human involvement at a number of vital steps, including understanding the attributes of domain-specific data, defining prediction problems, creating a suitable training data set, and selecting a promising machine learning technique. These steps often require a prolonged back-and-forth that makes this process inefficient for domain experts and data scientists alike, and keeps so-called AutoML systems from being truly automatic. In this review article, we introduce a new classification system for AutoML systems, using a seven-tiered schematic to distinguish these systems based on their level of autonomy. We begin by describing what an end-to-end machine learning pipeline actually looks like, and which subtasks of the machine learning pipeline have been automated so far. We highlight those subtasks which are still done manually - generally by a data scientist - and explain how this limits domain experts' access to machine learning. Next, we introduce our novel level-based taxonomy for AutoML systems and define each level according to the scope of automation support provided. Finally, we lay out a roadmap for the future, pinpointing the research required to further automate the end-to-end machine learning pipeline and discussing important challenges that stand in the way of this ambitious goal.",
+      "citation_count": 6,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W3162854913",
+      "pubmed_id": null,
+      "arxiv_id": "2010.10777",
+      "references": [
+        "paper_039",
+        "paper_040"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "OpenAlex 'AutoML EEG classification pipeline optimization'",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_C_automl_hpo",
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 4.0,
+        "recency_impact": 4.0,
+        "composite": 3.5,
+        "category": "included",
+        "rationale": "AutoML challenges/opportunities survey — context",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_049",
+      "title": "Evaluation of Hyperparameter Optimization in Machine and Deep Learning Methods for Decoding Imagined Speech EEG",
+      "authors": [
+        "Ciaran Cooney",
+        "Attila Korik",
+        "Raffaella Folli",
+        "Damien Coyle"
+      ],
+      "year": 2020,
+      "journal": "Sensors",
+      "doi": "10.3390/s20164629",
+      "url": "https://doi.org/10.3390/s20164629",
+      "abstract": "Classification of electroencephalography (EEG) signals corresponding to imagined speech production is important for the development of a direct-speech brain–computer interface (DS-BCI). Deep learning (DL) has been utilized with great success across several domains. However, it remains an open question whether DL methods provide significant advances over traditional machine learning (ML) approaches for classification of imagined speech. Furthermore, hyperparameter (HP) optimization has been neglected in DL-EEG studies, resulting in the significance of its effects remaining uncertain. In this study, we aim to improve classification of imagined speech EEG by employing DL methods while also statistically evaluating the impact of HP optimization on classifier performance. We trained three distinct convolutional neural networks (CNN) on imagined speech EEG using a nested cross-validation approach to HP optimization. Each of the CNNs evaluated was designed specifically for EEG decoding. An imagined speech EEG dataset consisting of both words and vowels facilitated training on both sets independently. CNN results were compared with three benchmark ML methods: Support Vector Machine, Random Forest and regularized Linear Discriminant Analysis. Intra- and inter-subject methods of HP optimization were tested and the effects of HPs statistically analyzed. Accuracies obtained by the CNNs were significantly greater than the benchmark methods when trained on both datasets (words: 24.97%, p < 1e-7, chance: 16.67%; vowels: 30.00%, p < 1e-7, chance: 20%). The effects of varying HP values, and interactions between HPs and the CNNs were both statistically significant. The results of HP optimization demonstrate how critical it is for training CNNs to decode imagined speech.",
+      "citation_count": 106,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W3049410214",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "OpenAlex 'Bayesian optimization EEG preprocessing hyperparameter'",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_C_automl_hpo",
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 4.0,
+        "recency_impact": 4.0,
+        "composite": 3.5,
+        "category": "included",
+        "rationale": "HPO evaluation/benchmark — method context",
+        "tier": 3
+      }
+    },
+    {
+      "id": "paper_063",
+      "title": "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face",
+      "authors": [
+        "Yongliang Shen",
+        "Kaitao Song",
+        "Xu Tan",
+        "Dongsheng Li",
+        "Weiming Lu",
+        "Yueting Zhuang"
+      ],
+      "year": 2023,
+      "journal": "arXiv (also NeurIPS 2023)",
+      "doi": "10.48550/arxiv.2303.17580",
+      "url": "https://arxiv.org/abs/2303.17580",
+      "abstract": "Solving complicated AI tasks with different domains and modalities is a key step toward artificial general intelligence. While there are numerous AI models available for various domains and modalities, they cannot handle complicated AI tasks autonomously. Considering large language models (LLMs) have exhibited exceptional abilities in language understanding, generation, interaction, and reasoning, we advocate that LLMs could act as a controller to manage existing AI models to solve complicated AI tasks, with language serving as a generic interface to empower this. Based on this philosophy, we present HuggingGPT, an LLM-powered agent that leverages LLMs (e.g., ChatGPT) to connect various AI models in machine learning communities (e.g., Hugging Face) to solve AI tasks. Specifically, we use ChatGPT to conduct task planning when receiving a user request, select models according to their function descriptions available in Hugging Face, execute each subtask with the selected AI model, and summarize the response according to the execution results. By leveraging the strong language capability of ChatGPT and abundant AI models in Hugging Face, HuggingGPT can tackle a wide range of sophisticated AI tasks spanning different modalities and domains and achieve impressive results in language, vision, speech, and other challenging tasks, which paves a new way towards the realization of artificial general intelligence.",
+      "citation_count": 264,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4361866031",
+      "pubmed_id": null,
+      "arxiv_id": "2303.17580",
+      "references": [
+        "paper_062"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "found_via": "OpenAlex title lookup (HuggingGPT, LLM-as-controller tool selection)",
+      "theme": "automl_agent",
+      "citation_network": {
+        "cluster": "cluster_D_llm_agents",
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false
+      },
+      "screening": {
+        "relevance": 3.0,
+        "quality": 4.0,
+        "recency_impact": 4.0,
+        "composite": 3.5,
+        "category": "included",
+        "rationale": "LLM orchestrating tool/model calls — tool-use pattern relevant to invoking preprocessing tools",
+        "tier": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "session_id": "20260620",
+  "topic": "Agentic EEG preprocessing pipeline with FOOOF-based signal quality optimization",
+  "topic_original": "建造一個 Agentic EEG pre-processing pipeline：(1) 傳統 greedy search 跑遍所有 preprocessing 組合建立 ground truth；(2) 用 FOOOF 週期性(signal)與非週期性(noise)計算 SNR 衡量好壞，捨棄 accuracy；(3) 有 ground truth 後讓 agent 學習挑選 preprocessing 參數。LLM-agent 路線、公開資料集。",
+  "topic_slug": "agentic-eeg-preprocessing-fooof",
+  "timestamp": "2026-06-20T20:45:00+08:00",
+  "current_step": 9,
+  "pico": {
+    "population": "EEG recordings from public datasets (resting-state and task-based); the study objects are signals and pipeline configurations rather than patients",
+    "intervention": "LLM-agent-driven adaptive selection of preprocessing parameters (filtering, ICA, artifact rejection, re-referencing) guided by intermediate signal features",
+    "comparison": "Fixed/standard pipelines (PREP, HAPPE, Autoreject), exhaustive greedy search as ground-truth oracle, and random/default parameter selection",
+    "outcome": "Signal quality via FOOOF aperiodic(1/f)-periodic decomposition as SNR proxy; agreement with greedy-search ground truth; compute cost",
+    "setting": "Offline batch preprocessing, reproducible research pipelines",
+    "timeframe": "2019-2026"
+  },
+  "source_urls": [],
+  "queries": [
+    {
+      "id": "Q1",
+      "strategy": "Core terms + Automated preprocessing",
+      "query": "automated EEG preprocessing pipeline artifact removal parameter optimization",
+      "rationale": "Direct hit on automated EEG preprocessing and parameter optimization literature (PREP, HAPPE, Autoreject)"
+    },
+    {
+      "id": "Q2",
+      "strategy": "Synonyms + Adjacent terms",
+      "query": "(\"EEG preprocessing\" OR \"EEG cleaning\" OR \"artifact correction\") AND (reproducib* OR standardiz* OR \"quality control\")",
+      "rationale": "Catches papers using alternative terminology (cleaning, QC, standardization) for the same preprocessing problem"
+    },
+    {
+      "id": "Q3",
+      "strategy": "Mechanism + Quality metric",
+      "query": "FOOOF aperiodic periodic spectral parameterization 1/f EEG signal quality SNR",
+      "rationale": "FOOOF/specparam separation of periodic and aperiodic components and its use as a signal-quality / SNR metric"
+    },
+    {
+      "id": "Q4",
+      "strategy": "Methodology + Search/learning",
+      "query": "(AutoML OR \"reinforcement learning\" OR \"Bayesian optimization\") AND (EEG OR \"signal processing\") pipeline hyperparameter selection",
+      "rationale": "Methods that frame preprocessing as a searchable/learnable problem (AutoML, RL, Bayesian optimization)"
+    },
+    {
+      "id": "Q5",
+      "strategy": "Cross-disciplinary + LLM agents",
+      "query": "(\"LLM agent\" OR \"large language model\" OR agentic) AND (\"scientific workflow\" OR \"data preprocessing\" OR \"tool use\") automation",
+      "rationale": "Cross-domain: LLM agents automating scientific workflows / data pipelines, supporting the Step-3 agent design"
+    }
+  ]
+}

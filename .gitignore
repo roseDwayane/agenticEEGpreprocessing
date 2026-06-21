@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# IDE / Obsidian
+.vscode/
+.obsidian/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 01_infra 的 transient state（也由 01_infra/.gitignore 處理）
+01_infra/.state/
+
+.claude/
+
