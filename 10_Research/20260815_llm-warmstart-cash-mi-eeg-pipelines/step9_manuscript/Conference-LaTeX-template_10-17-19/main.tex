@@ -1,0 +1,142 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+% ============================================================
+% main.tex -- 6-page IEEE conference version (iFUZZY 2026 target)
+% Condensed from step9_manuscript/01_intro.tex + 02_relatedwork.tex
+% Methods/Protocol from step8_hypothesis_specification.md
+% Pilot results from lab weekly reports (EEGMMI S001/S002)
+% ============================================================
+
+\title{Knowledge-Injected Warm-Starting of Decomposed CASH for Subject-Specific EEG Motor-Imagery Pipelines}
+% TODO: confirm final title; subtitles not allowed in Xplore
+
+\author{\IEEEauthorblockN{Anne-Mei Bessas}
+\IEEEauthorblockA{\textit{Institute of Applied Informatics} \\ % TODO: confirm dept.
+\textit{(organization)}\\ % TODO: fill university
+City, Country \\ % TODO
+email@example.edu} % TODO
+\and
+\IEEEauthorblockN{(Co-author)}
+\IEEEauthorblockA{\textit{(dept.)} \\
+\textit{(organization)}\\
+City, Country \\
+email} % TODO: add advisor / co-authors
+}
+
+\maketitle
+
+\begin{abstract}
+Subject-specific EEG motor-imagery (MI) decoding pipelines outperform one-size-fits-all designs, but optimizing the full preprocessing--decoding pipeline for every new user is prohibitively expensive: each optimization restarts from scratch, and automated hyperparameter search can take hours per subject. We formulate subject-specific pipeline design as a transfer variant of the combined algorithm selection and hyperparameter optimization (CASH) problem, treating each subject as a task. A decomposition-based CASH engine in the VolcanoML/SMAC lineage is extended with two interchangeable knowledge sources injected through a similarity-gated, $\pi$BO-style prior: (a) leave-one-subject-out search histories from other subjects and (b) priors elicited from a large language model. Evaluation follows a budget-matched anytime protocol with random-search, seeded cold-start, and fixed standard-pipeline controls, addressing known deflationary confounds of AutoML and LLM-advisor evaluations. In a pilot on PhysioNet EEGMMI, warm-started search reached a balanced accuracy of 0.950 versus 0.915 for cold-started search under the same budget, and zero-shot transfer of a source subject's configuration retained a substantial fraction of the searched improvement (0.765 vs.\ a 0.635 fixed-pipeline baseline) without any target-subject search. These results outline a path from per-user cold-start search toward calibration-efficient, subject-specific BCI pipelines.
+\end{abstract}
+
+\begin{IEEEkeywords}
+brain--computer interface, motor imagery, AutoML, CASH, Bayesian optimization, warm-starting, transfer learning, large language models
+\end{IEEEkeywords}
+
+% ============================================================
+\section{Introduction}
+\label{sec:intro}
+
+Motor-imagery brain--computer interfaces decode movement intention from EEG through a multi-stage pipeline of temporal filtering, epoching, spatial filtering, and classification \cite{CraikEtAl2019, SchirrmeisterEtAl2017}. Pipeline performance is strongly subject-dependent: EEG feature distributions vary across individuals by up to an order of magnitude on common features \cite{ZhangEtAl2024}, and subject-specific configurations consistently outperform fixed designs \cite{AnarakiEtAl2024, WangEtAl2026}. In practice, however, most studies freeze the preprocessing chain to community conventions---e.g., an 8--30\,Hz band-pass filter with common spatial patterns (CSP) and linear discriminant analysis---and tune only the classifier \cite{CraikEtAl2019, LeonEtAl2020}. Optimizing the whole pipeline per subject is rarely attempted because it is expensive: automated hyperparameter optimization for a single BCI setting has been reported to take on the order of twenty-four hours \cite{BerdyshevEtAl2024}. This per-user search cost is the computational face of the BCI calibration problem.
+
+Machine learning research has formalized exactly this setting. The CASH problem treats algorithm choices and hyperparameters across pipeline stages as one hierarchical search space \cite{KotthoffEtAl2019, HutterEtAl2019}, solved by Bayesian optimization (BO) engines such as SMAC \cite{LindauerEtAl2021} and, for large conditional spaces, by decomposition-based systems whose advantage over monolithic BO grows with dimensionality \cite{LiEtAl2021b, LiEtAl2020a}. In parallel, transfer hyperparameter optimization reuses knowledge from past tasks: meta-feature-matched warm-starting of the initial design \cite{FeurerEtAl2015}, and prior injection at the acquisition function, where $\pi$BO achieves up to $12.5\times$ faster time-to-accuracy from a simple default-centered prior while provably recovering from wrong priors \cite{HvarfnerEtAl2022}. Most recently, large language models (LLMs) have entered the loop as warm-starters and prior sources \cite{LiuEtAl2024, XuEtAl2026a}, with independent reproductions confirming the warm-start effect at 70B-parameter scale \cite{RychertEtAl2025}---and budget-matched audits warning that some claimed LLM gains reduce to a single good default configuration \cite{RodriguesEtAl2026}.
+
+Despite this methodological supply and the evident application demand, the intersection is empty. Across 124 studies screened in our systematic review, no work injects transferable knowledge---search histories from other subjects or LLM-elicited priors---into BO-based CASH over a full EEG pipeline. EEG pipeline automation relies on cold-start evolutionary search \cite{NakisaEtAl2018, ZhuEtAl2025}, and the cross-subject transfer literature moves model weights and meta-learned initializations \cite{BerdyshevEtAl2024, AristimunhaEtAl2025} but never configuration knowledge; per-subject optimization, where attempted, restarts cold each time \cite{ZhangEtAl2024}. Meanwhile the CASH systems literature names meta-learned warm-starting as its own next step \cite{LiEtAl2016, LiEtAl2020a, LiEtAl2022a}, and LLM-agent BCI tooling explicitly calls for LLM-driven pipeline optimization \cite{KapitonovaBall2024}.
+
+We close this gap by treating each EEG subject as a task in the transfer-HPO sense. Our contributions are:
+\begin{itemize}
+    \item a \emph{subjects-as-tasks} formulation of subject-specific EEG pipeline optimization as transfer-CASH, bridging decomposition-based AutoML \cite{LiEtAl2021b} and cross-subject BCI adaptation \cite{BerdyshevEtAl2024};
+    \item a dual knowledge-injection design in which cross-subject search-history priors and LLM-elicited priors enter one similarity-gated $\pi$BO-style mechanism \cite{HvarfnerEtAl2022}, enabling like-for-like comparison;
+    \item a deflation-proof, budget-matched anytime evaluation protocol with random-search, seeded cold-start, and fixed-pipeline controls \cite{ZollerHuber2019, RodriguesEtAl2026};
+    \item pilot evidence on PhysioNet EEGMMI that warm-starting improves best-in-budget accuracy (0.950 vs.\ 0.915) and that zero-shot configuration transfer is viable (0.765 vs.\ 0.635 baseline).
+\end{itemize}
+
+% ============================================================
+\section{Related Work}
+\label{sec:related}
+
+\textbf{CASH and AutoML systems.} Auto-WEKA introduced CASH \cite{KotthoffEtAl2019}; successors include TPOT's evolutionary pipelines \cite{OlsonEtAl2016}, AutoGluon's stacking \cite{EricksonEtAl2020}, and engines such as SMAC3 \cite{LindauerEtAl2021} and Optuna \cite{AkibaEtAl2019}. VolcanoML decomposes CASH into tree-structured execution plans that scale better than monolithic BO \cite{LiEtAl2021b, LiEtAl2022a}; Rising Bandits eliminate weak algorithm arms with $\sim$12.6$\times$ fewer trials \cite{LiEtAl2020a}. Benchmark studies caution that optimizer differences can vanish under rigorous protocols \cite{ZollerHuber2019} and name anytime reporting and transfer-HPO task families as open problems \cite{GijsbersEtAl2019, EggenspergerEtAl2021}.
+
+\textbf{Warm-starting and transfer BO.} Knowledge can enter at the initial design \cite{FeurerEtAl2015}, the surrogate \cite{WistubaGrabocka2021, LiEtAl2022c}, the search space \cite{LiEtAl2022d}, or the acquisition prior \cite{HvarfnerEtAl2022}. Surrogate-level transfer is structurally fragile under task heterogeneity \cite{HvarfnerEtAl2026}; similarity-gated warm-starting with cold-start fallback provides a guard \cite{NomuraEtAl2021}. Given documented inter-subject variability \cite{ZhangEtAl2024}, we inject only at the initial-design and acquisition-prior levels, gated by subject meta-features.
+
+\textbf{LLMs in the loop.} LLAMBO demonstrated LLM warm-starting as the most robust of its components \cite{LiuEtAl2024}; hybrid designs condition classical BO on LLM-derived context \cite{XuEtAl2026a}. Reproductions require $\geq$70B backbones \cite{RychertEtAl2025}, and budget-matched audits show gains can reduce to a good first configuration, with seeded classical search overtaking within twelve evaluations \cite{RodriguesEtAl2026}. We adopt these constraints as design choices (API-scale backbones, fixed prompts, seeded control).
+
+\textbf{Automated and subject-adaptive EEG decoding.} Existing EEG automation is dominated by evolutionary/swarm search over architectures \cite{NakisaEtAl2018, DuanEtAl2023, ZhuEtAl2025, WangEtAl2026}; the statistical significance of HPO effects in deep EEG decoding remains largely untested \cite{CooneyEtAl2020}. Cross-subject work transfers weights and initializations---EEG-Reptile automates meta-learning with a few-shot ceiling far below subject-specific training \cite{BerdyshevEtAl2024, SchirrmeisterEtAl2017}---while the closest configuration-level precedents are classifier recommendation from dataset characteristics \cite{AnarakiEtAl2024} and cross-subject channel selection \cite{WeiEtAl2023}. Unlike these, we transfer \emph{search knowledge} over the full pipeline space and let a decomposed CASH search continue adapting to the target subject.
+
+% ============================================================
+\section{Methodology}
+\label{sec:method}
+
+\subsection{Search Space and Engine}
+We define a five-stage conditional pipeline space for MI decoding: resampling; band-pass filtering (FIR/IIR with low/high cutoffs); re-referencing; epoching window; CSP spatial filtering (number of components); and classifier selection among LDA, SVM, random forest, logistic regression, and QDA with their hyperparameters. The space is searched by a decomposition-based CASH engine in the VolcanoML lineage \cite{LiEtAl2021b}: a tree-structured execution plan conditions on the classifier choice, with SMAC-style BO \cite{LindauerEtAl2021} in each leaf subspace.
+
+\subsection{Knowledge Sources and Injection}
+Two knowledge sources are constructed per target subject $s$:
+\emph{(a) Search-history priors.} Under leave-one-subject-out (LOSO) separation, the search histories of the remaining $N{-}1$ subjects yield per-hyperparameter priors and a ranked list of top configurations \cite{FeurerEtAl2015, BaiEtAl2023}.
+\emph{(b) LLM-elicited priors.} An API-scale LLM, prompted with dataset and subject descriptors under a fixed released template, returns distributions over pipeline choices and hyperparameters \cite{LiuEtAl2024}.
+Both sources are injected identically: top-$k$ configurations seed the initial design, and the prior multiplies the acquisition function with an iteration-decaying exponent, following $\pi$BO \cite{HvarfnerEtAl2022}, which guarantees recovery from misleading priors. A similarity gate $g(s)\in[0,1]$, computed from subject meta-features (band power statistics, CSP eigen-spectrum, baseline accuracy), attenuates the prior toward uniform when the target subject lies far from the source pool \cite{NomuraEtAl2021}, guarding against negative transfer for outlier subjects \cite{ZhangEtAl2024, HvarfnerEtAl2026}.
+
+\subsection{Zero-Shot Configuration Transfer}
+As a search-free operating point, the gated prior's single best configuration is applied directly to the target subject (budget $B{=}0$). This quantifies how much of the searched improvement survives without any target-subject evaluations---a quantity, to our knowledge, unmeasured at the configuration level in EEG.
+
+% TODO: figure -- conceptual framework diagram (knowledge sources -> prior construction -> decomposed CASH loop -> evaluation); adapt from step8 ASCII diagram
+%\begin{figure}[t]
+%\centering
+%\includegraphics[width=\linewidth]{framework.pdf}
+%\caption{Knowledge-injected warm-starting of decomposed CASH for subject-specific EEG pipelines.}
+%\label{fig:framework}
+%\end{figure}
+
+% ============================================================
+\section{Experimental Protocol}
+\label{sec:experiment}
+
+\textbf{Data.} PhysioNet EEG Motor Movement/Imagery (109 subjects) as the primary corpus; BCI Competition IV-2a for external validation. Within-subject evaluation uses 5-fold cross-validated balanced accuracy; prior learning is strictly LOSO to avoid meta-learning contamination \cite{EggenspergerEtAl2021}.
+
+\textbf{Conditions.} (1) fixed standard pipeline (8--30\,Hz FIR + CSP + LDA); (2) random search; (3) cold-start decomposed CASH; (4) \emph{seeded} cold-start, receiving the prior's best configuration as its first evaluation---isolating first-configuration quality from prior-shape guidance \cite{RodriguesEtAl2026}; (5) history-prior warm-start; (6) LLM-prior warm-start; (7) zero-shot transfer ($B{=}0$).
+
+\textbf{Endpoints.} All searched conditions consume identical budgets $B\in\{25,50,100\}$. Primary endpoints are the area under the incumbent balanced-accuracy curve (anytime AUC) and evaluations-to-target \cite{GijsbersEtAl2019}; secondary endpoints are fixed-budget final accuracy, zero-shot retention, and the negative-transfer rate with vs.\ without gating. Hypotheses are tested with Wilcoxon signed-rank tests across subjects with Holm--Bonferroni correction.
+
+% ============================================================
+\section{Preliminary Results}
+\label{sec:results}
+
+Table~\ref{tab:pilot} reports a pilot on two EEGMMI subjects (5-fold CV, budget ${\sim}30$ evaluations; H1--H3 notation as above). Cold-start decomposed CASH already improves substantially over the fixed standard pipeline (S001: 0.775 vs.\ 0.555; S002: 0.915 vs.\ 0.635), confirming that the ``standard'' configuration is far from subject-optimal. Warm-starting S002's search with S001-derived knowledge raised best-in-budget balanced accuracy to 0.950 and reached the cold-start optimum in roughly half the evaluations, while zero-shot application of the transferred configuration---no target-subject search at all---retained 0.765, recovering approximately 41\% of the searched improvement over the baseline. These pilot numbers motivate but do not yet establish H1--H2; the full 109-subject protocol with seeded controls (H3) is ongoing.
+
+\begin{table}[t]
+\caption{Pilot results on PhysioNet EEGMMI (balanced accuracy, 5-fold CV).}
+\label{tab:pilot}
+\centering
+\begin{tabular}{lcccc}
+\toprule
+Subject & Baseline & Cold-start & Warm-start & Zero-shot \\
+\midrule
+S001 & 0.555 & 0.775 & --- & --- \\
+S002 & 0.635 & 0.915 & \textbf{0.950} & 0.765 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+\section{Conclusion and Future Work}
+\label{sec:conclusion}
+
+We formulated subject-specific EEG MI pipeline design as a transfer-CASH problem, proposed a dual knowledge-injection framework with similarity gating, and specified a deflation-proof evaluation protocol. Pilot results indicate that cross-subject knowledge substantially accelerates per-subject pipeline search and that zero-shot configuration transfer is a viable low-cost operating point. Ongoing work scales the protocol to 109 subjects, adds the LLM-prior arm under fixed prompts, and releases the per-subject search histories as a realistic transfer-HPO benchmark for the AutoML community \cite{EggenspergerEtAl2021}.
+
+% TODO: add acknowledgment / funding footnote if applicable
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

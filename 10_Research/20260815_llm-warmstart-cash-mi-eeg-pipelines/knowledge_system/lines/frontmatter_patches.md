@@ -1,0 +1,53 @@
+# Frontmatter Patches (Pass 2)
+> 因果 / 層級 / 依賴關係的欄位補丁。promote 時套用到對應 Point 卡。
+> 標 [paper-level] 者：端點論文沒有對應概念卡，promote 時人工決定歸屬或忽略。
+> 標 [evolution/debate/analogy] 者：已由 4 張獨立 Line 卡涵蓋主軸，此處保留 canvas 證據供對照。
+
+- [debate] P_draft_Backbone_Capacity_Threshold <-> P_draft_LLAMBO  (canvas: RychertEtAl2025 -> LiuEtAl2024 | "reproduces: LLAMBO claims with open-weight Llama 3.1 70B")  <!-- context for standalone line cards -->
+- [debate] P_draft_Budget_Matched_Protocol <-> P_draft_LLAMBO  (canvas: RodriguesEtAl2026 -> LiuEtAl2024 | "audits: isolates default-seed control from LLM warm-start claim")  <!-- context for standalone line cards -->
+- `P_draft_Budget_Matched_Protocol` <- `depends_on`: `[P_draft_MI_SMAC]`  (canvas: RodriguesEtAl2026 -> FeurerEtAl2015 | "recommends: cheap meta-learned initialization over LLM advisor")
+- [debate] P_draft_Budget_Matched_Protocol <-> MahammadliErtekin2024  (canvas: RodriguesEtAl2026 -> MahammadliErtekin2024 | "audits: budget-matched test of SLLMBO-style advisor loops")  <!-- context for standalone line cards -->
+- [debate] SrinivasanMenzies2026 <-> P_draft_Budget_Matched_Protocol  (canvas: SrinivasanMenzies2026 -> RodriguesEtAl2026 | "corroborates: LLM advantage vanishes beyond low dimensionality")  <!-- context for standalone line cards -->
+- [debate] LeiCooper2026 <-> P_draft_LLAMBO  (canvas: LeiCooper2026 -> LiuEtAl2024 | "analyzes: prompt/protocol sensitivity of LLM surrogate beliefs")  <!-- context for standalone line cards -->
+- [paper-level depends_on] LiEtAl2016 -> FalknerEtAl2018  (canvas: LiEtAl2016 -> FalknerEtAl2018 | "Hyperband is the bandit backbone BOHB hybridizes with TPE")  <!-- endpoints lack concept cards; review at promote -->
+- [paper-level depends_on] ZelaEtAl2018 -> FalknerEtAl2018  (canvas: ZelaEtAl2018 -> FalknerEtAl2018 | "applies BOHB to joint NAS+HPO search")  <!-- endpoints lack concept cards; review at promote -->
+- [paper-level depends_on] BerdyshevEtAl2024 -> SchirrmeisterEtAl2017  (canvas: BerdyshevEtAl2024 -> SchirrmeisterEtAl2017 | "uses Braindecode tooling and ConvNet baselines from this work")  <!-- endpoints lack concept cards; review at promote -->
+- [paper-level depends_on] DingEtAl2024 -> HuangEtAl2025  (canvas: DingEtAl2024 -> HuangEtAl2025 | "architecture-level priors versus pretrained per-subject adaptation mod")  <!-- endpoints lack concept cards; review at promote -->
+- [evolution] MahammadliErtekin2024 <-> P_draft_LLAMBO  (canvas: MahammadliErtekin2024 -> LiuEtAl2024 | "extends: multi-LLM benchmark, hybridizes LLM with TPE")  <!-- context for standalone line cards -->
+- [evolution] XuEtAl2026b <-> P_draft_LLAMBO  (canvas: XuEtAl2026b -> LiuEtAl2024 | "extends: LLM semantic priors to structured CASH trees")  <!-- context for standalone line cards -->
+- [evolution] ChenYi2026 <-> P_draft_PiBO  (canvas: ChenYi2026 -> HvarfnerEtAl2022 | "extends: robust prior weighting to fallible multi-objective LLM expert")  <!-- context for standalone line cards -->
+- [evolution] YuanEtAl2026 <-> P_draft_LLAMBO  (canvas: YuanEtAl2026 -> LiuEtAl2024 | "extends: warm-start-only use to per-iteration preference injection")  <!-- context for standalone line cards -->
+- [evolution] MenetEtAl2025 <-> KristiadiEtAl2024  (canvas: MenetEtAl2025 -> KristiadiEtAl2024 | "extends: principled LLM posterior via fine-tuned Thompson sampling")  <!-- context for standalone line cards -->
+- [evolution] ChenEtAl2025a <-> P_draft_LLAMBO  (canvas: ChenEtAl2025a -> LiuEtAl2024 | "extends: dual-agent warm-start plus natural-language refinement")  <!-- context for standalone line cards -->
+- [evolution] SaadallahEtAl2026 <-> P_draft_LLAMBO  (canvas: SaadallahEtAl2026 -> LiuEtAl2024 | "extends: structured meta-knowledge prompts with BO cold-start init")  <!-- context for standalone line cards -->
+- [evolution] P_draft_MI_SMAC <-> P_draft_SMAC  (canvas: FeurerEtAl2015 -> LindauerEtAl2021 | "meta-learned initialization adopted into SMAC lineage")  <!-- context for standalone line cards -->
+- [evolution] PerroneEtAl2019 <-> LiEtAl2022d  (canvas: PerroneEtAl2019 -> LiEtAl2022d | "geometric space transfer generalized by GPC voting")  <!-- context for standalone line cards -->
+- [evolution] HuEtAl2019 <-> P_draft_Rising_Bandits  (canvas: HuEtAl2019 -> LiEtAl2020a | "cascaded bandit algorithm selection precursor to Rising Bandits")  <!-- context for standalone line cards -->
+- [evolution] LiuEtAl2019 <-> P_draft_Search_Space_Decomposition  (canvas: LiuEtAl2019 -> LiEtAl2021b | "ADMM decomposition generalized by VolcanoML's building-block plans")  <!-- context for standalone line cards -->
+- [evolution] BirdLotfi2023 <-> BirdEtAl2020  (canvas: BirdLotfi2023 -> BirdEtAl2020 | "same hyperheuristic evolutionary optimisation lineage")  <!-- context for standalone line cards -->
+- [evolution] BirdEtAl2020 <-> P_draft_EEG_Reptile  (canvas: BirdEtAl2020 -> BerdyshevEtAl2024 | "weight-level warm-start precursor to meta-learned EEG initialization")  <!-- context for standalone line cards -->
+- `P_draft_CoFEH` <- `depends_on`: `[P_draft_SMAC]`  (canvas: XuEtAl2026a -> LindauerEtAl2021 | "builds on: SMAC as FE-conditioned HPO module")
+- [paper-level depends_on] KristiadiEtAl2024 -> LiuEtAl2024  (canvas: KristiadiEtAl2024 -> LiuEtAl2024 | "tempers: LLM-BO usefulness requires domain pretraining/finetuning")  <!-- endpoints lack concept cards; review at promote -->
+- [paper-level depends_on] HollmannEtAl2025 -> BalefEggensperger2025  (canvas: HollmannEtAl2025 -> BalefEggensperger2025 | "PS-PFN builds on prior-data fitted networks")  <!-- endpoints lack concept cards; review at promote -->
+- [paper-level depends_on] GijsbersEtAl2021 -> HollmannEtAl2025  (canvas: GijsbersEtAl2021 -> HollmannEtAl2025 | "zero-shot data-dependent configuration to foundation models")  <!-- endpoints lack concept cards; review at promote -->
+- [debate] P_draft_CoFEH <-> P_draft_Search_Space_Decomposition  (canvas: XuEtAl2026a -> LiEtAl2021b | "contrasts: interleaved LLM-FE+BO vs unified-space CASH systems")  <!-- context for standalone line cards -->
+- [debate] GuptaEtAl2025 <-> P_draft_LLAMBO  (canvas: GuptaEtAl2025 -> LiuEtAl2024 | "challenges: LLM in-context sensitivity to experimental feedback")  <!-- context for standalone line cards -->
+- [debate] HuEtAl2025 <-> ZhaoEtAl2025  (canvas: HuEtAl2025 -> ZhaoEtAl2025 | "complements: cross-domain LLM NAS vs energy-aware NAS benchmarking")  <!-- context for standalone line cards -->
+- [debate] OlsonMoore2019 <-> EricksonEtAl2020  (canvas: OlsonMoore2019 -> EricksonEtAl2020 | "TPOT baseline outperformed by CASH-free stack ensembling")  <!-- context for standalone line cards -->
+- [debate] GuyonEtAl2019 <-> P_draft_Anytime_Performance  (canvas: GuyonEtAl2019 -> GijsbersEtAl2019 | "challenge protocols inform open benchmark design")  <!-- context for standalone line cards -->
+- [debate] BakerEtAl2016 <-> RealEtAl2019  (canvas: BakerEtAl2016 -> RealEtAl2019 | "RL-based NAS baseline that regularized evolution outperforms")  <!-- context for standalone line cards -->
+- [debate] ZhuEtAl2025 <-> WangEtAl2026  (canvas: ZhuEtAl2025 -> WangEtAl2026 | "differentiable vs multi-path NAS, both on BCI Competition IV MI")  <!-- context for standalone line cards -->
+- [debate] LiEtAl2025d <-> ZhuEtAl2025  (canvas: LiEtAl2025d -> ZhuEtAl2025 | "search-cost reduction: training-free proxies vs differentiable relaxat")  <!-- context for standalone line cards -->
+- [debate] NakisaEtAl2018 <-> LeonEtAl2020  (canvas: NakisaEtAl2018 -> LeonEtAl2020 | "evolutionary HPO of neural EEG classifiers (DE vs GA)")  <!-- context for standalone line cards -->
+- [debate] NakisaEtAl2018 <-> P_draft_Search_Space_Decomposition  (canvas: NakisaEtAl2018 -> LiEtAl2021b | "TPE/BO only a beaten baseline vs BO-centric CASH systems")  <!-- context for standalone line cards -->
+- [debate] WangEtAl2026 <-> P_draft_EEG_Reptile  (canvas: WangEtAl2026 -> BerdyshevEtAl2024 | "per-subject adaptation via NAS vs via meta-learning")  <!-- context for standalone line cards -->
+- [debate] WuEtAl2022 <-> P_draft_EEG_Reptile  (canvas: WuEtAl2022 -> BerdyshevEtAl2024 | "plain transfer-learning baseline that EEG-Reptile significantly outper")  <!-- context for standalone line cards -->
+- [debate] WeiEtAl2023 <-> P_draft_Zero_Shot_Configuration_Transfer  (canvas: WeiEtAl2023 -> AnarakiEtAl2024 | "both transfer configurations (channels vs classifier choice) across su")  <!-- context for standalone line cards -->
+- [debate] P_draft_ChatBCI <-> P_draft_EEG_Reptile  (canvas: KapitonovaBall2024 -> BerdyshevEtAl2024 | "rival automation routes: LLM-generated decoders vs automated meta-lear")  <!-- context for standalone line cards -->
+- [analogy] TopalisEtAl2025 <-> P_draft_PiBO  (canvas: TopalisEtAl2025 -> HvarfnerEtAl2022 | "parallels: piBO prior injection with LLM+RAG-elicited Dirichlet priors")  <!-- context for standalone line cards -->
+- [analogy] WistubaGrabocka2021 <-> P_draft_EEG_Reptile  (canvas: WistubaGrabocka2021 -> BerdyshevEtAl2024 | "few-shot meta-learned adaptation parallels EEG-Reptile")  <!-- context for standalone line cards -->
+- [analogy] MirandaEtAl2022 <-> P_draft_Search_Space_Decomposition  (canvas: MirandaEtAl2022 -> LiEtAl2021b | "GP pipeline AutoML on EEG parallels decomposed CASH search")  <!-- context for standalone line cards -->
+- [analogy] P_draft_EEG_Reptile <-> P_draft_MI_SMAC  (canvas: BerdyshevEtAl2024 -> FeurerEtAl2015 | "meta-learned weight initialization parallels meta-feature configuratio")  <!-- context for standalone line cards -->
+- [analogy] P_draft_Zero_Shot_Configuration_Transfer <-> P_draft_MI_SMAC  (canvas: AnarakiEtAl2024 -> FeurerEtAl2015 | "per-subject classifier prediction mirrors meta-feature warm-start of C")  <!-- context for standalone line cards -->
+- [paper-level caused_by] XuEtAl2025a -> LiuEtAl2024  (canvas: XuEtAl2025a -> LiuEtAl2024 | "fixes: repetition/self-reinforcement of ICL candidate generation")  <!-- endpoints lack concept cards; review at promote -->
+- [paper-level caused_by] LiEtAl2025a -> LiEtAl2021b  (canvas: LiEtAl2025a -> LiEtAl2021b | "fixed low-code EEG pipelines vs automated CASH search")  <!-- endpoints lack concept cards; review at promote -->

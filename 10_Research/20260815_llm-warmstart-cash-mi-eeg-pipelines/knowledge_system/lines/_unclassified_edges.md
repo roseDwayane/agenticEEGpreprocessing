@@ -1,0 +1,55 @@
+# Unclassified edges — 需人工標註
+
+- ChenEtAl2025b -> KristiadiEtAl2024 | responds: likelihood-free acquisition avoids deep Bayesian surrogate cost
+- KobalczykEtAl2025 -> LiuEtAl2024 | repositions: LLM as feedback translator, not the optimizer
+- Kannan2023 -> LiuEtAl2024 | anticipates: LLM warm-start and search-space narrowing for BO
+- FeurerEtAl2015 -> NomuraEtAl2021 | meta-feature init contrasted with KL-based warm start
+- HvarfnerEtAl2022 -> LindauerEtAl2021 | piBO shipped inside SMAC3
+- HvarfnerEtAl2022 -> LiuEtAl2024 | prior-injection channel usable by LLM-elicited priors
+- RijnHutter2017 -> HvarfnerEtAl2022 | fANOVA-derived priors supply piBO-style beliefs
+- LiEtAl2022d -> WangEtAl2024 | static space transfer extended by adaptive MCTS
+- LiEtAl2022c -> LiEtAl2021a | surrogate-transfer weighting powers OpenBox service
+- LiEtAl2021a -> LiEtAl2021b | sister PKU system; VolcanoML shares transfer infrastructure
+- WistubaGrabocka2021 -> ArangoEtAl2021 | FSBO ranked best transfer method on HPO-B
+- ChenEtAl2022 -> LiuEtAl2024 | text-based transformer HPO anticipates LLM-driven BO
+- ChenEtAl2022 -> BalefEggensperger2025 | in-context optimization via pretrained sequence models
+- BalefEtAl2025 -> LindauerEtAl2021 | SMAC used as lower-level HPO under MaxUCB
+- BalefEtAl2025 -> LiEtAl2021b | bandit decomposition rivals joint CASH search systems
+- BaiEtAl2023 -> FeurerEtAl2015 | canonical initial-points-design exemplar in taxonomy
+- HvarfnerEtAl2026 -> BaiEtAl2023 | shows surrogate-transfer category structurally fragile
+- PfistererEtAl2018 -> GijsbersEtAl2021 | static default sets extended to symbolic defaults
+- Vanschoren2019 -> FeurerEtAl2015 | survey canonizes warm-start initialization practice
+- NguyenEtAl2024 -> BalefEtAl2025 | budget-limited selection: MDP versus extreme-bandit framing
+- Chakrabarty2022 -> WistubaGrabocka2021 | meta-learned initial surrogates echo few-shot BO
+- LiEtAl2024 -> FeurerEtAl2015 | portfolio initial design echoes MI-SMBO
+- BasgaluppEtAl2020 -> OlsonEtAl2016 | EA-based AutoML comparison alongside TPOT
+- OlsonEtAl2016 -> LiEtAl2021b | EA pipeline search baseline for VolcanoML-class systems
+- RuedenEtAl2021 -> HvarfnerEtAl2022 | informed-ML taxonomy frames user-belief injection
+- BossekEtAl2020 -> FeurerEtAl2015 | initial-design sensitivity motivates learned initialization
+- KotthoffEtAl2019 -> FeurerEtAl2015 | CASH formulation adopted and meta-learning-warm-started by auto-sklearn
+- LiEtAl2016 -> FeurerEtAl2015 | conclusion proposes meta-learned priors to replace random sampling
+- KleinEtAl2016 -> FalknerEtAl2018 | Fabolas dataset-size fidelity compared against BOHB on SVM surrogates
+- FalknerEtAl2018 -> LiEtAl2020b | BOHB's low-fidelity handling improved by MFES-HB ensemble surrogates
+- LiEtAl2020b -> LiEtAl2022b | MFES-HB deployed as optimizer inside distributed Hyper-Tune
+- LiEtAl2020a -> LiEtAl2021b | Rising Bandits become VolcanoML's conditioning-block bandit (RB-ES)
+- LiEtAl2021b -> LiEtAl2022a | journal extension adds RGPE/RankNet meta-learning and plan search
+- LiEtAl2022a -> LiuEtAl2024 | history-based RGPE transfer is the baseline LLM warm-starting (LLAMBO) targets
+- YangEtAl2018 -> FeurerEtAl2015 | replaces meta-feature warm-start with collaborative-filtering cold-start
+- DaningEtAl2018 -> HvarfnerEtAl2022 | hand-built meta-acquisition priors anticipate principled prior injection in piBO
+- ShenEtAl2023 -> LiEtAl2021b | searches VolcanoML's 100-HP space and beats its RB-ES ensemble strategy
+- XuEtAl2025b -> ShenEtAl2023 | optimizes the post-hoc stacking stage DivBO's search feeds
+- EricksonEtAl2020 -> GijsbersEtAl2019 | evaluated on the OpenML AutoML Benchmark dataset suite
+- EggenspergerEtAl2015 -> EggenspergerEtAl2021 | surrogate benchmarking scaled into containerized HPOBench
+- KleinEtAl2019 -> EggenspergerEtAl2021 | generative meta-surrogates complement tabular/surrogate HPOBench problems
+- EggenspergerEtAl2021 -> LindauerEtAl2021 | HPOBench problems used to validate SMAC3 multi-fidelity facade
+- BischlEtAl2021 -> BischlEtAl2023 | arXiv preprint later published as journal survey
+- JinEtAl2019 -> AvvalEtAl2025 | morphism-guided BO NAS surveyed in systematic NAS review
+- ZollerHuber2019 -> GijsbersEtAl2019 | endorses the open benchmark as the promising path to comparability
+- ThomasEtAl2018 -> GijsbersEtAl2019 | autoxgboost flagged for future benchmark inclusion
+- CraikEtAl2019 -> WangEtAl2026 | manual architecture guidelines that per-subject NAS automates
+- DuanEtAl2023 -> WangEtAl2026 | per-subject NAS extended with filter-bank frequency cells
+- MirandaEtAl2022 -> BirdLotfi2023 | GP pipeline search applied to EEG classification
+- ZhangEtAl2024 -> LiEtAl2021b | cold-start per-dataset hyperparameter search that scalable CASH systems target
+- CooneyEtAl2020 -> ZhangEtAl2024 | both show tuned hyperparameters beat defaults on EEG tasks
+- AristimunhaEtAl2025 -> HuangEtAl2025 | formalizes the zero-shot cross-subject goal NEED claims to achieve
+- SchirrmeisterEtAl2017 -> KapitonovaBall2024 | provides BCI IV 2a preprocessing context ChatBCI re-examines

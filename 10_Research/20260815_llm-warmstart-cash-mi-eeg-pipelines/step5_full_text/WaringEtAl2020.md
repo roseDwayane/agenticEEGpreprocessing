@@ -1,0 +1,25 @@
+---
+citation_key: "WaringEtAl2020"
+title: "Automated machine learning: Review of the state-of-the-art and opportunities for healthcare"
+authors: "Jonathan Waring; Charlotta Lindvall; Renato Umeton"
+year: 2020
+doi: "10.1016/j.artmed.2020.101822"
+source: "abstract-only"
+access_level: "abstract-only"
+retrieved_date: "2026-08-15"
+---
+
+# Automated machine learning: Review of the state-of-the-art and opportunities for healthcare
+
+**Authors**: Jonathan Waring, Charlotta Lindvall, Renato Umeton
+**Year**: 2020
+**DOI**: 10.1016/j.artmed.2020.101822
+
+> **Note / 備註**: Not in the full-text priority set (top-composite + manually included); fetch on demand. Try institutional access: https://doi.org/10.1016/j.artmed.2020.101822
+> 全文未能以自動化開放管道取得，請嘗試機構存取。
+
+---
+
+## Abstract
+
+OBJECTIVE: This work aims to provide a review of the existing literature in the field of automated machine learning (AutoML) to help healthcare professionals better utilize machine learning models "off-the-shelf" with limited data science expertise. We also identify the potential opportunities and barriers to using AutoML in healthcare, as well as existing applications of AutoML in healthcare. METHODS: Published papers, accompanied with code, describing work in the field of AutoML from both a computer science perspective or a biomedical informatics perspective were reviewed. We also provide a short summary of a series of AutoML challenges hosted by ChaLearn. RESULTS: A review of 101 papers in the field of AutoML revealed that these automated techniques can match or improve upon expert human performance in certain machine learning tasks, often in a shorter amount of time. The main limitation of AutoML at this point is the ability to get these systems to work efficiently on a large scale, i.e. beyond small- and medium-size retrospective datasets. DISCUSSION: The utilization of machine learning techniques has the demonstrated potential to improve health outcomes, cut healthcare costs, and advance clinical research. However, most hospitals are not currently deploying machine learning solutions. One reason for this is that health care professionals often lack the machine learning expertise that is necessary to build a successful model, deploy it in production, and integrate it with the clinical workflow. In order to make machine learning techniques easier to apply and to reduce the demand for human experts, automated machine learning (AutoML) has emerged as a growing field that seeks to automatically select, compose, and parametrize machine learning models, so as to achieve optimal performance on a given task and/or dataset. CONCLUSION: While there have already been some use cases of AutoML in the healthcare field, more work needs to be done in order for there to be widespread adoption of AutoML in healthcare.

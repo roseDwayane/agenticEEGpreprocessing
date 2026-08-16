@@ -1,0 +1,2109 @@
+{
+ "nodes": [
+  {
+   "id": "overview",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step6_sota_review.md",
+   "x": 1400,
+   "y": -300,
+   "width": 450,
+   "height": 100,
+   "color": "6"
+  },
+  {
+   "id": "theme-T1",
+   "type": "group",
+   "x": 0,
+   "y": 0,
+   "width": 420,
+   "height": 2658,
+   "label": "T1 LLMs as Optimizers & Prior Injectors / LLM 最佳化器與先驗注入"
+  },
+  {
+   "id": "LiuEtAl2024",
+   "x": 50,
+   "y": 80,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/LiuEtAl2024.md"
+  },
+  {
+   "id": "RodriguesEtAl2026",
+   "x": 50,
+   "y": 178,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/RodriguesEtAl2026.md"
+  },
+  {
+   "id": "RychertEtAl2025",
+   "x": 50,
+   "y": 276,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/RychertEtAl2025.md"
+  },
+  {
+   "id": "XuEtAl2026a",
+   "x": 50,
+   "y": 374,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/XuEtAl2026a.md"
+  },
+  {
+   "id": "HuEtAl2025",
+   "x": 50,
+   "y": 472,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/HuEtAl2025.md"
+  },
+  {
+   "id": "MahammadliErtekin2024",
+   "x": 50,
+   "y": 570,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "text",
+   "text": "**MahammadliErtekin2024**\nSequential Large Language Model-Based Hyper-parameter Optimization (2024)"
+  },
+  {
+   "id": "ChenYi2026",
+   "x": 50,
+   "y": 668,
+   "width": 320,
+   "height": 70,
+   "color": "6",
+   "type": "text",
+   "text": "**ChenYi2026**\nEvidence-Gated LLM Priors for Multi-Objective Bayesian Optimization (2026)"
+  },
+  {
+   "id": "GuptaEtAl2025",
+   "x": 50,
+   "y": 766,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "text",
+   "text": "**GuptaEtAl2025**\nLLMs for Bayesian Optimization in Scientific Domains: Are We There Yet (2025)"
+  },
+  {
+   "id": "ZhaoEtAl2025",
+   "x": 50,
+   "y": 864,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "text",
+   "text": "**ZhaoEtAl2025**\nEA-HAS-Bench and Language-Enhanced Shrinkage Search for Energy-Aware N (2025)"
+  },
+  {
+   "id": "XuEtAl2026b",
+   "x": 50,
+   "y": 962,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "text",
+   "text": "**XuEtAl2026b**\nTree-Structured Synergy of Large Language Models and Bayesian Optimiza (2026)"
+  },
+  {
+   "id": "TopalisEtAl2025",
+   "x": 50,
+   "y": 1060,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "text",
+   "text": "**TopalisEtAl2025**\nLangBO: A Framework for Language-Guided Prior Integration in Bayesian  (2025)"
+  },
+  {
+   "id": "Bal-GhaouiTiouti2025",
+   "x": 50,
+   "y": 1158,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "text",
+   "text": "**Bal-GhaouiTiouti2025**\nMetaLLMix : An XAI Aided LLM-Meta-learning Based Approach for Hyper-pa (2025)"
+  },
+  {
+   "id": "YuanEtAl2026",
+   "x": 50,
+   "y": 1256,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "text",
+   "text": "**YuanEtAl2026**\nUnleashing LLMs in Bayesian Optimization: Preference-Guided Framework  (2026)"
+  },
+  {
+   "id": "ChenEtAl2025a",
+   "x": 50,
+   "y": 1354,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "text",
+   "text": "**ChenEtAl2025a**\nHALO: Hyperparameter Auto-tuning via LLM Optimizer for Rapid, Interpre (2025)"
+  },
+  {
+   "id": "LiEtAl2025c",
+   "x": 50,
+   "y": 1452,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**LiEtAl2025c**\nLLaMEA-BO: A Large Language Model Evolutionary Algorithm for Automatic (2025)"
+  },
+  {
+   "id": "PatelEtAl2025",
+   "x": 50,
+   "y": 1550,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/PatelEtAl2025.md"
+  },
+  {
+   "id": "KristiadiEtAl2024",
+   "x": 50,
+   "y": 1648,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/KristiadiEtAl2024.md"
+  },
+  {
+   "id": "SaadallahEtAl2026",
+   "x": 50,
+   "y": 1746,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "text",
+   "text": "**SaadallahEtAl2026**\nA Meta-Knowledge-Augmented LLM Framework for Hyperparameter Optimizati (2026)"
+  },
+  {
+   "id": "XuEtAl2025a",
+   "x": 50,
+   "y": 1844,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/XuEtAl2025a.md"
+  },
+  {
+   "id": "KobalczykEtAl2025",
+   "x": 50,
+   "y": 1942,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "text",
+   "text": "**KobalczykEtAl2025**\nLILO: Bayesian Optimization with Natural Language Feedback (2025)"
+  },
+  {
+   "id": "MenetEtAl2025",
+   "x": 50,
+   "y": 2040,
+   "width": 320,
+   "height": 70,
+   "color": "6",
+   "type": "text",
+   "text": "**MenetEtAl2025**\nThompson Sampling via Fine-Tuning of LLMs (2025)"
+  },
+  {
+   "id": "LeiCooper2026",
+   "x": 50,
+   "y": 2138,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "text",
+   "text": "**LeiCooper2026**\nElicitation Matters: How Prompts and Query Protocols Shape LLM Surroga (2026)"
+  },
+  {
+   "id": "SrinivasanMenzies2026",
+   "x": 50,
+   "y": 2236,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "text",
+   "text": "**SrinivasanMenzies2026**\nBeyond the Prompt: Assessing Domain Knowledge Strategies for High-Dime (2026)"
+  },
+  {
+   "id": "ChenEtAl2025b",
+   "x": 50,
+   "y": 2334,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "text",
+   "text": "**ChenEtAl2025b**\nInforming Acquisition Functions via Foundation Models for Molecular Di (2025)"
+  },
+  {
+   "id": "Kannan2023",
+   "x": 50,
+   "y": 2432,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/Kannan2023.md"
+  },
+  {
+   "id": "WangEtAl2025",
+   "x": 50,
+   "y": 2530,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/WangEtAl2025.md"
+  },
+  {
+   "id": "theme-T2",
+   "type": "group",
+   "x": 900,
+   "y": 0,
+   "width": 420,
+   "height": 2854,
+   "label": "T2 Warm-Starting & Transfer for BO / BO 暖啟動與遷移"
+  },
+  {
+   "id": "FeurerEtAl2015",
+   "x": 950,
+   "y": 80,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/FeurerEtAl2015.md"
+  },
+  {
+   "id": "OlsonEtAl2016",
+   "x": 950,
+   "y": 178,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "text",
+   "text": "**OlsonEtAl2016**\nEvaluation of a Tree-based Pipeline Optimization Tool for Automating D (2016)"
+  },
+  {
+   "id": "HvarfnerEtAl2022",
+   "x": 950,
+   "y": 276,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/HvarfnerEtAl2022.md"
+  },
+  {
+   "id": "BaiEtAl2023",
+   "x": 950,
+   "y": 374,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/BaiEtAl2023.md"
+  },
+  {
+   "id": "ChenEtAl2022",
+   "x": 950,
+   "y": 472,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/ChenEtAl2022.md"
+  },
+  {
+   "id": "LiEtAl2021a",
+   "x": 950,
+   "y": 570,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/LiEtAl2021a.md"
+  },
+  {
+   "id": "RijnHutter2017",
+   "x": 950,
+   "y": 668,
+   "width": 320,
+   "height": 70,
+   "color": "4",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/RijnHutter2017.md"
+  },
+  {
+   "id": "WistubaGrabocka2021",
+   "x": 950,
+   "y": 766,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/WistubaGrabocka2021.md"
+  },
+  {
+   "id": "ArangoEtAl2021",
+   "x": 950,
+   "y": 864,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/ArangoEtAl2021.md"
+  },
+  {
+   "id": "NomuraEtAl2021",
+   "x": 950,
+   "y": 962,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/NomuraEtAl2021.md"
+  },
+  {
+   "id": "BalefEtAl2025",
+   "x": 950,
+   "y": 1060,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/BalefEtAl2025.md"
+  },
+  {
+   "id": "LiEtAl2022c",
+   "x": 950,
+   "y": 1158,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/LiEtAl2022c.md"
+  },
+  {
+   "id": "LiEtAl2022d",
+   "x": 950,
+   "y": 1256,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/LiEtAl2022d.md"
+  },
+  {
+   "id": "Vanschoren2019",
+   "x": 950,
+   "y": 1354,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "text",
+   "text": "**Vanschoren2019**\nMeta-Learning (2019)"
+  },
+  {
+   "id": "BalefEggensperger2025",
+   "x": 950,
+   "y": 1452,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**BalefEggensperger2025**\nIn-Context Decision Making for Optimizing Complex AutoML Pipelines (2025)"
+  },
+  {
+   "id": "PerroneEtAl2019",
+   "x": 950,
+   "y": 1550,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/PerroneEtAl2019.md"
+  },
+  {
+   "id": "HvarfnerEtAl2026",
+   "x": 950,
+   "y": 1648,
+   "width": 320,
+   "height": 70,
+   "color": "6",
+   "type": "text",
+   "text": "**HvarfnerEtAl2026**\nPitfalls and Remedies for Multi-Task Bayesian Optimization (2026)"
+  },
+  {
+   "id": "Garouani2025",
+   "x": 950,
+   "y": 1746,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "text",
+   "text": "**Garouani2025**\nAn experimental survey and Perspective View on Meta-Learning for Autom (2025)"
+  },
+  {
+   "id": "GijsbersEtAl2021",
+   "x": 950,
+   "y": 1844,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**GijsbersEtAl2021**\nMeta-learning for symbolic hyperparameter defaults (2021)"
+  },
+  {
+   "id": "PfistererEtAl2018",
+   "x": 950,
+   "y": 1942,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**PfistererEtAl2018**\nLearning multiple defaults for machine learning algorithms (2018)"
+  },
+  {
+   "id": "HollmannEtAl2025",
+   "x": 950,
+   "y": 2040,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/HollmannEtAl2025.md"
+  },
+  {
+   "id": "BasgaluppEtAl2020",
+   "x": 950,
+   "y": 2138,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/BasgaluppEtAl2020.md"
+  },
+  {
+   "id": "LiEtAl2024",
+   "x": 950,
+   "y": 2236,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "text",
+   "text": "**LiEtAl2024**\nEfficient Automatic Tuning for Data-driven Model Predictive Control vi (2024)"
+  },
+  {
+   "id": "WangEtAl2024",
+   "x": 950,
+   "y": 2334,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**WangEtAl2024**\nMonte Carlo Tree Search based Space Transfer for Black-box Optimizatio (2024)"
+  },
+  {
+   "id": "Chakrabarty2022",
+   "x": 950,
+   "y": 2432,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**Chakrabarty2022**\nOptimizing Closed-Loop Performance with Data from Similar Systems: A B (2022)"
+  },
+  {
+   "id": "NguyenEtAl2024",
+   "x": 950,
+   "y": 2530,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**NguyenEtAl2024**\nMeta-Learning from Learning Curves for Budget-Limited Algorithm Select (2024)"
+  },
+  {
+   "id": "RuedenEtAl2021",
+   "x": 950,
+   "y": 2628,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/RuedenEtAl2021.md"
+  },
+  {
+   "id": "BossekEtAl2020",
+   "x": 950,
+   "y": 2726,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/BossekEtAl2020.md"
+  },
+  {
+   "id": "theme-T3",
+   "type": "group",
+   "x": 1800,
+   "y": 0,
+   "width": 790,
+   "height": 2462,
+   "label": "T3 CASH, AutoML Systems & Benchmarks / CASH 系統與基準"
+  },
+  {
+   "id": "KotthoffEtAl2019",
+   "x": 1850,
+   "y": 80,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "text",
+   "text": "**KotthoffEtAl2019**\nAuto-WEKA: Automatic Model Selection and Hyperparameter Optimization i (2019)"
+  },
+  {
+   "id": "LiEtAl2016",
+   "x": 2220,
+   "y": 80,
+   "width": 320,
+   "height": 70,
+   "color": "6",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/LiEtAl2016.md"
+  },
+  {
+   "id": "BischlEtAl2023",
+   "x": 1850,
+   "y": 178,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/BischlEtAl2023.md"
+  },
+  {
+   "id": "LiEtAl2021b",
+   "x": 2220,
+   "y": 178,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/LiEtAl2021b.md"
+  },
+  {
+   "id": "ZollerHuber2019",
+   "x": 1850,
+   "y": 276,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/ZollerHuber2019.md"
+  },
+  {
+   "id": "EggenspergerEtAl2021",
+   "x": 2220,
+   "y": 276,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/EggenspergerEtAl2021.md"
+  },
+  {
+   "id": "EricksonEtAl2020",
+   "x": 1850,
+   "y": 374,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/EricksonEtAl2020.md"
+  },
+  {
+   "id": "HutterEtAl2019",
+   "x": 2220,
+   "y": 374,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "text",
+   "text": "**HutterEtAl2019**\nAutomated Machine Learning (2019)"
+  },
+  {
+   "id": "BergstraEtAl2015",
+   "x": 1850,
+   "y": 472,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "text",
+   "text": "**BergstraEtAl2015**\nHyperopt: a Python library for model selection and hyperparameter opti (2015)"
+  },
+  {
+   "id": "OlsonMoore2019",
+   "x": 2220,
+   "y": 472,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "text",
+   "text": "**OlsonMoore2019**\nTPOT: A Tree-Based Pipeline Optimization Tool for Automating Machine L (2019)"
+  },
+  {
+   "id": "LiEtAl2022a",
+   "x": 1850,
+   "y": 570,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/LiEtAl2022a.md"
+  },
+  {
+   "id": "AkibaEtAl2019",
+   "x": 2220,
+   "y": 570,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/AkibaEtAl2019.md"
+  },
+  {
+   "id": "YangEtAl2018",
+   "x": 1850,
+   "y": 668,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/YangEtAl2018.md"
+  },
+  {
+   "id": "ShenEtAl2023",
+   "x": 2220,
+   "y": 668,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/ShenEtAl2023.md"
+  },
+  {
+   "id": "LiuEtAl2019",
+   "x": 1850,
+   "y": 766,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/LiuEtAl2019.md"
+  },
+  {
+   "id": "GijsbersEtAl2019",
+   "x": 2220,
+   "y": 766,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/GijsbersEtAl2019.md"
+  },
+  {
+   "id": "LiEtAl2020a",
+   "x": 1850,
+   "y": 864,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/LiEtAl2020a.md"
+  },
+  {
+   "id": "RealEtAl2019",
+   "x": 2220,
+   "y": 864,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/RealEtAl2019.md"
+  },
+  {
+   "id": "FalknerEtAl2018",
+   "x": 1850,
+   "y": 962,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/FalknerEtAl2018.md"
+  },
+  {
+   "id": "JinEtAl2019",
+   "x": 2220,
+   "y": 962,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/JinEtAl2019.md"
+  },
+  {
+   "id": "LindauerEtAl2021",
+   "x": 1850,
+   "y": 1060,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/LindauerEtAl2021.md"
+  },
+  {
+   "id": "AvvalEtAl2025",
+   "x": 2220,
+   "y": 1060,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "text",
+   "text": "**AvvalEtAl2025**\nSystematic review on neural architecture search (2025)"
+  },
+  {
+   "id": "TruongEtAl2019",
+   "x": 1850,
+   "y": 1158,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/TruongEtAl2019.md"
+  },
+  {
+   "id": "HuEtAl2019",
+   "x": 2220,
+   "y": 1158,
+   "width": 320,
+   "height": 70,
+   "color": "6",
+   "type": "text",
+   "text": "**HuEtAl2019**\nCascaded Algorithm-Selection and Hyper-Parameter Optimization with Ext (2019)"
+  },
+  {
+   "id": "BischlEtAl2021",
+   "x": 1850,
+   "y": 1256,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/BischlEtAl2021.md"
+  },
+  {
+   "id": "EggenspergerEtAl2015",
+   "x": 2220,
+   "y": 1256,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**EggenspergerEtAl2015**\nEfficient Benchmarking of Hyperparameter Optimizers via Surrogates (2015)"
+  },
+  {
+   "id": "GuyonEtAl2019",
+   "x": 1850,
+   "y": 1354,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/GuyonEtAl2019.md"
+  },
+  {
+   "id": "WeverEtAl2021",
+   "x": 2220,
+   "y": 1354,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**WeverEtAl2021**\nAutoML for Multi-Label Classification: Overview and Empirical Evaluati (2021)"
+  },
+  {
+   "id": "KleinEtAl2019",
+   "x": 1850,
+   "y": 1452,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**KleinEtAl2019**\nMeta-Surrogate Benchmarking for Hyperparameter Optimization (2019)"
+  },
+  {
+   "id": "Morales-HernandezEtAl2022",
+   "x": 2220,
+   "y": 1452,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "text",
+   "text": "**Morales-HernandezEtAl2022**\nA survey on multi-objective hyperparameter optimization algorithms for (2022)"
+  },
+  {
+   "id": "WaringEtAl2020",
+   "x": 1850,
+   "y": 1550,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "text",
+   "text": "**WaringEtAl2020**\nAutomated machine learning: Review of the state-of-the-art and opportu (2020)"
+  },
+  {
+   "id": "BarbudoEtAl2023",
+   "x": 2220,
+   "y": 1550,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "text",
+   "text": "**BarbudoEtAl2023**\nEight years of AutoML: categorisation, review and trends (2023)"
+  },
+  {
+   "id": "HeEtAl2019",
+   "x": 1850,
+   "y": 1648,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "text",
+   "text": "**HeEtAl2019**\nAutoML: A Survey of the State-of-the-Art (2019)"
+  },
+  {
+   "id": "KleinEtAl2016",
+   "x": 2220,
+   "y": 1648,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**KleinEtAl2016**\nFast Bayesian Optimization of Machine Learning Hyperparameters on Larg (2016)"
+  },
+  {
+   "id": "LiuEtAl2018",
+   "x": 1850,
+   "y": 1746,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**LiuEtAl2018**\nDARTS: Differentiable Architecture Search (2018)"
+  },
+  {
+   "id": "BakerEtAl2016",
+   "x": 2220,
+   "y": 1746,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**BakerEtAl2016**\nDesigning Neural Network Architectures using Reinforcement Learning (2016)"
+  },
+  {
+   "id": "ZelaEtAl2018",
+   "x": 1850,
+   "y": 1844,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**ZelaEtAl2018**\nTowards Automated Deep Learning: Efficient Joint Neural Architecture a (2018)"
+  },
+  {
+   "id": "VincentJidesh2023",
+   "x": 2220,
+   "y": 1844,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**VincentJidesh2023**\nAn improved hyperparameter optimization framework for AutoML systems u (2023)"
+  },
+  {
+   "id": "KarlEtAl2023",
+   "x": 1850,
+   "y": 1942,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/KarlEtAl2023.md"
+  },
+  {
+   "id": "LiEtAl2020b",
+   "x": 2220,
+   "y": 1942,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**LiEtAl2020b**\nMFES-HB: Efficient Hyperband with Multi-Fidelity Quality Measurements (2020)"
+  },
+  {
+   "id": "LiEtAl2022b",
+   "x": 1850,
+   "y": 2040,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "text",
+   "text": "**LiEtAl2022b**\nHyper-Tune: Towards Efficient Hyper-parameter Tuning at Scale (2022)"
+  },
+  {
+   "id": "ElshawiEtAl2019",
+   "x": 2220,
+   "y": 2040,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "text",
+   "text": "**ElshawiEtAl2019**\nAutomated Machine Learning: State-of-The-Art and Open Challenges (2019)"
+  },
+  {
+   "id": "LiEtAl2025b",
+   "x": 1850,
+   "y": 2138,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**LiEtAl2025b**\nCausal-aware Graph Neural Architecture Search under Distribution Shift (2025)"
+  },
+  {
+   "id": "XuEtAl2025b",
+   "x": 2220,
+   "y": 2138,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**XuEtAl2025b**\nPSEO: Optimizing Post-hoc Stacking Ensemble Through Hyperparameter Tun (2025)"
+  },
+  {
+   "id": "ThomasEtAl2018",
+   "x": 1850,
+   "y": 2236,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**ThomasEtAl2018**\nAutomatic Gradient Boosting (2018)"
+  },
+  {
+   "id": "ZhongEtAl2025",
+   "x": 2220,
+   "y": 2236,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**ZhongEtAl2025**\nDual-Level Cross-Modality Neural Architecture Search for Guided Image  (2025)"
+  },
+  {
+   "id": "ChenEtAl2023",
+   "x": 1850,
+   "y": 2334,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/ChenEtAl2023.md"
+  },
+  {
+   "id": "DaningEtAl2018",
+   "x": 2220,
+   "y": 2334,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/DaningEtAl2018.md"
+  },
+  {
+   "id": "theme-T4",
+   "type": "group",
+   "x": 0,
+   "y": 1600,
+   "width": 420,
+   "height": 1188,
+   "label": "T4 Automated EEG Pipeline Optimization / EEG 管線自動化"
+  },
+  {
+   "id": "WangEtAl2026",
+   "x": 50,
+   "y": 1680,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**WangEtAl2026**\nSubject-Adaptive EEG Decoding via Filter-Bank Neural Architecture Sear (2026)"
+  },
+  {
+   "id": "ZhuEtAl2025",
+   "x": 50,
+   "y": 1778,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/ZhuEtAl2025.md"
+  },
+  {
+   "id": "DuanEtAl2023",
+   "x": 50,
+   "y": 1876,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**DuanEtAl2023**\nCross task neural architecture search for EEG signal recognition (2023)"
+  },
+  {
+   "id": "LiEtAl2025d",
+   "x": 50,
+   "y": 1974,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**LiEtAl2025d**\nSpiking Spatiotemporal Neural Architecture Search for EEG-Based Emotio (2025)"
+  },
+  {
+   "id": "MirandaEtAl2022",
+   "x": 50,
+   "y": 2072,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**MirandaEtAl2022**\nGenetic Programming-based AutoML for EEG Signal Classification - A Com (2022)"
+  },
+  {
+   "id": "LiEtAl2025a",
+   "x": 50,
+   "y": 2170,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/LiEtAl2025a.md"
+  },
+  {
+   "id": "BirdLotfi2023",
+   "x": 50,
+   "y": 2268,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**BirdLotfi2023**\nFall compensation detection from EEG using neuroevolution and genetic  (2023)"
+  },
+  {
+   "id": "CraikEtAl2019",
+   "x": 50,
+   "y": 2366,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "text",
+   "text": "**CraikEtAl2019**\nDeep learning for electroencephalogram (EEG) classification tasks: a r (2019)"
+  },
+  {
+   "id": "BirdEtAl2020",
+   "x": 50,
+   "y": 2464,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "text",
+   "text": "**BirdEtAl2020**\nCross-Domain MLP and CNN Transfer Learning for Biological Signal Proce (2020)"
+  },
+  {
+   "id": "NakisaEtAl2018",
+   "x": 50,
+   "y": 2562,
+   "width": 320,
+   "height": 70,
+   "color": "1",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/NakisaEtAl2018.md"
+  },
+  {
+   "id": "LeonEtAl2020",
+   "x": 50,
+   "y": 2660,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/LeonEtAl2020.md"
+  },
+  {
+   "id": "theme-T5",
+   "type": "group",
+   "x": 900,
+   "y": 1600,
+   "width": 420,
+   "height": 1188,
+   "label": "T5 Cross-Subject EEG Adaptation / EEG 跨受試者調適"
+  },
+  {
+   "id": "CooneyEtAl2020",
+   "x": 950,
+   "y": 1680,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**CooneyEtAl2020**\nEvaluation of Hyperparameter Optimization in Machine and Deep Learning (2020)"
+  },
+  {
+   "id": "SchirrmeisterEtAl2017",
+   "x": 950,
+   "y": 1778,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/SchirrmeisterEtAl2017.md"
+  },
+  {
+   "id": "AristimunhaEtAl2025",
+   "x": 950,
+   "y": 1876,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/AristimunhaEtAl2025.md"
+  },
+  {
+   "id": "DingEtAl2024",
+   "x": 950,
+   "y": 1974,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**DingEtAl2024**\nEmT: A Novel Transformer for Generalized Cross-Subject EEG Emotion Rec (2024)"
+  },
+  {
+   "id": "HuangEtAl2025",
+   "x": 950,
+   "y": 2072,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/HuangEtAl2025.md"
+  },
+  {
+   "id": "AnarakiEtAl2024",
+   "x": 950,
+   "y": 2170,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**AnarakiEtAl2024**\nPersonalized Classifier Selection for EEG-Based BCIs (2024)"
+  },
+  {
+   "id": "WuEtAl2022",
+   "x": 950,
+   "y": 2268,
+   "width": 320,
+   "height": 70,
+   "color": "3",
+   "type": "text",
+   "text": "**WuEtAl2022**\nTransfer learning for motor imagery based brain-computer interfaces: A (2022)"
+  },
+  {
+   "id": "BerdyshevEtAl2024",
+   "x": 950,
+   "y": 2366,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/BerdyshevEtAl2024.md"
+  },
+  {
+   "id": "ZhangEtAl2024",
+   "x": 950,
+   "y": 2464,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/ZhangEtAl2024.md"
+  },
+  {
+   "id": "WeiEtAl2023",
+   "x": 950,
+   "y": 2562,
+   "width": 320,
+   "height": 70,
+   "color": "2",
+   "type": "text",
+   "text": "**WeiEtAl2023**\nCross-Subject EEG Channel Selection Method for Lower Limb Brain-Comput (2023)"
+  },
+  {
+   "id": "KapitonovaBall2024",
+   "x": 950,
+   "y": 2660,
+   "width": 320,
+   "height": 70,
+   "color": "5",
+   "type": "file",
+   "file": "10_Research/20260815_llm-warmstart-cash-mi-eeg-pipelines/step5_full_text/KapitonovaBall2024.md"
+  }
+ ],
+ "edges": [
+  {
+   "id": "edge-RychertEtAl2025-LiuEtAl2024",
+   "fromNode": "RychertEtAl2025",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "reproduces: LLAMBO claims with open-weight Llama 3.1 70B"
+  },
+  {
+   "id": "edge-RodriguesEtAl2026-LiuEtAl2024",
+   "fromNode": "RodriguesEtAl2026",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "audits: isolates default-seed control from LLM warm-start claim"
+  },
+  {
+   "id": "edge-RodriguesEtAl2026-FeurerEtAl2015",
+   "fromNode": "RodriguesEtAl2026",
+   "fromSide": "bottom",
+   "toNode": "FeurerEtAl2015",
+   "toSide": "top",
+   "label": "recommends: cheap meta-learned initialization over LLM advisor"
+  },
+  {
+   "id": "edge-RodriguesEtAl2026-MahammadliErtekin2024",
+   "fromNode": "RodriguesEtAl2026",
+   "fromSide": "bottom",
+   "toNode": "MahammadliErtekin2024",
+   "toSide": "top",
+   "label": "audits: budget-matched test of SLLMBO-style advisor loops"
+  },
+  {
+   "id": "edge-MahammadliErtekin2024-LiuEtAl2024",
+   "fromNode": "MahammadliErtekin2024",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "extends: multi-LLM benchmark, hybridizes LLM with TPE"
+  },
+  {
+   "id": "edge-XuEtAl2026b-LiuEtAl2024",
+   "fromNode": "XuEtAl2026b",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "extends: LLM semantic priors to structured CASH trees"
+  },
+  {
+   "id": "edge-XuEtAl2026a-LindauerEtAl2021",
+   "fromNode": "XuEtAl2026a",
+   "fromSide": "bottom",
+   "toNode": "LindauerEtAl2021",
+   "toSide": "top",
+   "label": "builds on: SMAC as FE-conditioned HPO module"
+  },
+  {
+   "id": "edge-XuEtAl2026a-LiEtAl2021b",
+   "fromNode": "XuEtAl2026a",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2021b",
+   "toSide": "top",
+   "label": "contrasts: interleaved LLM-FE+BO vs unified-space CASH systems"
+  },
+  {
+   "id": "edge-TopalisEtAl2025-HvarfnerEtAl2022",
+   "fromNode": "TopalisEtAl2025",
+   "fromSide": "bottom",
+   "toNode": "HvarfnerEtAl2022",
+   "toSide": "top",
+   "label": "parallels: piBO prior injection with LLM+RAG-elicited Dirichlet priors"
+  },
+  {
+   "id": "edge-ChenYi2026-HvarfnerEtAl2022",
+   "fromNode": "ChenYi2026",
+   "fromSide": "bottom",
+   "toNode": "HvarfnerEtAl2022",
+   "toSide": "top",
+   "label": "extends: robust prior weighting to fallible multi-objective LLM experts"
+  },
+  {
+   "id": "edge-GuptaEtAl2025-LiuEtAl2024",
+   "fromNode": "GuptaEtAl2025",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "challenges: LLM in-context sensitivity to experimental feedback"
+  },
+  {
+   "id": "edge-KristiadiEtAl2024-LiuEtAl2024",
+   "fromNode": "KristiadiEtAl2024",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "tempers: LLM-BO usefulness requires domain pretraining/finetuning"
+  },
+  {
+   "id": "edge-SrinivasanMenzies2026-RodriguesEtAl2026",
+   "fromNode": "SrinivasanMenzies2026",
+   "fromSide": "bottom",
+   "toNode": "RodriguesEtAl2026",
+   "toSide": "top",
+   "label": "corroborates: LLM advantage vanishes beyond low dimensionality"
+  },
+  {
+   "id": "edge-XuEtAl2025a-LiuEtAl2024",
+   "fromNode": "XuEtAl2025a",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "fixes: repetition/self-reinforcement of ICL candidate generation"
+  },
+  {
+   "id": "edge-LeiCooper2026-LiuEtAl2024",
+   "fromNode": "LeiCooper2026",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "analyzes: prompt/protocol sensitivity of LLM surrogate beliefs"
+  },
+  {
+   "id": "edge-YuanEtAl2026-LiuEtAl2024",
+   "fromNode": "YuanEtAl2026",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "extends: warm-start-only use to per-iteration preference injection"
+  },
+  {
+   "id": "edge-MenetEtAl2025-KristiadiEtAl2024",
+   "fromNode": "MenetEtAl2025",
+   "fromSide": "bottom",
+   "toNode": "KristiadiEtAl2024",
+   "toSide": "top",
+   "label": "extends: principled LLM posterior via fine-tuned Thompson sampling"
+  },
+  {
+   "id": "edge-ChenEtAl2025b-KristiadiEtAl2024",
+   "fromNode": "ChenEtAl2025b",
+   "fromSide": "bottom",
+   "toNode": "KristiadiEtAl2024",
+   "toSide": "top",
+   "label": "responds: likelihood-free acquisition avoids deep Bayesian surrogate cost"
+  },
+  {
+   "id": "edge-KobalczykEtAl2025-LiuEtAl2024",
+   "fromNode": "KobalczykEtAl2025",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "repositions: LLM as feedback translator, not the optimizer"
+  },
+  {
+   "id": "edge-ChenEtAl2025a-LiuEtAl2024",
+   "fromNode": "ChenEtAl2025a",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "extends: dual-agent warm-start plus natural-language refinement"
+  },
+  {
+   "id": "edge-Kannan2023-LiuEtAl2024",
+   "fromNode": "Kannan2023",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "anticipates: LLM warm-start and search-space narrowing for BO"
+  },
+  {
+   "id": "edge-HuEtAl2025-ZhaoEtAl2025",
+   "fromNode": "HuEtAl2025",
+   "fromSide": "bottom",
+   "toNode": "ZhaoEtAl2025",
+   "toSide": "top",
+   "label": "complements: cross-domain LLM NAS vs energy-aware NAS benchmarking"
+  },
+  {
+   "id": "edge-SaadallahEtAl2026-LiuEtAl2024",
+   "fromNode": "SaadallahEtAl2026",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "extends: structured meta-knowledge prompts with BO cold-start init"
+  },
+  {
+   "id": "edge-FeurerEtAl2015-LindauerEtAl2021",
+   "fromNode": "FeurerEtAl2015",
+   "fromSide": "bottom",
+   "toNode": "LindauerEtAl2021",
+   "toSide": "top",
+   "label": "meta-learned initialization adopted into SMAC lineage"
+  },
+  {
+   "id": "edge-FeurerEtAl2015-NomuraEtAl2021",
+   "fromNode": "FeurerEtAl2015",
+   "fromSide": "bottom",
+   "toNode": "NomuraEtAl2021",
+   "toSide": "top",
+   "label": "meta-feature init contrasted with KL-based warm start"
+  },
+  {
+   "id": "edge-HvarfnerEtAl2022-LindauerEtAl2021",
+   "fromNode": "HvarfnerEtAl2022",
+   "fromSide": "bottom",
+   "toNode": "LindauerEtAl2021",
+   "toSide": "top",
+   "label": "piBO shipped inside SMAC3"
+  },
+  {
+   "id": "edge-HvarfnerEtAl2022-LiuEtAl2024",
+   "fromNode": "HvarfnerEtAl2022",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "prior-injection channel usable by LLM-elicited priors"
+  },
+  {
+   "id": "edge-RijnHutter2017-HvarfnerEtAl2022",
+   "fromNode": "RijnHutter2017",
+   "fromSide": "bottom",
+   "toNode": "HvarfnerEtAl2022",
+   "toSide": "top",
+   "label": "fANOVA-derived priors supply piBO-style beliefs"
+  },
+  {
+   "id": "edge-PerroneEtAl2019-LiEtAl2022d",
+   "fromNode": "PerroneEtAl2019",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2022d",
+   "toSide": "top",
+   "label": "geometric space transfer generalized by GPC voting"
+  },
+  {
+   "id": "edge-LiEtAl2022d-WangEtAl2024",
+   "fromNode": "LiEtAl2022d",
+   "fromSide": "bottom",
+   "toNode": "WangEtAl2024",
+   "toSide": "top",
+   "label": "static space transfer extended by adaptive MCTS"
+  },
+  {
+   "id": "edge-LiEtAl2022c-LiEtAl2021a",
+   "fromNode": "LiEtAl2022c",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2021a",
+   "toSide": "top",
+   "label": "surrogate-transfer weighting powers OpenBox service"
+  },
+  {
+   "id": "edge-LiEtAl2021a-LiEtAl2021b",
+   "fromNode": "LiEtAl2021a",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2021b",
+   "toSide": "top",
+   "label": "sister PKU system; VolcanoML shares transfer infrastructure"
+  },
+  {
+   "id": "edge-WistubaGrabocka2021-ArangoEtAl2021",
+   "fromNode": "WistubaGrabocka2021",
+   "fromSide": "bottom",
+   "toNode": "ArangoEtAl2021",
+   "toSide": "top",
+   "label": "FSBO ranked best transfer method on HPO-B"
+  },
+  {
+   "id": "edge-WistubaGrabocka2021-BerdyshevEtAl2024",
+   "fromNode": "WistubaGrabocka2021",
+   "fromSide": "bottom",
+   "toNode": "BerdyshevEtAl2024",
+   "toSide": "top",
+   "label": "few-shot meta-learned adaptation parallels EEG-Reptile"
+  },
+  {
+   "id": "edge-ChenEtAl2022-LiuEtAl2024",
+   "fromNode": "ChenEtAl2022",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "text-based transformer HPO anticipates LLM-driven BO"
+  },
+  {
+   "id": "edge-ChenEtAl2022-BalefEggensperger2025",
+   "fromNode": "ChenEtAl2022",
+   "fromSide": "bottom",
+   "toNode": "BalefEggensperger2025",
+   "toSide": "top",
+   "label": "in-context optimization via pretrained sequence models"
+  },
+  {
+   "id": "edge-HollmannEtAl2025-BalefEggensperger2025",
+   "fromNode": "HollmannEtAl2025",
+   "fromSide": "bottom",
+   "toNode": "BalefEggensperger2025",
+   "toSide": "top",
+   "label": "PS-PFN builds on prior-data fitted networks"
+  },
+  {
+   "id": "edge-BalefEtAl2025-LindauerEtAl2021",
+   "fromNode": "BalefEtAl2025",
+   "fromSide": "bottom",
+   "toNode": "LindauerEtAl2021",
+   "toSide": "top",
+   "label": "SMAC used as lower-level HPO under MaxUCB"
+  },
+  {
+   "id": "edge-BalefEtAl2025-LiEtAl2021b",
+   "fromNode": "BalefEtAl2025",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2021b",
+   "toSide": "top",
+   "label": "bandit decomposition rivals joint CASH search systems"
+  },
+  {
+   "id": "edge-BaiEtAl2023-FeurerEtAl2015",
+   "fromNode": "BaiEtAl2023",
+   "fromSide": "bottom",
+   "toNode": "FeurerEtAl2015",
+   "toSide": "top",
+   "label": "canonical initial-points-design exemplar in taxonomy"
+  },
+  {
+   "id": "edge-HvarfnerEtAl2026-BaiEtAl2023",
+   "fromNode": "HvarfnerEtAl2026",
+   "fromSide": "bottom",
+   "toNode": "BaiEtAl2023",
+   "toSide": "top",
+   "label": "shows surrogate-transfer category structurally fragile"
+  },
+  {
+   "id": "edge-PfistererEtAl2018-GijsbersEtAl2021",
+   "fromNode": "PfistererEtAl2018",
+   "fromSide": "bottom",
+   "toNode": "GijsbersEtAl2021",
+   "toSide": "top",
+   "label": "static default sets extended to symbolic defaults"
+  },
+  {
+   "id": "edge-Vanschoren2019-FeurerEtAl2015",
+   "fromNode": "Vanschoren2019",
+   "fromSide": "bottom",
+   "toNode": "FeurerEtAl2015",
+   "toSide": "top",
+   "label": "survey canonizes warm-start initialization practice"
+  },
+  {
+   "id": "edge-NguyenEtAl2024-BalefEtAl2025",
+   "fromNode": "NguyenEtAl2024",
+   "fromSide": "bottom",
+   "toNode": "BalefEtAl2025",
+   "toSide": "top",
+   "label": "budget-limited selection: MDP versus extreme-bandit framing"
+  },
+  {
+   "id": "edge-Chakrabarty2022-WistubaGrabocka2021",
+   "fromNode": "Chakrabarty2022",
+   "fromSide": "bottom",
+   "toNode": "WistubaGrabocka2021",
+   "toSide": "top",
+   "label": "meta-learned initial surrogates echo few-shot BO"
+  },
+  {
+   "id": "edge-LiEtAl2024-FeurerEtAl2015",
+   "fromNode": "LiEtAl2024",
+   "fromSide": "bottom",
+   "toNode": "FeurerEtAl2015",
+   "toSide": "top",
+   "label": "portfolio initial design echoes MI-SMBO"
+  },
+  {
+   "id": "edge-BasgaluppEtAl2020-OlsonEtAl2016",
+   "fromNode": "BasgaluppEtAl2020",
+   "fromSide": "bottom",
+   "toNode": "OlsonEtAl2016",
+   "toSide": "top",
+   "label": "EA-based AutoML comparison alongside TPOT"
+  },
+  {
+   "id": "edge-OlsonEtAl2016-LiEtAl2021b",
+   "fromNode": "OlsonEtAl2016",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2021b",
+   "toSide": "top",
+   "label": "EA pipeline search baseline for VolcanoML-class systems"
+  },
+  {
+   "id": "edge-RuedenEtAl2021-HvarfnerEtAl2022",
+   "fromNode": "RuedenEtAl2021",
+   "fromSide": "bottom",
+   "toNode": "HvarfnerEtAl2022",
+   "toSide": "top",
+   "label": "informed-ML taxonomy frames user-belief injection"
+  },
+  {
+   "id": "edge-BossekEtAl2020-FeurerEtAl2015",
+   "fromNode": "BossekEtAl2020",
+   "fromSide": "bottom",
+   "toNode": "FeurerEtAl2015",
+   "toSide": "top",
+   "label": "initial-design sensitivity motivates learned initialization"
+  },
+  {
+   "id": "edge-GijsbersEtAl2021-HollmannEtAl2025",
+   "fromNode": "GijsbersEtAl2021",
+   "fromSide": "bottom",
+   "toNode": "HollmannEtAl2025",
+   "toSide": "top",
+   "label": "zero-shot data-dependent configuration to foundation models"
+  },
+  {
+   "id": "edge-KotthoffEtAl2019-FeurerEtAl2015",
+   "fromNode": "KotthoffEtAl2019",
+   "fromSide": "bottom",
+   "toNode": "FeurerEtAl2015",
+   "toSide": "top",
+   "label": "CASH formulation adopted and meta-learning-warm-started by auto-sklearn"
+  },
+  {
+   "id": "edge-LiEtAl2016-FalknerEtAl2018",
+   "fromNode": "LiEtAl2016",
+   "fromSide": "bottom",
+   "toNode": "FalknerEtAl2018",
+   "toSide": "top",
+   "label": "Hyperband is the bandit backbone BOHB hybridizes with TPE"
+  },
+  {
+   "id": "edge-LiEtAl2016-FeurerEtAl2015",
+   "fromNode": "LiEtAl2016",
+   "fromSide": "bottom",
+   "toNode": "FeurerEtAl2015",
+   "toSide": "top",
+   "label": "conclusion proposes meta-learned priors to replace random sampling"
+  },
+  {
+   "id": "edge-KleinEtAl2016-FalknerEtAl2018",
+   "fromNode": "KleinEtAl2016",
+   "fromSide": "bottom",
+   "toNode": "FalknerEtAl2018",
+   "toSide": "top",
+   "label": "Fabolas dataset-size fidelity compared against BOHB on SVM surrogates"
+  },
+  {
+   "id": "edge-FalknerEtAl2018-LiEtAl2020b",
+   "fromNode": "FalknerEtAl2018",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2020b",
+   "toSide": "top",
+   "label": "BOHB's low-fidelity handling improved by MFES-HB ensemble surrogates"
+  },
+  {
+   "id": "edge-LiEtAl2020b-LiEtAl2022b",
+   "fromNode": "LiEtAl2020b",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2022b",
+   "toSide": "top",
+   "label": "MFES-HB deployed as optimizer inside distributed Hyper-Tune"
+  },
+  {
+   "id": "edge-ZelaEtAl2018-FalknerEtAl2018",
+   "fromNode": "ZelaEtAl2018",
+   "fromSide": "bottom",
+   "toNode": "FalknerEtAl2018",
+   "toSide": "top",
+   "label": "applies BOHB to joint NAS+HPO search"
+  },
+  {
+   "id": "edge-HuEtAl2019-LiEtAl2020a",
+   "fromNode": "HuEtAl2019",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2020a",
+   "toSide": "top",
+   "label": "cascaded bandit algorithm selection precursor to Rising Bandits"
+  },
+  {
+   "id": "edge-LiEtAl2020a-LiEtAl2021b",
+   "fromNode": "LiEtAl2020a",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2021b",
+   "toSide": "top",
+   "label": "Rising Bandits become VolcanoML's conditioning-block bandit (RB-ES)"
+  },
+  {
+   "id": "edge-LiuEtAl2019-LiEtAl2021b",
+   "fromNode": "LiuEtAl2019",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2021b",
+   "toSide": "top",
+   "label": "ADMM decomposition generalized by VolcanoML's building-block plans"
+  },
+  {
+   "id": "edge-LiEtAl2021b-LiEtAl2022a",
+   "fromNode": "LiEtAl2021b",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2022a",
+   "toSide": "top",
+   "label": "journal extension adds RGPE/RankNet meta-learning and plan search"
+  },
+  {
+   "id": "edge-LiEtAl2022a-LiuEtAl2024",
+   "fromNode": "LiEtAl2022a",
+   "fromSide": "bottom",
+   "toNode": "LiuEtAl2024",
+   "toSide": "top",
+   "label": "history-based RGPE transfer is the baseline LLM warm-starting (LLAMBO) targets"
+  },
+  {
+   "id": "edge-YangEtAl2018-FeurerEtAl2015",
+   "fromNode": "YangEtAl2018",
+   "fromSide": "bottom",
+   "toNode": "FeurerEtAl2015",
+   "toSide": "top",
+   "label": "replaces meta-feature warm-start with collaborative-filtering cold-start"
+  },
+  {
+   "id": "edge-DaningEtAl2018-HvarfnerEtAl2022",
+   "fromNode": "DaningEtAl2018",
+   "fromSide": "bottom",
+   "toNode": "HvarfnerEtAl2022",
+   "toSide": "top",
+   "label": "hand-built meta-acquisition priors anticipate principled prior injection in piBO"
+  },
+  {
+   "id": "edge-ShenEtAl2023-LiEtAl2021b",
+   "fromNode": "ShenEtAl2023",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2021b",
+   "toSide": "top",
+   "label": "searches VolcanoML's 100-HP space and beats its RB-ES ensemble strategy"
+  },
+  {
+   "id": "edge-XuEtAl2025b-ShenEtAl2023",
+   "fromNode": "XuEtAl2025b",
+   "fromSide": "bottom",
+   "toNode": "ShenEtAl2023",
+   "toSide": "top",
+   "label": "optimizes the post-hoc stacking stage DivBO's search feeds"
+  },
+  {
+   "id": "edge-OlsonMoore2019-EricksonEtAl2020",
+   "fromNode": "OlsonMoore2019",
+   "fromSide": "bottom",
+   "toNode": "EricksonEtAl2020",
+   "toSide": "top",
+   "label": "TPOT baseline outperformed by CASH-free stack ensembling"
+  },
+  {
+   "id": "edge-EricksonEtAl2020-GijsbersEtAl2019",
+   "fromNode": "EricksonEtAl2020",
+   "fromSide": "bottom",
+   "toNode": "GijsbersEtAl2019",
+   "toSide": "top",
+   "label": "evaluated on the OpenML AutoML Benchmark dataset suite"
+  },
+  {
+   "id": "edge-GuyonEtAl2019-GijsbersEtAl2019",
+   "fromNode": "GuyonEtAl2019",
+   "fromSide": "bottom",
+   "toNode": "GijsbersEtAl2019",
+   "toSide": "top",
+   "label": "challenge protocols inform open benchmark design"
+  },
+  {
+   "id": "edge-EggenspergerEtAl2015-EggenspergerEtAl2021",
+   "fromNode": "EggenspergerEtAl2015",
+   "fromSide": "bottom",
+   "toNode": "EggenspergerEtAl2021",
+   "toSide": "top",
+   "label": "surrogate benchmarking scaled into containerized HPOBench"
+  },
+  {
+   "id": "edge-KleinEtAl2019-EggenspergerEtAl2021",
+   "fromNode": "KleinEtAl2019",
+   "fromSide": "bottom",
+   "toNode": "EggenspergerEtAl2021",
+   "toSide": "top",
+   "label": "generative meta-surrogates complement tabular/surrogate HPOBench problems"
+  },
+  {
+   "id": "edge-EggenspergerEtAl2021-LindauerEtAl2021",
+   "fromNode": "EggenspergerEtAl2021",
+   "fromSide": "bottom",
+   "toNode": "LindauerEtAl2021",
+   "toSide": "top",
+   "label": "HPOBench problems used to validate SMAC3 multi-fidelity facade"
+  },
+  {
+   "id": "edge-BischlEtAl2021-BischlEtAl2023",
+   "fromNode": "BischlEtAl2021",
+   "fromSide": "bottom",
+   "toNode": "BischlEtAl2023",
+   "toSide": "top",
+   "label": "arXiv preprint later published as journal survey"
+  },
+  {
+   "id": "edge-BakerEtAl2016-RealEtAl2019",
+   "fromNode": "BakerEtAl2016",
+   "fromSide": "bottom",
+   "toNode": "RealEtAl2019",
+   "toSide": "top",
+   "label": "RL-based NAS baseline that regularized evolution outperforms"
+  },
+  {
+   "id": "edge-JinEtAl2019-AvvalEtAl2025",
+   "fromNode": "JinEtAl2019",
+   "fromSide": "bottom",
+   "toNode": "AvvalEtAl2025",
+   "toSide": "top",
+   "label": "morphism-guided BO NAS surveyed in systematic NAS review"
+  },
+  {
+   "id": "edge-ZollerHuber2019-GijsbersEtAl2019",
+   "fromNode": "ZollerHuber2019",
+   "fromSide": "bottom",
+   "toNode": "GijsbersEtAl2019",
+   "toSide": "top",
+   "label": "endorses the open benchmark as the promising path to comparability"
+  },
+  {
+   "id": "edge-ThomasEtAl2018-GijsbersEtAl2019",
+   "fromNode": "ThomasEtAl2018",
+   "fromSide": "bottom",
+   "toNode": "GijsbersEtAl2019",
+   "toSide": "top",
+   "label": "autoxgboost flagged for future benchmark inclusion"
+  },
+  {
+   "id": "edge-CraikEtAl2019-WangEtAl2026",
+   "fromNode": "CraikEtAl2019",
+   "fromSide": "bottom",
+   "toNode": "WangEtAl2026",
+   "toSide": "top",
+   "label": "manual architecture guidelines that per-subject NAS automates"
+  },
+  {
+   "id": "edge-DuanEtAl2023-WangEtAl2026",
+   "fromNode": "DuanEtAl2023",
+   "fromSide": "bottom",
+   "toNode": "WangEtAl2026",
+   "toSide": "top",
+   "label": "per-subject NAS extended with filter-bank frequency cells"
+  },
+  {
+   "id": "edge-ZhuEtAl2025-WangEtAl2026",
+   "fromNode": "ZhuEtAl2025",
+   "fromSide": "bottom",
+   "toNode": "WangEtAl2026",
+   "toSide": "top",
+   "label": "differentiable vs multi-path NAS, both on BCI Competition IV MI"
+  },
+  {
+   "id": "edge-LiEtAl2025d-ZhuEtAl2025",
+   "fromNode": "LiEtAl2025d",
+   "fromSide": "bottom",
+   "toNode": "ZhuEtAl2025",
+   "toSide": "top",
+   "label": "search-cost reduction: training-free proxies vs differentiable relaxation"
+  },
+  {
+   "id": "edge-NakisaEtAl2018-LeonEtAl2020",
+   "fromNode": "NakisaEtAl2018",
+   "fromSide": "bottom",
+   "toNode": "LeonEtAl2020",
+   "toSide": "top",
+   "label": "evolutionary HPO of neural EEG classifiers (DE vs GA)"
+  },
+  {
+   "id": "edge-NakisaEtAl2018-LiEtAl2021b",
+   "fromNode": "NakisaEtAl2018",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2021b",
+   "toSide": "top",
+   "label": "TPE/BO only a beaten baseline vs BO-centric CASH systems"
+  },
+  {
+   "id": "edge-MirandaEtAl2022-LiEtAl2021b",
+   "fromNode": "MirandaEtAl2022",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2021b",
+   "toSide": "top",
+   "label": "GP pipeline AutoML on EEG parallels decomposed CASH search"
+  },
+  {
+   "id": "edge-MirandaEtAl2022-BirdLotfi2023",
+   "fromNode": "MirandaEtAl2022",
+   "fromSide": "bottom",
+   "toNode": "BirdLotfi2023",
+   "toSide": "top",
+   "label": "GP pipeline search applied to EEG classification"
+  },
+  {
+   "id": "edge-BirdLotfi2023-BirdEtAl2020",
+   "fromNode": "BirdLotfi2023",
+   "fromSide": "bottom",
+   "toNode": "BirdEtAl2020",
+   "toSide": "top",
+   "label": "same hyperheuristic evolutionary optimisation lineage"
+  },
+  {
+   "id": "edge-BirdEtAl2020-BerdyshevEtAl2024",
+   "fromNode": "BirdEtAl2020",
+   "fromSide": "bottom",
+   "toNode": "BerdyshevEtAl2024",
+   "toSide": "top",
+   "label": "weight-level warm-start precursor to meta-learned EEG initialization"
+  },
+  {
+   "id": "edge-LiEtAl2025a-LiEtAl2021b",
+   "fromNode": "LiEtAl2025a",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2021b",
+   "toSide": "top",
+   "label": "fixed low-code EEG pipelines vs automated CASH search"
+  },
+  {
+   "id": "edge-WangEtAl2026-BerdyshevEtAl2024",
+   "fromNode": "WangEtAl2026",
+   "fromSide": "bottom",
+   "toNode": "BerdyshevEtAl2024",
+   "toSide": "top",
+   "label": "per-subject adaptation via NAS vs via meta-learning"
+  },
+  {
+   "id": "edge-BerdyshevEtAl2024-SchirrmeisterEtAl2017",
+   "fromNode": "BerdyshevEtAl2024",
+   "fromSide": "bottom",
+   "toNode": "SchirrmeisterEtAl2017",
+   "toSide": "top",
+   "label": "uses Braindecode tooling and ConvNet baselines from this work"
+  },
+  {
+   "id": "edge-BerdyshevEtAl2024-FeurerEtAl2015",
+   "fromNode": "BerdyshevEtAl2024",
+   "fromSide": "bottom",
+   "toNode": "FeurerEtAl2015",
+   "toSide": "top",
+   "label": "meta-learned weight initialization parallels meta-feature configuration warm-sta"
+  },
+  {
+   "id": "edge-WuEtAl2022-BerdyshevEtAl2024",
+   "fromNode": "WuEtAl2022",
+   "fromSide": "bottom",
+   "toNode": "BerdyshevEtAl2024",
+   "toSide": "top",
+   "label": "plain transfer-learning baseline that EEG-Reptile significantly outperforms"
+  },
+  {
+   "id": "edge-AnarakiEtAl2024-FeurerEtAl2015",
+   "fromNode": "AnarakiEtAl2024",
+   "fromSide": "bottom",
+   "toNode": "FeurerEtAl2015",
+   "toSide": "top",
+   "label": "per-subject classifier prediction mirrors meta-feature warm-start of CASH"
+  },
+  {
+   "id": "edge-WeiEtAl2023-AnarakiEtAl2024",
+   "fromNode": "WeiEtAl2023",
+   "fromSide": "bottom",
+   "toNode": "AnarakiEtAl2024",
+   "toSide": "top",
+   "label": "both transfer configurations (channels vs classifier choice) across subjects"
+  },
+  {
+   "id": "edge-ZhangEtAl2024-LiEtAl2021b",
+   "fromNode": "ZhangEtAl2024",
+   "fromSide": "bottom",
+   "toNode": "LiEtAl2021b",
+   "toSide": "top",
+   "label": "cold-start per-dataset hyperparameter search that scalable CASH systems target"
+  },
+  {
+   "id": "edge-KapitonovaBall2024-BerdyshevEtAl2024",
+   "fromNode": "KapitonovaBall2024",
+   "fromSide": "bottom",
+   "toNode": "BerdyshevEtAl2024",
+   "toSide": "top",
+   "label": "rival automation routes: LLM-generated decoders vs automated meta-learning"
+  },
+  {
+   "id": "edge-CooneyEtAl2020-ZhangEtAl2024",
+   "fromNode": "CooneyEtAl2020",
+   "fromSide": "bottom",
+   "toNode": "ZhangEtAl2024",
+   "toSide": "top",
+   "label": "both show tuned hyperparameters beat defaults on EEG tasks"
+  },
+  {
+   "id": "edge-AristimunhaEtAl2025-HuangEtAl2025",
+   "fromNode": "AristimunhaEtAl2025",
+   "fromSide": "bottom",
+   "toNode": "HuangEtAl2025",
+   "toSide": "top",
+   "label": "formalizes the zero-shot cross-subject goal NEED claims to achieve"
+  },
+  {
+   "id": "edge-DingEtAl2024-HuangEtAl2025",
+   "fromNode": "DingEtAl2024",
+   "fromSide": "bottom",
+   "toNode": "HuangEtAl2025",
+   "toSide": "top",
+   "label": "architecture-level priors versus pretrained per-subject adaptation modules"
+  },
+  {
+   "id": "edge-SchirrmeisterEtAl2017-KapitonovaBall2024",
+   "fromNode": "SchirrmeisterEtAl2017",
+   "fromSide": "bottom",
+   "toNode": "KapitonovaBall2024",
+   "toSide": "top",
+   "label": "provides BCI IV 2a preprocessing context ChatBCI re-examines"
+  }
+ ]
+}

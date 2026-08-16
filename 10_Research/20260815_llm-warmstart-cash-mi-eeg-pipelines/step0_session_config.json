@@ -1,0 +1,49 @@
+{
+  "session_id": "20260815",
+  "topic": "LLM-informed warm-starting and prior injection for Bayesian optimization (CASH) of subject-specific EEG motor-imagery preprocessing pipelines, with cross-subject transfer",
+  "topic_original": "在受試者特定的 MI-BCI 前處理管線 CASH 最佳化中，讓 LLM 扮演 prior injector / cold-start initializer（或結合其他受試者的歷史搜尋結果做遷移），相較於純 cold-start 的 SMAC/VolcanoML 搜尋，能否在相同評估預算內顯著加速收斂並提升最終解碼準確率？零樣本直接遷移（zero-shot transfer）又能達到多少水準？",
+  "topic_slug": "llm-warmstart-cash-mi-eeg-pipelines",
+  "timestamp": "2026-08-15T19:15:00+08:00",
+  "current_step": 9,
+  "pico": {
+    "population": "Subject-specific EEG motor-imagery (MI) BCI decoding tasks on public benchmark datasets (e.g., PhysioNet EEGMMI, BCI Competition IV-2a/2b), where the full preprocessing + feature extraction + classification pipeline is treated as a CASH search space",
+    "intervention": "LLM-as-prior-injector / cold-start initializer for Bayesian optimization (SMAC/OpenBox/VolcanoML-style decomposed search), and meta-learned warm-starting that transfers search histories from other subjects",
+    "comparison": "Pure cold-start Bayesian optimization (SMAC, auto-sklearn, VolcanoML), random search, and fixed 'standard' manually-designed EEG preprocessing pipelines; zero-shot transferred configurations without further search",
+    "outcome": "Convergence speed under a fixed evaluation budget (anytime performance, evaluations-to-target), final decoding performance (balanced accuracy, kappa), and zero-shot transfer accuracy relative to searched optima",
+    "setting": "Computational/offline benchmark experiments on public EEG MI datasets; AutoML / HPO system research context",
+    "timeframe": "2015-2026 (meta-learning warm-start BO from 2015; LLM-for-AutoML concentrated in 2023-2026)"
+  },
+  "source_urls": [],
+  "queries": [
+    {
+      "id": "Q1",
+      "strategy": "Core terms + Population",
+      "query": "\"large language model\" AND (\"Bayesian optimization\" OR \"hyperparameter optimization\" OR AutoML) AND (warm-start OR \"cold start\" OR prior OR initialization)",
+      "rationale": "Direct hit on the LLM-as-prior-injector/initializer literature for BO/HPO/AutoML (e.g., LLAMBO, BORA, LB-MCTS lineage)"
+    },
+    {
+      "id": "Q2",
+      "strategy": "Synonyms + Alternative terminology",
+      "query": "(EEG OR \"brain-computer interface\" OR BCI) AND (\"motor imagery\") AND (\"pipeline optimization\" OR AutoML OR \"combined algorithm selection\" OR CASH OR \"automated preprocessing\")",
+      "rationale": "Catches EEG/BCI-side work that automates preprocessing or full-pipeline selection, regardless of whether LLMs are involved (NeuroWeaver, EEG AutoML systems)"
+    },
+    {
+      "id": "Q3",
+      "strategy": "Mechanism + Theoretical basis",
+      "query": "(\"meta-learning\" OR \"transfer learning\") AND (\"Bayesian optimization\" OR \"hyperparameter optimization\") AND (warm-start OR \"warm starting\" OR \"search history\" OR \"transfer of surrogates\")",
+      "rationale": "Finds the mechanistic foundation: how prior task/subject search histories are transferred to warm-start BO surrogates and initial designs"
+    },
+    {
+      "id": "Q4",
+      "strategy": "Methodology + Study design",
+      "query": "(AutoML OR \"hyperparameter optimization\") AND (benchmark OR \"anytime performance\" OR \"evaluation budget\" OR ablation) AND (\"search space decomposition\" OR SMAC OR VolcanoML OR auto-sklearn)",
+      "rationale": "Targets rigorous system evaluations and budget-controlled comparisons that define how to measure convergence speedup fairly"
+    },
+    {
+      "id": "Q5",
+      "strategy": "Cross-disciplinary + Adjacent fields",
+      "query": "(\"cross-subject\" OR \"inter-subject\" OR \"subject transfer\" OR \"subject-to-subject\") AND (EEG OR BCI) AND (hyperparameter OR configuration OR pipeline OR \"neural architecture search\")",
+      "rationale": "Broadens to cross-subject variability/transfer work in EEG — including NAS-for-EEG and subject-adaptive decoding — whose transfer methods may apply to pipeline configuration"
+    }
+  ]
+}
